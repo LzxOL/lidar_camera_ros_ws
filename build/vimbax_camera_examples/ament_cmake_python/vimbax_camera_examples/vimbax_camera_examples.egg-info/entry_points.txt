@@ -1,0 +1,13 @@
+[console_scripts]
+asynchronous_grab = vimbax_camera_examples.asynchronous_grab:main
+asynchronous_grab_opencv = vimbax_camera_examples.asynchronous_grab_opencv:main
+camera_connected = vimbax_camera_examples.camera_connected:main
+connection_observer = vimbax_camera_examples.connection_observer:main
+event_viewer = vimbax_camera_examples.event_viewer:main
+feature_command_execute = vimbax_camera_examples.feature_command_execute:main
+feature_get = vimbax_camera_examples.feature_get:main
+feature_info_get = vimbax_camera_examples.feature_info_get:main
+feature_set = vimbax_camera_examples.feature_set:main
+list_features = vimbax_camera_examples.list_features:main
+settings_load_save = vimbax_camera_examples.settings_load_save:main
+status_get = vimbax_camera_examples.status_get:main

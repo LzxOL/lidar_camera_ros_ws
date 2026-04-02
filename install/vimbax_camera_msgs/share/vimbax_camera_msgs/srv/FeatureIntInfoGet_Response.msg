@@ -1,0 +1,5 @@
+
+int64 min
+int64 max
+int64 inc
+Error error

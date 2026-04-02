@@ -1,0 +1,46 @@
+[0.017s] Invoking command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction /usr/bin/cmake /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vmbc_interface -DCMAKE_INSTALL_PREFIX=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface
+[0.469s] -- The C compiler identification is GNU 11.4.0
+[0.777s] -- The CXX compiler identification is GNU 11.4.0
+[0.883s] -- Detecting C compiler ABI info
+[1.091s] -- Detecting C compiler ABI info - done
+[1.098s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.103s] -- Detecting C compile features
+[1.107s] -- Detecting C compile features - done
+[1.121s] -- Detecting CXX compiler ABI info
+[1.243s] -- Detecting CXX compiler ABI info - done
+[1.252s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.252s] -- Detecting CXX compile features
+[1.253s] -- Detecting CXX compile features - done
+[1.466s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.868s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.086s] -- Configuring done
+[2.090s] -- Generating done
+[2.092s] -- Build files have been written to: /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface
+[2.096s] Invoked command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction /usr/bin/cmake /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vmbc_interface -DCMAKE_INSTALL_PREFIX=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface
+[2.099s] Invoking command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction /usr/bin/cmake --build /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface -- -j16 -l16
+[2.114s] Invoked command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction /usr/bin/cmake --build /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface -- -j16 -l16
+[2.119s] Invoking command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction /usr/bin/cmake --install /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface
+[2.120s] -- Install configuration: ""
+[2.120s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/include
+[2.120s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/include/VmbC
+[2.120s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/include/VmbC/VmbC.h
+[2.121s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/include/VmbC/VmbConstants.h
+[2.121s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/include/VmbC/VmbCommonTypes.h
+[2.121s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/include/VmbC/VmbCTypeDefinitions.h
+[2.121s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/ament_index/resource_index/package_run_dependencies/vmbc_interface
+[2.121s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/ament_index/resource_index/parent_prefix_path/vmbc_interface
+[2.122s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/environment/ament_prefix_path.sh
+[2.122s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/environment/ament_prefix_path.dsv
+[2.122s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/environment/path.sh
+[2.122s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/environment/path.dsv
+[2.122s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/local_setup.bash
+[2.122s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/local_setup.sh
+[2.122s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/local_setup.zsh
+[2.123s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/local_setup.dsv
+[2.123s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/package.dsv
+[2.123s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/ament_index/resource_index/packages/vmbc_interface
+[2.123s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.123s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/cmake/vmbc_interfaceConfig.cmake
+[2.123s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/cmake/vmbc_interfaceConfig-version.cmake
+[2.123s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/package.xml
+[2.125s] Invoked command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction /usr/bin/cmake --install /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface

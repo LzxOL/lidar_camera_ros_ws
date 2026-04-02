@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from vimbax_camera_msgs/msg/Error.msg
+// generated code does not contain a copyright notice
+
+
+module vimbax_camera_msgs {
+  module msg {
+    struct Error {
+      int32 code;
+
+      string text;
+    };
+  };
+};

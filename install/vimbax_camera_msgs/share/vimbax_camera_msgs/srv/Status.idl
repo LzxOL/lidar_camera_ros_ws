@@ -1,0 +1,49 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from vimbax_camera_msgs/srv/Status.srv
+// generated code does not contain a copyright notice
+
+#include "vimbax_camera_msgs/msg/Error.idl"
+#include "vimbax_camera_msgs/msg/TriggerInfo.idl"
+
+module vimbax_camera_msgs {
+  module srv {
+    struct Status_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct Status_Response {
+      vimbax_camera_msgs::msg::Error error;
+
+      string display_name;
+
+      string model_name;
+
+      string device_firmware_version;
+
+      string device_id;
+
+      string device_user_id;
+
+      string device_serial_number;
+
+      string interface_id;
+
+      string transport_layer_id;
+
+      boolean streaming;
+
+      uint32 width;
+
+      uint32 height;
+
+      double frame_rate;
+
+      string pixel_format;
+
+      sequence<vimbax_camera_msgs::msg::TriggerInfo> trigger_info;
+
+      string ip_address;
+
+      string mac_address;
+    };
+  };
+};

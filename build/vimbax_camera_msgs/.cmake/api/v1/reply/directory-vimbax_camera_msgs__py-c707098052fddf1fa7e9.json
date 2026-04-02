@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "vimbax_camera_msgs__py",
+		"source" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/vimbax_camera_msgs__py"
+	}
+}

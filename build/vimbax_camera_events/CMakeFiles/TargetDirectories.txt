@@ -1,0 +1,12 @@
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_events/CMakeFiles/uninstall.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_events/CMakeFiles/vimbax_camera_events_uninstall.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_events/CMakeFiles/vimbax_camera_events.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_events/CMakeFiles/ament_cmake_python_copy_vimbax_camera_events.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_events/CMakeFiles/ament_cmake_python_build_vimbax_camera_events_egg.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_events/CMakeFiles/test.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_events/CMakeFiles/edit_cache.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_events/CMakeFiles/rebuild_cache.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_events/CMakeFiles/list_install_components.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_events/CMakeFiles/install.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_events/CMakeFiles/install/local.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_events/CMakeFiles/install/strip.dir

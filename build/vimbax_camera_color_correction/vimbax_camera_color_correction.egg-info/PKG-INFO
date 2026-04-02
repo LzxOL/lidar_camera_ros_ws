@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: vimbax_camera_color_correction
+Version: 1.0.0
+Summary: Color correction node using OpenCV ColorChecker and CCM
+Maintainer: User
+Maintainer-email: user@example.com
+License: BSD
+Requires-Dist: setuptools

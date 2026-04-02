@@ -1,0 +1,42 @@
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found rslidar_msg: 0.0.0 (/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk
+Consolidate compiler generated dependencies of target rslidar_sdk_node
+[ 33%] Building CXX object CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o
+[ 66%] Linking CXX executable rslidar_sdk_node
+[100%] Built target rslidar_sdk_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/lib/rslidar_sdk/rslidar_sdk_node
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/launch/elequent_start.py
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/launch/humble_start.py
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/launch/start.launch
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/launch/start.py
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/rviz/rviz.rviz
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/rviz/rviz2.rviz
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/ament_index/resource_index/package_run_dependencies/rslidar_sdk
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/ament_index/resource_index/parent_prefix_path/rslidar_sdk
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/environment/ament_prefix_path.sh
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/environment/ament_prefix_path.dsv
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/environment/path.sh
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/environment/path.dsv
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.bash
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.sh
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.zsh
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.dsv
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/package.dsv
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/ament_index/resource_index/packages/rslidar_sdk
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/cmake/rslidar_sdkConfig.cmake
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/cmake/rslidar_sdkConfig-version.cmake
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/package.xml

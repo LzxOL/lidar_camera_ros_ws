@@ -1,0 +1,7 @@
+setup.py
+vimbax_camera_events/__init__.py
+vimbax_camera_events/event_subscriber.py
+vimbax_camera_events.egg-info/PKG-INFO
+vimbax_camera_events.egg-info/SOURCES.txt
+vimbax_camera_events.egg-info/dependency_links.txt
+vimbax_camera_events.egg-info/top_level.txt

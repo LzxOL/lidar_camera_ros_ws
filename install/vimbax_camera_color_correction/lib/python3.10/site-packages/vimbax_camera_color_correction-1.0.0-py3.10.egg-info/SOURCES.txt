@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/PKG-INFO
+../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/SOURCES.txt
+../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/dependency_links.txt
+../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/entry_points.txt
+../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/requires.txt
+../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/top_level.txt
+../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/zip-safe
+launch/color_correction.launch.py
+launch/lut_apply.launch.py
+resource/vimbax_camera_color_correction
+vimbax_camera_color_correction/__init__.py
+vimbax_camera_color_correction/color_correction_node.py
+vimbax_camera_color_correction/color_lut.py
+vimbax_camera_color_correction/lut_apply_node.py

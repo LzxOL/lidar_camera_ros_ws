@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>vimbax_camera_color_correction_cpp</name>
+  <version>1.0.0</version>
+  <description>
+    High-performance C++ implementation of 3D LUT color correction for ROS2.
+    This package provides optimized color correction using trilinear interpolation
+    with OpenMP parallelization for real-time processing.
+
+    Features:
+    - Fast 3D LUT application using optimized C++ code
+    - OpenMP multi-threading for parallel processing
+    - Support for binary (.bin) and numpy (.npy) LUT file formats
+    - RGB and BGR input/output support
+    - Performance monitoring and logging
+  </description>
+
+  <maintainer email="maintainer@example.com">Maintainer</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <!-- ROS dependencies -->
+  <depend>rclcpp</depend>
+  <depend>rclcpp_components</depend>
+  <depend>image_transport</depend>
+  <depend>camera_info_manager</depend>
+  <depend>cv_bridge</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+
+  <!-- OpenCV -->
+  <depend>opencv</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

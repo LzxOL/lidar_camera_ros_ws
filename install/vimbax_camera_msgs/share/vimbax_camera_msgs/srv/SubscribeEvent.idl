@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from vimbax_camera_msgs/srv/SubscribeEvent.srv
+// generated code does not contain a copyright notice
+
+#include "vimbax_camera_msgs/msg/Error.idl"
+
+module vimbax_camera_msgs {
+  module srv {
+    struct SubscribeEvent_Request {
+      string name;
+    };
+    struct SubscribeEvent_Response {
+      vimbax_camera_msgs::msg::Error error;
+    };
+  };
+};

@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4e9dea980fc193993a6d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "vimbax_camera_msgs__py",
+					"jsonFile" : "directory-vimbax_camera_msgs__py-c707098052fddf1fa7e9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/vimbax_camera_msgs__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "vimbax_camera_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_vimbax_camera_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_vimbax_camera_msgs_egg-a4993be128a5c85003a4.json",
+					"name" : "ament_cmake_python_build_vimbax_camera_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_vimbax_camera_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_vimbax_camera_msgs-e97cf126d364f6901edc.json",
+					"name" : "ament_cmake_python_copy_vimbax_camera_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-8da463a2ba224a72529f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs-7d4f3a4ec04e15f72014.json",
+					"name" : "vimbax_camera_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs__cpp-4d25faf7cf966faffaa0.json",
+					"name" : "vimbax_camera_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "vimbax_camera_msgs__py::@d9d7b6bfb080444e9d53",
+					"jsonFile" : "target-vimbax_camera_msgs__py-da01d69f4837c77bba09.json",
+					"name" : "vimbax_camera_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs__rosidl_generator_c-f65a7ccb1c47ec420ba1.json",
+					"name" : "vimbax_camera_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs__rosidl_generator_py-10efb07ec5800da36ad7.json",
+					"name" : "vimbax_camera_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs__rosidl_typesupport_c-3bbd82b9cf3c7de3458e.json",
+					"name" : "vimbax_camera_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs__rosidl_typesupport_c__pyext-7d69d2cab673e06f65a7.json",
+					"name" : "vimbax_camera_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs__rosidl_typesupport_cpp-b364375ff9aed10eeb4e.json",
+					"name" : "vimbax_camera_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs__rosidl_typesupport_fastrtps_c-64b8a64756fa12a580fa.json",
+					"name" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs__rosidl_typesupport_fastrtps_c__pyext-a4aad458f3f2cc056a65.json",
+					"name" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs__rosidl_typesupport_fastrtps_cpp-75392173bdc3b7920dc3.json",
+					"name" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs__rosidl_typesupport_introspection_c-323d7d0258814d251c31.json",
+					"name" : "vimbax_camera_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs__rosidl_typesupport_introspection_c__pyext-9135f205845cf3b4fcf3.json",
+					"name" : "vimbax_camera_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs__rosidl_typesupport_introspection_cpp-3909c69c90ee3550f4e5.json",
+					"name" : "vimbax_camera_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vimbax_camera_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vimbax_camera_msgs_uninstall-f20fd740f4fbae264638.json",
+					"name" : "vimbax_camera_msgs_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs",
+		"source" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

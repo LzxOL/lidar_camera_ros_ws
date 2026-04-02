@@ -1,0 +1,837 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"rosidl_generate_interfaces",
+			"add_dependencies",
+			"include",
+			"ament_execute_extensions"
+		],
+		"files" : 
+		[
+			"/opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/humble/share/rosidl_generator_c/cmake/rosidl_generator_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_introspection_c/cmake/rosidl_typesupport_introspection_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_generator_cpp/cmake/rosidl_generator_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/cmake/rosidl_typesupport_fastrtps_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/cmake/rosidl_typesupport_introspection_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cpp_generate_interfaces.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 213,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 286,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 48,
+				"parent" : 3
+			},
+			{
+				"file" : 2,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 143,
+				"parent" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 48,
+				"parent" : 3
+			},
+			{
+				"file" : 4,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 145,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 48,
+				"parent" : 3
+			},
+			{
+				"file" : 5,
+				"parent" : 10
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 135,
+				"parent" : 11
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 48,
+				"parent" : 3
+			},
+			{
+				"file" : 6,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 135,
+				"parent" : 14
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 48,
+				"parent" : 3
+			},
+			{
+				"file" : 7,
+				"parent" : 16
+			},
+			{
+				"command" : 2,
+				"file" : 7,
+				"line" : 139,
+				"parent" : 17
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 48,
+				"parent" : 3
+			},
+			{
+				"file" : 8,
+				"parent" : 19
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 163,
+				"parent" : 20
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 48,
+				"parent" : 3
+			},
+			{
+				"file" : 9,
+				"parent" : 22
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 134,
+				"parent" : 23
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 48,
+				"parent" : 3
+			},
+			{
+				"file" : 10,
+				"parent" : 25
+			},
+			{
+				"command" : 2,
+				"file" : 10,
+				"line" : 134,
+				"parent" : 26
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "vimbax_camera_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "vimbax_camera_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "vimbax_camera_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "vimbax_camera_msgs__cpp::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "vimbax_camera_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "vimbax_camera_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "vimbax_camera_msgs::@6890427a1f51a3e7e1df",
+	"name" : "vimbax_camera_msgs",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				98
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"path" : "msg/FeatureFlags.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "msg/FeatureInfo.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "msg/EventDataEntry.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "msg/EventData.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "msg/Error.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "msg/FeatureModule.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "msg/TriggerInfo.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureIntGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureIntGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureIntGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureIntSet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureIntSet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureIntSet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureIntInfoGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureIntInfoGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureIntInfoGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureFloatGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureFloatGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureFloatGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureFloatSet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureFloatSet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureFloatSet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureFloatInfoGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureFloatInfoGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureFloatInfoGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureStringGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureStringGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureStringGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureStringSet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureStringSet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureStringSet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureStringInfoGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureStringInfoGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureStringInfoGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureBoolGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureBoolGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureBoolGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureBoolSet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureBoolSet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureBoolSet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureCommandIsDone.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureCommandIsDone_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureCommandIsDone_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureCommandRun.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureCommandRun_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureCommandRun_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureEnumGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureEnumSet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumSet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumSet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureEnumInfoGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumInfoGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumInfoGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureEnumAsIntGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumAsIntGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumAsIntGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureEnumAsStringGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumAsStringGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumAsStringGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureRawGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureRawGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureRawGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureRawSet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureRawSet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureRawSet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureRawInfoGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureRawInfoGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureRawInfoGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureAccessModeGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureAccessModeGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureAccessModeGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeatureInfoQuery.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureInfoQuery_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureInfoQuery_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/FeaturesListGet.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeaturesListGet_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeaturesListGet_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/SettingsLoadSave.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/SettingsLoadSave_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/SettingsLoadSave_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/Status.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/Status_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/Status_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/StreamStartStop.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/StreamStartStop_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/StreamStartStop_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/SubscribeEvent.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/SubscribeEvent_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/SubscribeEvent_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/UnsubscribeEvent.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/UnsubscribeEvent_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/UnsubscribeEvent_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "srv/ConnectionStatus.srv",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/ConnectionStatus_Request.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/ConnectionStatus_Response.msg",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/CMakeFiles/vimbax_camera_msgs",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/CMakeFiles/vimbax_camera_msgs.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

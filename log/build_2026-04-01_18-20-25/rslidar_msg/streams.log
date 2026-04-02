@@ -1,0 +1,238 @@
+[0.018s] Invoking command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction /usr/bin/cmake /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/rslidar_msg -DCMAKE_INSTALL_PREFIX=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg
+[0.473s] -- The C compiler identification is GNU 11.4.0
+[0.781s] -- The CXX compiler identification is GNU 11.4.0
+[0.881s] -- Detecting C compiler ABI info
+[1.101s] -- Detecting C compiler ABI info - done
+[1.110s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.110s] -- Detecting C compile features
+[1.111s] -- Detecting C compile features - done
+[1.124s] -- Detecting CXX compiler ABI info
+[1.247s] -- Detecting CXX compiler ABI info - done
+[1.256s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.257s] -- Detecting CXX compile features
+[1.257s] -- Detecting CXX compile features - done
+[1.470s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.894s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.990s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[2.065s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.071s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.084s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.122s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.140s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.183s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[2.234s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.240s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.288s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.310s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.397s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.398s] -- Found Threads: TRUE  
+[2.487s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.752s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.982s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.068s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.094s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.095s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.124s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.124s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.124s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.124s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.146s] -- Found PythonExtra: .so  
+[3.205s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.234s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.243s] -- Added test 'lint_cmake' to check CMake code style
+[3.249s] -- Added test 'xmllint' to check XML markup files
+[3.252s] -- Configuring done
+[3.291s] -- Generating done
+[3.323s] -- Build files have been written to: /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_msg
+[3.331s] Invoked command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction /usr/bin/cmake /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/rslidar_msg -DCMAKE_INSTALL_PREFIX=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg
+[3.333s] Invoking command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction /usr/bin/cmake --build /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_msg -- -j16 -l16
+[3.361s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.361s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.365s] [  6%] Built target ament_cmake_python_copy_rslidar_msg
+[3.682s] [  6%] Built target rslidar_msg__cpp
+[3.687s] [  9%] [32mBuilding C object CMakeFiles/rslidar_msg__rosidl_generator_c.dir/rosidl_generator_c/rslidar_msg/msg/detail/rslidar_packet__functions.c.o[0m
+[3.688s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.688s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.688s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.697s] running egg_info
+[3.698s] creating rslidar_msg.egg-info
+[3.725s] writing rslidar_msg.egg-info/PKG-INFO
+[3.726s] writing dependency_links to rslidar_msg.egg-info/dependency_links.txt
+[3.726s] writing top-level names to rslidar_msg.egg-info/top_level.txt
+[3.811s] [ 22%] [32m[1mLinking C shared library librslidar_msg__rosidl_generator_c.so[0m
+[3.856s] [ 22%] Built target rslidar_msg__rosidl_generator_c
+[3.862s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.862s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.863s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.981s] [ 35%] [32mBuilding CXX object CMakeFiles/rslidar_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rslidar_msg/msg/rslidar_packet__type_support.cpp.o[0m
+[4.040s] [ 38%] [32mBuilding CXX object CMakeFiles/rslidar_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rslidar_msg/msg/detail/rslidar_packet__type_support.cpp.o[0m
+[4.057s] [ 41%] [32mBuilding CXX object CMakeFiles/rslidar_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rslidar_msg/msg/detail/dds_fastrtps/rslidar_packet__type_support.cpp.o[0m
+[4.172s] [ 45%] [32mBuilding CXX object CMakeFiles/rslidar_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/rslidar_msg/msg/rslidar_packet__type_support.cpp.o[0m
+[4.206s] [ 48%] [32mBuilding CXX object CMakeFiles/rslidar_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rslidar_msg/msg/detail/rslidar_packet__type_support_c.cpp.o[0m
+[4.209s] [ 51%] [32mBuilding C object CMakeFiles/rslidar_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rslidar_msg/msg/detail/rslidar_packet__type_support.c.o[0m
+[4.215s] [ 54%] [32m[1mLinking CXX shared library librslidar_msg__rosidl_typesupport_c.so[0m
+[4.257s] [ 54%] Built target rslidar_msg__rosidl_typesupport_c
+[4.276s] [ 58%] [32m[1mLinking C shared library librslidar_msg__rosidl_typesupport_introspection_c.so[0m
+[4.306s] [ 58%] Built target rslidar_msg__rosidl_typesupport_introspection_c
+[4.346s] [ 61%] [32m[1mLinking CXX shared library librslidar_msg__rosidl_typesupport_cpp.so[0m
+[4.399s] writing manifest file 'rslidar_msg.egg-info/SOURCES.txt'
+[4.405s] [ 61%] Built target rslidar_msg__rosidl_typesupport_cpp
+[4.486s] reading manifest file 'rslidar_msg.egg-info/SOURCES.txt'
+[4.487s] writing manifest file 'rslidar_msg.egg-info/SOURCES.txt'
+[4.544s] [ 61%] Built target ament_cmake_python_build_rslidar_msg_egg
+[4.592s] [ 64%] [32m[1mLinking CXX shared library librslidar_msg__rosidl_typesupport_introspection_cpp.so[0m
+[4.698s] [ 67%] [32m[1mLinking CXX shared library librslidar_msg__rosidl_typesupport_fastrtps_c.so[0m
+[4.699s] [ 70%] [32m[1mLinking CXX shared library librslidar_msg__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.700s] [ 70%] Built target rslidar_msg__rosidl_typesupport_introspection_cpp
+[4.837s] [ 70%] Built target rslidar_msg__rosidl_typesupport_fastrtps_cpp
+[4.841s] [ 70%] Built target rslidar_msg__rosidl_typesupport_fastrtps_c
+[4.853s] [ 70%] Built target rslidar_msg
+[4.865s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.157s] [ 74%] Built target rslidar_msg__py
+[5.167s] [ 77%] [32mBuilding C object CMakeFiles/rslidar_msg__rosidl_generator_py.dir/rosidl_generator_py/rslidar_msg/msg/_rslidar_packet_s.c.o[0m
+[5.342s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/rslidar_msg/librslidar_msg__rosidl_generator_py.so[0m
+[5.377s] [ 80%] Built target rslidar_msg__rosidl_generator_py
+[5.389s] [ 87%] [32mBuilding C object CMakeFiles/rslidar_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rslidar_msg/_rslidar_msg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.389s] [ 87%] [32mBuilding C object CMakeFiles/rslidar_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rslidar_msg/_rslidar_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.389s] [ 90%] [32mBuilding C object CMakeFiles/rslidar_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rslidar_msg/_rslidar_msg_s.ep.rosidl_typesupport_c.c.o[0m
+[5.497s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/rslidar_msg/rslidar_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.499s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/rslidar_msg/rslidar_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.502s] [100%] [32m[1mLinking C shared library rosidl_generator_py/rslidar_msg/rslidar_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.532s] [100%] Built target rslidar_msg__rosidl_typesupport_introspection_c__pyext
+[5.533s] [100%] Built target rslidar_msg__rosidl_typesupport_c__pyext
+[5.536s] [100%] Built target rslidar_msg__rosidl_typesupport_fastrtps_c__pyext
+[5.542s] Invoked command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction /usr/bin/cmake --build /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_msg -- -j16 -l16
+[5.544s] Invoking command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction /usr/bin/cmake --install /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_msg
+[5.547s] -- Install configuration: ""
+[5.548s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/ament_index/resource_index/rosidl_interfaces/rslidar_msg
+[5.548s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg
+[5.548s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg
+[5.548s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rslidar_packet.h
+[5.548s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rosidl_generator_c__visibility_control.h
+[5.548s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail
+[5.548s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__functions.c
+[5.549s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__functions.h
+[5.549s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__struct.h
+[5.549s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__type_support.h
+[5.549s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/environment/library_path.sh
+[5.549s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/environment/library_path.dsv
+[5.549s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_generator_c.so
+[5.550s] -- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_generator_c.so" to ""
+[5.550s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg
+[5.550s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg
+[5.550s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.550s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail
+[5.551s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__rosidl_typesupport_fastrtps_c.h
+[5.551s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_fastrtps_c.so
+[5.551s] -- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_fastrtps_c.so" to ""
+[5.551s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg
+[5.551s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg
+[5.551s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rslidar_packet.hpp
+[5.551s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail
+[5.551s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__struct.hpp
+[5.552s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__traits.hpp
+[5.552s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__builder.hpp
+[5.552s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__type_support.hpp
+[5.552s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.552s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg
+[5.552s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg
+[5.552s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.552s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail
+[5.553s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__rosidl_typesupport_fastrtps_cpp.hpp
+[5.553s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/dds_fastrtps
+[5.553s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_fastrtps_cpp.so
+[5.553s] -- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.553s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg
+[5.553s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg
+[5.553s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail
+[5.553s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__type_support.c
+[5.554s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__rosidl_typesupport_introspection_c.h
+[5.554s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.554s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_introspection_c.so
+[5.554s] -- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_introspection_c.so" to ""
+[5.554s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_c.so
+[5.554s] -- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_c.so" to ""
+[5.555s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg
+[5.555s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg
+[5.555s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail
+[5.555s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__type_support.cpp
+[5.555s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/include/rslidar_msg/rslidar_msg/msg/detail/rslidar_packet__rosidl_typesupport_introspection_cpp.hpp
+[5.555s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_introspection_cpp.so
+[5.555s] -- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_introspection_cpp.so" to ""
+[5.555s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_cpp.so
+[5.556s] -- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_typesupport_cpp.so" to ""
+[5.556s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/environment/pythonpath.sh
+[5.556s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/environment/pythonpath.dsv
+[5.556s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg-0.0.0-py3.10.egg-info
+[5.557s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg-0.0.0-py3.10.egg-info/dependency_links.txt
+[5.557s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg-0.0.0-py3.10.egg-info/PKG-INFO
+[5.557s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg-0.0.0-py3.10.egg-info/top_level.txt
+[5.557s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg-0.0.0-py3.10.egg-info/SOURCES.txt
+[5.557s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg
+[5.557s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.557s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/_rslidar_msg_s.ep.rosidl_typesupport_introspection_c.c
+[5.557s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/msg
+[5.558s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/msg/_rslidar_packet.py
+[5.558s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/msg/_rslidar_packet_s.c
+[5.558s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/msg/__init__.py
+[5.558s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.558s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/__init__.py
+[5.558s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/librslidar_msg__rosidl_generator_py.so
+[5.558s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/_rslidar_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.558s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/_rslidar_msg_s.ep.rosidl_typesupport_c.c
+[5.559s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.601s] Listing '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg'...
+[5.601s] Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/__init__.py'...
+[5.601s] Listing '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/msg'...
+[5.601s] Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/msg/__init__.py'...
+[5.602s] Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/msg/_rslidar_packet.py'...
+[5.608s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.609s] -- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.609s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.609s] -- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.609s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.610s] -- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages/rslidar_msg/rslidar_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.610s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_generator_py.so
+[5.611s] -- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib/librslidar_msg__rosidl_generator_py.so" to ""
+[5.611s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/msg/RslidarPacket.idl
+[5.611s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/msg/RslidarPacket.msg
+[5.611s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/ament_index/resource_index/package_run_dependencies/rslidar_msg
+[5.611s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/ament_index/resource_index/parent_prefix_path/rslidar_msg
+[5.611s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/environment/ament_prefix_path.sh
+[5.612s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/environment/ament_prefix_path.dsv
+[5.612s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/environment/path.sh
+[5.612s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/environment/path.dsv
+[5.612s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/local_setup.bash
+[5.612s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/local_setup.sh
+[5.612s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/local_setup.zsh
+[5.613s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/local_setup.dsv
+[5.613s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/package.dsv
+[5.613s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/ament_index/resource_index/packages/rslidar_msg
+[5.613s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_generator_cExport.cmake
+[5.613s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_generator_cExport-noconfig.cmake
+[5.614s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[5.614s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.614s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_generator_cppExport.cmake
+[5.614s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.614s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.614s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_introspection_cExport.cmake
+[5.615s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.615s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_cExport.cmake
+[5.615s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_cExport-noconfig.cmake
+[5.615s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_introspection_cppExport.cmake
+[5.615s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.615s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_cppExport.cmake
+[5.616s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[5.616s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_generator_pyExport.cmake
+[5.616s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/export_rslidar_msg__rosidl_generator_pyExport-noconfig.cmake
+[5.616s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rosidl_cmake-extras.cmake
+[5.616s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.616s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.617s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[5.617s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/ament_cmake_export_targets-extras.cmake
+[5.617s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.617s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.617s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msgConfig.cmake
+[5.617s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake/rslidar_msgConfig-version.cmake
+[5.618s] -- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/package.xml
+[5.620s] Invoked command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction /usr/bin/cmake --install /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_msg

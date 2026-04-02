@@ -1,0 +1,1 @@
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/rslidar_sdk/launch/start.py

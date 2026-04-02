@@ -1,0 +1,1 @@
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/ament_cmake_environment_hooks/local_setup.bash

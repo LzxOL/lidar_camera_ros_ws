@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from vimbax_camera_msgs/srv/UnsubscribeEvent.srv
+// generated code does not contain a copyright notice
+
+
+module vimbax_camera_msgs {
+  module srv {
+    struct UnsubscribeEvent_Request {
+      string name;
+    };
+    struct UnsubscribeEvent_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

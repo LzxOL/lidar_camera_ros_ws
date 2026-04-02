@@ -1,0 +1,3461 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ament_index_register_resource",
+			"rosidl_generate_interfaces",
+			"include",
+			"ament_execute_extensions",
+			"ament_environment_hooks",
+			"_ament_cmake_export_libraries_register_environment_hook",
+			"ament_export_libraries",
+			"_ament_cmake_python_register_environment_hook",
+			"ament_python_install_package",
+			"_ament_cmake_python_install_package",
+			"ament_cmake_environment_generate_package_run_dependencies_marker",
+			"ament_package",
+			"ament_cmake_environment_generate_parent_prefix_path_marker",
+			"ament_generate_package_environment",
+			"ament_index_register_package",
+			"_ament_package"
+		],
+		"files" : 
+		[
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake",
+			"/opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/humble/share/rosidl_generator_c/cmake/rosidl_generator_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_libraries/cmake/ament_cmake_export_libraries-extras.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_libraries/cmake/ament_export_libraries.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_introspection_c/cmake/rosidl_typesupport_introspection_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_generator_cpp/cmake/rosidl_generator_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/cmake/rosidl_typesupport_fastrtps_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/cmake/rosidl_typesupport_introspection_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/ament_cmake_python/cmake/ament_cmake_python-extras.cmake",
+			"/opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake",
+			"/opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment/ament_cmake_environment_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_cmake_index_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_targets/cmake/ament_cmake_export_targets_package_hook.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 252,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 105,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 286,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 4
+			},
+			{
+				"file" : 3,
+				"parent" : 5
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 149,
+				"parent" : 6
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 157,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 35,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 6,
+				"line" : 25,
+				"parent" : 9
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 70,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 87,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 164,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 4
+			},
+			{
+				"file" : 8,
+				"parent" : 14
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 151,
+				"parent" : 15
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 167,
+				"parent" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 4
+			},
+			{
+				"file" : 9,
+				"parent" : 18
+			},
+			{
+				"command" : 0,
+				"file" : 9,
+				"line" : 141,
+				"parent" : 19
+			},
+			{
+				"command" : 0,
+				"file" : 9,
+				"line" : 146,
+				"parent" : 19
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 4
+			},
+			{
+				"file" : 10,
+				"parent" : 22
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 141,
+				"parent" : 23
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 4
+			},
+			{
+				"file" : 11,
+				"parent" : 25
+			},
+			{
+				"command" : 0,
+				"file" : 11,
+				"line" : 149,
+				"parent" : 26
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 4
+			},
+			{
+				"file" : 12,
+				"parent" : 28
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 169,
+				"parent" : 29
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 185,
+				"parent" : 29
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 4
+			},
+			{
+				"file" : 13,
+				"parent" : 32
+			},
+			{
+				"command" : 0,
+				"file" : 13,
+				"line" : 140,
+				"parent" : 33
+			},
+			{
+				"command" : 0,
+				"file" : 13,
+				"line" : 146,
+				"parent" : 33
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 4
+			},
+			{
+				"file" : 14,
+				"parent" : 36
+			},
+			{
+				"command" : 0,
+				"file" : 14,
+				"line" : 140,
+				"parent" : 37
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 4
+			},
+			{
+				"file" : 17,
+				"parent" : 39
+			},
+			{
+				"command" : 9,
+				"file" : 17,
+				"line" : 124,
+				"parent" : 40
+			},
+			{
+				"command" : 8,
+				"file" : 16,
+				"line" : 38,
+				"parent" : 41
+			},
+			{
+				"command" : 5,
+				"file" : 15,
+				"line" : 36,
+				"parent" : 42
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 70,
+				"parent" : 43
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 87,
+				"parent" : 43
+			},
+			{
+				"command" : 10,
+				"file" : 16,
+				"line" : 39,
+				"parent" : 41
+			},
+			{
+				"command" : 0,
+				"file" : 16,
+				"line" : 154,
+				"parent" : 46
+			},
+			{
+				"command" : 0,
+				"file" : 16,
+				"line" : 181,
+				"parent" : 46
+			},
+			{
+				"command" : 0,
+				"file" : 16,
+				"line" : 191,
+				"parent" : 46
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 282,
+				"parent" : 40
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 282,
+				"parent" : 40
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 282,
+				"parent" : 40
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 302,
+				"parent" : 40
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 309,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 320,
+				"parent" : 1
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 19,
+				"line" : 66,
+				"parent" : 188
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 189
+			},
+			{
+				"file" : 18,
+				"parent" : 190
+			},
+			{
+				"command" : 11,
+				"file" : 18,
+				"line" : 47,
+				"parent" : 191
+			},
+			{
+				"command" : 1,
+				"file" : 18,
+				"line" : 29,
+				"parent" : 192
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 105,
+				"parent" : 193
+			},
+			{
+				"command" : 13,
+				"file" : 18,
+				"line" : 48,
+				"parent" : 191
+			},
+			{
+				"command" : 1,
+				"file" : 18,
+				"line" : 43,
+				"parent" : 195
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 105,
+				"parent" : 196
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 189
+			},
+			{
+				"file" : 20,
+				"parent" : 198
+			},
+			{
+				"command" : 5,
+				"file" : 20,
+				"line" : 20,
+				"parent" : 199
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 70,
+				"parent" : 200
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 87,
+				"parent" : 200
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 70,
+				"parent" : 200
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 87,
+				"parent" : 200
+			},
+			{
+				"command" : 14,
+				"file" : 20,
+				"line" : 26,
+				"parent" : 199
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 91,
+				"parent" : 205
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 91,
+				"parent" : 205
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 91,
+				"parent" : 205
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 107,
+				"parent" : 205
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 119,
+				"parent" : 205
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 189
+			},
+			{
+				"file" : 23,
+				"parent" : 211
+			},
+			{
+				"command" : 15,
+				"file" : 23,
+				"line" : 16,
+				"parent" : 212
+			},
+			{
+				"command" : 1,
+				"file" : 22,
+				"line" : 29,
+				"parent" : 213
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 105,
+				"parent" : 214
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 48,
+				"parent" : 189
+			},
+			{
+				"file" : 24,
+				"parent" : 216
+			},
+			{
+				"command" : 0,
+				"file" : 24,
+				"line" : 28,
+				"parent" : 217
+			},
+			{
+				"command" : 0,
+				"file" : 24,
+				"line" : 28,
+				"parent" : 217
+			},
+			{
+				"command" : 0,
+				"file" : 24,
+				"line" : 28,
+				"parent" : 217
+			},
+			{
+				"command" : 0,
+				"file" : 24,
+				"line" : 28,
+				"parent" : 217
+			},
+			{
+				"command" : 0,
+				"file" : 24,
+				"line" : 28,
+				"parent" : 217
+			},
+			{
+				"command" : 0,
+				"file" : 24,
+				"line" : 28,
+				"parent" : 217
+			},
+			{
+				"command" : 0,
+				"file" : 24,
+				"line" : 28,
+				"parent" : 217
+			},
+			{
+				"command" : 0,
+				"file" : 24,
+				"line" : 28,
+				"parent" : 217
+			},
+			{
+				"command" : 0,
+				"file" : 24,
+				"line" : 28,
+				"parent" : 217
+			},
+			{
+				"command" : 16,
+				"file" : 19,
+				"line" : 68,
+				"parent" : 188
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 122,
+				"parent" : 227
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 122,
+				"parent" : 227
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 122,
+				"parent" : 227
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 122,
+				"parent" : 227
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 122,
+				"parent" : 227
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 122,
+				"parent" : 227
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 122,
+				"parent" : 227
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 150,
+				"parent" : 227
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 157,
+				"parent" : 227
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/rosidl_interfaces",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/vimbax_camera_msgs"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "include/vimbax_camera_msgs/vimbax_camera_msgs",
+			"paths" : 
+			[
+				{
+					"from" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_generator_c/vimbax_camera_msgs",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/environment",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_environment_hooks/library_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libvimbax_camera_msgs__rosidl_generator_c.so"
+			],
+			"targetId" : "vimbax_camera_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+			"targetIndex" : 6,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "include/vimbax_camera_msgs/vimbax_camera_msgs",
+			"paths" : 
+			[
+				{
+					"from" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_typesupport_fastrtps_c/vimbax_camera_msgs",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 17,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libvimbax_camera_msgs__rosidl_typesupport_fastrtps_c.so"
+			],
+			"targetId" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+			"targetIndex" : 11,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 20,
+			"component" : "Unspecified",
+			"destination" : "include/vimbax_camera_msgs/vimbax_camera_msgs",
+			"paths" : 
+			[
+				{
+					"from" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_typesupport_introspection_c/vimbax_camera_msgs",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 21,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libvimbax_camera_msgs__rosidl_typesupport_introspection_c.so"
+			],
+			"targetId" : "vimbax_camera_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+			"targetIndex" : 14,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 24,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libvimbax_camera_msgs__rosidl_typesupport_c.so"
+			],
+			"targetId" : "vimbax_camera_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+			"targetIndex" : 8,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 27,
+			"component" : "Unspecified",
+			"destination" : "include/vimbax_camera_msgs/vimbax_camera_msgs",
+			"paths" : 
+			[
+				{
+					"from" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_generator_cpp/vimbax_camera_msgs",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 30,
+			"component" : "Unspecified",
+			"destination" : "include/vimbax_camera_msgs/vimbax_camera_msgs",
+			"paths" : 
+			[
+				{
+					"from" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_typesupport_fastrtps_cpp/vimbax_camera_msgs",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 31,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libvimbax_camera_msgs__rosidl_typesupport_fastrtps_cpp.so"
+			],
+			"targetId" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+			"targetIndex" : 13,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 34,
+			"component" : "Unspecified",
+			"destination" : "include/vimbax_camera_msgs/vimbax_camera_msgs",
+			"paths" : 
+			[
+				{
+					"from" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_typesupport_introspection_cpp/vimbax_camera_msgs",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 35,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libvimbax_camera_msgs__rosidl_typesupport_introspection_cpp.so"
+			],
+			"targetId" : "vimbax_camera_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+			"targetIndex" : 16,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 38,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libvimbax_camera_msgs__rosidl_typesupport_cpp.so"
+			],
+			"targetId" : "vimbax_camera_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+			"targetIndex" : 10,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 44,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/environment",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_environment_hooks/pythonpath.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 45,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/environment",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_environment_hooks/pythonpath.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 47,
+			"component" : "Unspecified",
+			"destination" : "local/lib/python3.10/dist-packages/vimbax_camera_msgs-1.0.2-py3.10.egg-info",
+			"paths" : 
+			[
+				{
+					"from" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_python/vimbax_camera_msgs/vimbax_camera_msgs.egg-info",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 48,
+			"component" : "Unspecified",
+			"destination" : "local/lib/python3.10/dist-packages/vimbax_camera_msgs",
+			"paths" : 
+			[
+				{
+					"from" : "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_generator_py/vimbax_camera_msgs",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 49,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 50,
+			"component" : "Unspecified",
+			"destination" : "local/lib/python3.10/dist-packages/vimbax_camera_msgs",
+			"paths" : 
+			[
+				"rosidl_generator_py/vimbax_camera_msgs/vimbax_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so"
+			],
+			"targetId" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+			"targetIndex" : 12,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 51,
+			"component" : "Unspecified",
+			"destination" : "local/lib/python3.10/dist-packages/vimbax_camera_msgs",
+			"paths" : 
+			[
+				"rosidl_generator_py/vimbax_camera_msgs/vimbax_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so"
+			],
+			"targetId" : "vimbax_camera_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+			"targetIndex" : 15,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 52,
+			"component" : "Unspecified",
+			"destination" : "local/lib/python3.10/dist-packages/vimbax_camera_msgs",
+			"paths" : 
+			[
+				"rosidl_generator_py/vimbax_camera_msgs/vimbax_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so"
+			],
+			"targetId" : "vimbax_camera_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+			"targetIndex" : 9,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"rosidl_generator_py/vimbax_camera_msgs/libvimbax_camera_msgs__rosidl_generator_py.so"
+			],
+			"targetId" : "vimbax_camera_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 54,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/msg/FeatureFlags.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 55,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/msg/FeatureInfo.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 56,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/msg/EventDataEntry.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 57,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/msg/EventData.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 58,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/msg/Error.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 59,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/msg/FeatureModule.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 60,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/msg/TriggerInfo.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 61,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureIntGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 62,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureIntSet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 63,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureIntInfoGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 64,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureFloatGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 65,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureFloatSet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 66,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureFloatInfoGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 67,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureStringGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 68,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureStringSet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 69,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureStringInfoGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 70,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureBoolGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 71,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureBoolSet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 72,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureCommandIsDone.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 73,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureCommandRun.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 74,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureEnumGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 75,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureEnumSet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 76,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureEnumInfoGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 77,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureEnumAsIntGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 78,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureEnumAsStringGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 79,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureRawGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 80,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureRawSet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 81,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureRawInfoGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 82,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureAccessModeGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 83,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeatureInfoQuery.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 84,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/FeaturesListGet.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 85,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/SettingsLoadSave.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 86,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/Status.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 87,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/StreamStartStop.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 88,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/SubscribeEvent.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 89,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/UnsubscribeEvent.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 90,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_adapter/vimbax_camera_msgs/srv/ConnectionStatus.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 91,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"msg/FeatureFlags.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 92,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"msg/FeatureInfo.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 93,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"msg/EventDataEntry.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 94,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"msg/EventData.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 95,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"msg/Error.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 96,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"msg/FeatureModule.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 97,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/msg",
+			"paths" : 
+			[
+				"msg/TriggerInfo.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 98,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureIntGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 99,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureIntGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 100,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureIntGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 101,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureIntSet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 102,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureIntSet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 103,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureIntSet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 104,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureIntInfoGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 105,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureIntInfoGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 106,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureIntInfoGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 107,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureFloatGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 108,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureFloatGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 109,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureFloatGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 110,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureFloatSet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 111,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureFloatSet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 112,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureFloatSet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 113,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureFloatInfoGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 114,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureFloatInfoGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 115,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureFloatInfoGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 116,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureStringGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 117,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureStringGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 118,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureStringGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 119,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureStringSet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 120,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureStringSet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 121,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureStringSet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 122,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureStringInfoGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 123,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureStringInfoGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 124,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureStringInfoGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 125,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureBoolGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 126,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureBoolGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 127,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureBoolGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 128,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureBoolSet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 129,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureBoolSet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 130,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureBoolSet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 131,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureCommandIsDone.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 132,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureCommandIsDone_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 133,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureCommandIsDone_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 134,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureCommandRun.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 135,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureCommandRun_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 136,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureCommandRun_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 137,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureEnumGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 138,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 139,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 140,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureEnumSet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 141,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumSet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 142,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumSet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 143,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureEnumInfoGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 144,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumInfoGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 145,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumInfoGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 146,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureEnumAsIntGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 147,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumAsIntGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 148,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumAsIntGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 149,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureEnumAsStringGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 150,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumAsStringGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 151,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureEnumAsStringGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 152,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureRawGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 153,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureRawGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 154,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureRawGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 155,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureRawSet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 156,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureRawSet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 157,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureRawSet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 158,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureRawInfoGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 159,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureRawInfoGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 160,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureRawInfoGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 161,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureAccessModeGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 162,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureAccessModeGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 163,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureAccessModeGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 164,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeatureInfoQuery.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 165,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureInfoQuery_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 166,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeatureInfoQuery_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 167,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/FeaturesListGet.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 168,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeaturesListGet_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 169,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/FeaturesListGet_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 170,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/SettingsLoadSave.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 171,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/SettingsLoadSave_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 172,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/SettingsLoadSave_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 173,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/Status.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 174,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/Status_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 175,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/Status_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 176,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/StreamStartStop.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 177,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/StreamStartStop_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 178,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/StreamStartStop_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 179,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/SubscribeEvent.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 180,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/SubscribeEvent_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 181,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/SubscribeEvent_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 182,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/UnsubscribeEvent.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 183,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/UnsubscribeEvent_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 184,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/UnsubscribeEvent_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 185,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"srv/ConnectionStatus.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 186,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/ConnectionStatus_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 187,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/srv",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/srv/ConnectionStatus_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 194,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/package_run_dependencies",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vimbax_camera_msgs"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 197,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/parent_prefix_path",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vimbax_camera_msgs"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 201,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 202,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/environment",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 203,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 204,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/environment",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_environment_hooks/path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 206,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_environment_hooks/local_setup.bash"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 207,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_environment_hooks/local_setup.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 208,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_environment_hooks/local_setup.zsh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 209,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_environment_hooks/local_setup.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 210,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_environment_hooks/package.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 215,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/packages",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_index/share/ament_index/resource_index/packages/vimbax_camera_msgs"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 218,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"exportName" : "export_vimbax_camera_msgs__rosidl_generator_c",
+			"exportTargets" : 
+			[
+				{
+					"id" : "vimbax_camera_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"index" : 6
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/a735e1a6c48709134ac33f7387f45e9d/export_vimbax_camera_msgs__rosidl_generator_cExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 219,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"exportName" : "export_vimbax_camera_msgs__rosidl_typesupport_fastrtps_c",
+			"exportTargets" : 
+			[
+				{
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"index" : 11
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/a735e1a6c48709134ac33f7387f45e9d/export_vimbax_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 220,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"exportName" : "vimbax_camera_msgs__rosidl_typesupport_introspection_c",
+			"exportTargets" : 
+			[
+				{
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"index" : 14
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/a735e1a6c48709134ac33f7387f45e9d/vimbax_camera_msgs__rosidl_typesupport_introspection_cExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 221,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"exportName" : "vimbax_camera_msgs__rosidl_typesupport_c",
+			"exportTargets" : 
+			[
+				{
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"index" : 8
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/a735e1a6c48709134ac33f7387f45e9d/vimbax_camera_msgs__rosidl_typesupport_cExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 222,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"exportName" : "export_vimbax_camera_msgs__rosidl_generator_cpp",
+			"exportTargets" : 
+			[
+				{
+					"id" : "vimbax_camera_msgs__rosidl_generator_cpp::@6890427a1f51a3e7e1df",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/a735e1a6c48709134ac33f7387f45e9d/export_vimbax_camera_msgs__rosidl_generator_cppExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 223,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"exportName" : "export_vimbax_camera_msgs__rosidl_typesupport_fastrtps_cpp",
+			"exportTargets" : 
+			[
+				{
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"index" : 13
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/a735e1a6c48709134ac33f7387f45e9d/export_vimbax_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 224,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"exportName" : "vimbax_camera_msgs__rosidl_typesupport_introspection_cpp",
+			"exportTargets" : 
+			[
+				{
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"index" : 16
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/a735e1a6c48709134ac33f7387f45e9d/vimbax_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 225,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"exportName" : "vimbax_camera_msgs__rosidl_typesupport_cpp",
+			"exportTargets" : 
+			[
+				{
+					"id" : "vimbax_camera_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"index" : 10
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/a735e1a6c48709134ac33f7387f45e9d/vimbax_camera_msgs__rosidl_typesupport_cppExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 226,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"exportName" : "export_vimbax_camera_msgs__rosidl_generator_py",
+			"exportTargets" : 
+			[
+				{
+					"id" : "vimbax_camera_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"index" : 7
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/a735e1a6c48709134ac33f7387f45e9d/export_vimbax_camera_msgs__rosidl_generator_pyExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 228,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/rosidl_cmake-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 229,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 230,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 231,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 232,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 233,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 234,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 235,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs/cmake",
+			"paths" : 
+			[
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_core/vimbax_camera_msgsConfig.cmake",
+				"/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_msgs/ament_cmake_core/vimbax_camera_msgsConfig-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 236,
+			"component" : "Unspecified",
+			"destination" : "share/vimbax_camera_msgs",
+			"paths" : 
+			[
+				"package.xml"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

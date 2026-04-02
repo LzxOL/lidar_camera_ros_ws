@@ -1,0 +1,182 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclcpp_components: 16.0.16 (/opt/ros/humble/share/rclcpp_components/cmake)
+-- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+-- Found vimbax_camera_msgs: 1.0.2 (/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/share/vimbax_camera_msgs/cmake)
+-- Found vimbax_camera_events: 1.0.2 (/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/share/vimbax_camera_events/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_examples
+[ 50%] [32mBuilding CXX object CMakeFiles/asynchronous_grab_performance.dir/src/asynchronous_grab_performance.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/asynchronous_grab_cpp.dir/src/asynchronous_grab.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/event_viewer_cpp.dir/src/event_viewer.cpp.o[0m
+[ 50%] Built target ament_cmake_python_copy_vimbax_camera_examples_setup
+[ 50%] Built target ament_cmake_python_copy_vimbax_camera_examples
+running egg_info
+creating vimbax_camera_examples.egg-info
+running install_scripts
+writing vimbax_camera_examples.egg-info/PKG-INFO
+writing dependency_links to vimbax_camera_examples.egg-info/dependency_links.txt
+writing entry points to vimbax_camera_examples.egg-info/entry_points.txt
+writing top-level names to vimbax_camera_examples.egg-info/top_level.txt
+/home/root1/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running egg_info
+writing manifest file 'vimbax_camera_examples.egg-info/SOURCES.txt'
+writing vimbax_camera_examples.egg-info/PKG-INFO
+writing dependency_links to vimbax_camera_examples.egg-info/dependency_links.txt
+writing entry points to vimbax_camera_examples.egg-info/entry_points.txt
+writing top-level names to vimbax_camera_examples.egg-info/top_level.txt
+reading manifest file 'vimbax_camera_examples.egg-info/SOURCES.txt'
+writing manifest file 'vimbax_camera_examples.egg-info/SOURCES.txt'
+[ 50%] Built target ament_cmake_python_build_vimbax_camera_examples_egg
+reading manifest file 'vimbax_camera_examples.egg-info/SOURCES.txt'
+writing manifest file 'vimbax_camera_examples.egg-info/SOURCES.txt'
+Installing asynchronous_grab script to scripts
+Installing asynchronous_grab_opencv script to scripts
+Installing camera_connected script to scripts
+Installing connection_observer script to scripts
+Installing event_viewer script to scripts
+Installing feature_command_execute script to scripts
+Installing feature_get script to scripts
+Installing feature_info_get script to scripts
+Installing feature_set script to scripts
+Installing list_features script to scripts
+Installing settings_load_save script to scripts
+Installing status_get script to scripts
+[ 50%] Built target ament_cmake_python_build_vimbax_camera_examples_scripts
+[ 66%] [32m[1mLinking CXX executable asynchronous_grab_cpp[0m
+[ 66%] Built target asynchronous_grab_cpp
+[ 83%] [32m[1mLinking CXX shared library libasynchronous_grab_performance.so[0m
+[ 83%] Built target asynchronous_grab_performance
+[100%] [32m[1mLinking CXX executable event_viewer_cpp[0m
+[100%] Built target event_viewer_cpp
+-- Install configuration: ""
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/libasynchronous_grab_performance.so
+-- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/libasynchronous_grab_performance.so" to ""
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples/asynchronous_grab_cpp
+-- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples/asynchronous_grab_cpp" to ""
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples/event_viewer_cpp
+-- Set runtime path of "/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples/event_viewer_cpp" to ""
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples//launch
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples//launch/vimbax_calibration_launch.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples//launch/asynchronous_grab_performance_launch.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/environment/pythonpath.sh
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/environment/pythonpath.dsv
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples-1.0.2-py3.10.egg-info
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples-1.0.2-py3.10.egg-info/entry_points.txt
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples-1.0.2-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples-1.0.2-py3.10.egg-info/PKG-INFO
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples-1.0.2-py3.10.egg-info/top_level.txt
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples-1.0.2-py3.10.egg-info/SOURCES.txt
+-- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples/
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples//list_features
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples//status_get
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples//feature_info_get
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples//event_viewer
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples//feature_set
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples//feature_get
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples//feature_command_execute
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples//camera_connected
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples//settings_load_save
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples//asynchronous_grab_opencv
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples//asynchronous_grab
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/lib/vimbax_camera_examples//connection_observer
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/asynchronous_grab.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/feature_command_execute.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/camera_connected.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/list_features.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/feature_set.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/settings_load_save.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/status_get.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/__init__.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/asynchronous_grab_opencv.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/event_viewer.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/helper.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/feature_get.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/feature_info_get.py
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/connection_observer.py
+Listing '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/__init__.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/asynchronous_grab.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/asynchronous_grab_opencv.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/camera_connected.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/connection_observer.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/event_viewer.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/feature_command_execute.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/feature_get.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/feature_info_get.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/feature_set.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/helper.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/list_features.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/settings_load_save.py'...
+Compiling '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/local/lib/python3.10/dist-packages/vimbax_camera_examples/status_get.py'...
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/environment/library_path.sh
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/environment/library_path.dsv
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/ament_index/resource_index/package_run_dependencies/vimbax_camera_examples
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/ament_index/resource_index/parent_prefix_path/vimbax_camera_examples
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/environment/ament_prefix_path.sh
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/environment/ament_prefix_path.dsv
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/environment/path.sh
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/environment/path.dsv
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/local_setup.bash
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/local_setup.sh
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/local_setup.zsh
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/local_setup.dsv
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/package.dsv
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/ament_index/resource_index/packages/vimbax_camera_examples
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/ament_index/resource_index/rclcpp_components/vimbax_camera_examples
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/cmake/vimbax_camera_examplesConfig.cmake
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/cmake/vimbax_camera_examplesConfig-version.cmake
+-- Installing: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_examples/share/vimbax_camera_examples/package.xml

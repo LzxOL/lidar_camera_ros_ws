@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<ModuleSettings>
+    <SettingsStruct>
+        <PersistType Description="Persist all features except LUTs" Value="2" />
+        <MaxIterations Description="How often implementation shall try to write values to specific feature (due to complex feature dependencies, multiple write operations are sometimes necessary)" Value="10" />
+        <LoggingLevel Description="Warn: Error, Debug and Warn messages are logged" Value="3" />
+    </SettingsStruct>
+    <CameraInfo Id="DEV_1AB22C02AC07" Model="1800 U-2040c">
+        <LocalDevice>
+            <Feature Name="DeviceDisplayName" Value="Allied Vision 1800 U-2040c" Type="String" />
+            <Feature Name="DeviceID" Value="DEV_1AB22C02AC07" Type="String" />
+            <Feature Name="DeviceModelName" Value="1800 U-2040c" Type="String" />
+            <Feature Name="DeviceType" Value="USB3" Type="Enum" />
+            <Feature Name="DeviceVendorName" Value="Allied Vision" Type="String" />
+            <Feature Name="StreamCount" Value="1" Type="Int" />
+            <Feature Name="StreamSelector" Value="0" Type="Int" />
+        </LocalDevice>
+        <RemoteDevice>
+            <Feature Name="DeviceLinkThroughputLimit" Value="450000000" Type="Int" />
+            <Feature Name="DeviceLinkThroughputLimitMode" Value="On" Type="Enum" />
+            <Feature Name="ExposureTime" Value="750000.0" Type="Float" />
+            <Feature Name="PixelFormat" Value="BayerRG8" Type="Enum" />
+        </RemoteDevice>
+    </CameraInfo>
+</ModuleSettings>

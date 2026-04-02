@@ -1,0 +1,6 @@
+source;share/vimbax_camera_color_correction/hook/pythonpath.ps1
+source;share/vimbax_camera_color_correction/hook/pythonpath.dsv
+source;share/vimbax_camera_color_correction/hook/pythonpath.sh
+source;share/vimbax_camera_color_correction/hook/ament_prefix_path.ps1
+source;share/vimbax_camera_color_correction/hook/ament_prefix_path.dsv
+source;share/vimbax_camera_color_correction/hook/ament_prefix_path.sh

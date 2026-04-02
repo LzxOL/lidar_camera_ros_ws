@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libtest_lib.so -o libtest_lib.so CMakeFiles/test_lib.dir/test_lib.c.o 

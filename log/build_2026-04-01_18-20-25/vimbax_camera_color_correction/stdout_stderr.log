@@ -1,0 +1,45 @@
+running egg_info
+creating ../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info
+writing ../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/PKG-INFO
+writing dependency_links to ../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/dependency_links.txt
+writing entry points to ../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/entry_points.txt
+writing requirements to ../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/requires.txt
+writing top-level names to ../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/top_level.txt
+writing manifest file '../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/SOURCES.txt'
+reading manifest file '../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/SOURCES.txt'
+writing manifest file '../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_color_correction/build
+creating /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_color_correction/build/lib
+creating /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_color_correction/build/lib/vimbax_camera_color_correction
+copying vimbax_camera_color_correction/lut_apply_node.py -> /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_color_correction/build/lib/vimbax_camera_color_correction
+copying vimbax_camera_color_correction/color_lut.py -> /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_color_correction/build/lib/vimbax_camera_color_correction
+copying vimbax_camera_color_correction/__init__.py -> /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_color_correction/build/lib/vimbax_camera_color_correction
+copying vimbax_camera_color_correction/color_correction_node.py -> /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_color_correction/build/lib/vimbax_camera_color_correction
+running install
+running install_lib
+creating /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/lib/python3.10/site-packages/vimbax_camera_color_correction
+copying /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_color_correction/build/lib/vimbax_camera_color_correction/lut_apply_node.py -> /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/lib/python3.10/site-packages/vimbax_camera_color_correction
+copying /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_color_correction/build/lib/vimbax_camera_color_correction/color_lut.py -> /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/lib/python3.10/site-packages/vimbax_camera_color_correction
+copying /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_color_correction/build/lib/vimbax_camera_color_correction/__init__.py -> /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/lib/python3.10/site-packages/vimbax_camera_color_correction
+copying /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_color_correction/build/lib/vimbax_camera_color_correction/color_correction_node.py -> /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/lib/python3.10/site-packages/vimbax_camera_color_correction
+byte-compiling /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/lib/python3.10/site-packages/vimbax_camera_color_correction/lut_apply_node.py to lut_apply_node.cpython-310.pyc
+byte-compiling /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/lib/python3.10/site-packages/vimbax_camera_color_correction/color_lut.py to color_lut.cpython-310.pyc
+byte-compiling /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/lib/python3.10/site-packages/vimbax_camera_color_correction/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/lib/python3.10/site-packages/vimbax_camera_color_correction/color_correction_node.py to color_correction_node.cpython-310.pyc
+running install_data
+creating /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/share/ament_index
+creating /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/share/ament_index/resource_index
+creating /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/share/ament_index/resource_index/packages
+copying resource/vimbax_camera_color_correction -> /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/share/ament_index/resource_index/packages
+creating /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/share/vimbax_camera_color_correction/launch
+copying launch/color_correction.launch.py -> /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/share/vimbax_camera_color_correction/launch
+copying launch/lut_apply.launch.py -> /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/share/vimbax_camera_color_correction/launch
+copying package.xml -> /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/share/vimbax_camera_color_correction
+running install_egg_info
+Copying ../../build/vimbax_camera_color_correction/vimbax_camera_color_correction.egg-info to /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/lib/python3.10/site-packages/vimbax_camera_color_correction-1.0.0-py3.10.egg-info
+running install_scripts
+Installing color_correction_node script to /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/lib/vimbax_camera_color_correction
+Installing lut_apply_node script to /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_color_correction/lib/vimbax_camera_color_correction
+writing list of installed files to '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera_color_correction/install.log'

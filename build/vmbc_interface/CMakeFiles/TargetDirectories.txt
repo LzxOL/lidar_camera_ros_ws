@@ -1,0 +1,9 @@
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface/CMakeFiles/uninstall.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface/CMakeFiles/vmbc_interface_uninstall.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface/CMakeFiles/test.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface/CMakeFiles/edit_cache.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface/CMakeFiles/rebuild_cache.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface/CMakeFiles/list_install_components.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface/CMakeFiles/install.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface/CMakeFiles/install/local.dir
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vmbc_interface/CMakeFiles/install/strip.dir

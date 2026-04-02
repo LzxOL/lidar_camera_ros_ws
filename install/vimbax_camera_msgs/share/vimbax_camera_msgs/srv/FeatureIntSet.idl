@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from vimbax_camera_msgs/srv/FeatureIntSet.srv
+// generated code does not contain a copyright notice
+
+#include "vimbax_camera_msgs/msg/Error.idl"
+#include "vimbax_camera_msgs/msg/FeatureModule.idl"
+
+module vimbax_camera_msgs {
+  module srv {
+    struct FeatureIntSet_Request {
+      string feature_name;
+
+      vimbax_camera_msgs::msg::FeatureModule feature_module;
+
+      int64 value;
+    };
+    struct FeatureIntSet_Response {
+      vimbax_camera_msgs::msg::Error error;
+    };
+  };
+};

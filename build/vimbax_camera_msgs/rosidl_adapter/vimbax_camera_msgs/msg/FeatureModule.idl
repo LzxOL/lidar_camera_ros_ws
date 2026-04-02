@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from vimbax_camera_msgs/msg/FeatureModule.msg
+// generated code does not contain a copyright notice
+
+
+module vimbax_camera_msgs {
+  module msg {
+    module FeatureModule_Constants {
+      const uint8 MODULE_REMOTE_DEVICE = 0;
+      const uint8 MODULE_SYSTEM = 1;
+      const uint8 MODULE_INTERFACE = 2;
+      const uint8 MODULE_LOCAL_DEVICE = 3;
+      const uint8 MODULE_STREAM = 4;
+    };
+    struct FeatureModule {
+      uint8 id;
+    };
+  };
+};

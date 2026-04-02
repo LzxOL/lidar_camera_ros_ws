@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from vimbax_camera_msgs/srv/FeatureFloatInfoGet.srv
+// generated code does not contain a copyright notice
+
+#include "vimbax_camera_msgs/msg/Error.idl"
+#include "vimbax_camera_msgs/msg/FeatureModule.idl"
+
+module vimbax_camera_msgs {
+  module srv {
+    struct FeatureFloatInfoGet_Request {
+      string feature_name;
+
+      vimbax_camera_msgs::msg::FeatureModule feature_module;
+    };
+    struct FeatureFloatInfoGet_Response {
+      double min;
+
+      double max;
+
+      double inc;
+
+      boolean inc_available;
+
+      vimbax_camera_msgs::msg::Error error;
+    };
+  };
+};

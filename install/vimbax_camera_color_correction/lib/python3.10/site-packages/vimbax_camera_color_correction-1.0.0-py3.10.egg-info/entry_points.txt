@@ -1,0 +1,3 @@
+[console_scripts]
+color_correction_node = vimbax_camera_color_correction.color_correction_node:main
+lut_apply_node = vimbax_camera_color_correction.lut_apply_node:main
