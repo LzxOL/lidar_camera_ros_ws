@@ -1,0 +1,11 @@
+-- run_test.py: invoking following command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera':
+ - /opt/ros/humble/bin/ament_copyright --xunit-file /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/copyright.xunit.xml
+
+camera_timestamp_sync.py: could not find copyright notice
+launch/dual_camera_stream_launch.py: could not find copyright notice
+launch/vimbax_camera_param_launch.py: could not find copyright notice
+3 errors, checked 30 files
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/copyright.xunit.xml'

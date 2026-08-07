@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="9" failures="0" disabled="0" errors="0" time="0" timestamp="2026-08-06T23:17:50" name="AllTests">
+  <testsuite name="library_loader" tests="9" failures="0" disabled="0" errors="0" time="0" timestamp="2026-08-06T23:17:50">
+    <testcase name="single_default_instance" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.library_loader" />
+    <testcase name="build_library_name" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.library_loader" />
+    <testcase name="open_error_by_name" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.library_loader" />
+    <testcase name="open_error_by_path" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.library_loader" />
+    <testcase name="open_by_path" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.library_loader" />
+    <testcase name="open_by_name" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.library_loader" />
+    <testcase name="invalid_symbol" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.library_loader" />
+    <testcase name="valid_symbol" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.library_loader" />
+    <testcase name="test_func_call" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.library_loader" />
+  </testsuite>
+</testsuites>

@@ -6,5 +6,5 @@ C_DEFINES = -Dtest_lib_EXPORTS
 
 C_INCLUDES = 
 
-C_FLAGS = -fPIC -Wall -Wextra -Wpedantic
+C_FLAGS = -O3 -DNDEBUG -fPIC -Wall -Wextra -Wpedantic
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="0" disabled="0" errors="0" time="0.001" timestamp="2026-08-06T23:17:50" name="AllTests">
+  <testsuite name="VmbCAPITest" tests="3" failures="0" disabled="0" errors="0" time="0.001" timestamp="2026-08-06T23:17:50">
+    <testcase name="load_by_vimabx_home" status="run" result="skipped" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.VmbCAPITest" />
+    <testcase name="load_by_gentl_path" status="run" result="skipped" time="0.001" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.VmbCAPITest" />
+    <testcase name="load_by_library_path" status="run" result="skipped" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.VmbCAPITest" />
+  </testsuite>
+</testsuites>

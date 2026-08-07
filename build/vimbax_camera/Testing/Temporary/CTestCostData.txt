@@ -1,0 +1,13 @@
+copyright 0 0
+cppcheck 1 0.18205
+cpplint 0 0
+flake8 0 0
+lint_cmake 1 0.114938
+pep257 0 0
+uncrustify 0 0
+xmllint 0 0
+vimbax_camera_library_loader_test 2 0.0356901
+vimbax_camera_api_loader_test 2 0.02961
+vimbax_camera_vimbax_camera_test 2 0.0346512
+vimbax_camera_vmbc_load_test 2 0.029461
+---

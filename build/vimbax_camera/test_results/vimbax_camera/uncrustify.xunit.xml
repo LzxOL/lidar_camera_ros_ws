@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="vimbax_camera.uncrustify"
+  tests="19"
+  failures="1"
+  errors="0"
+  time="0.205"
+>
+  <testcase
+    name="include/vimbax_camera/loader/library_loader.hpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="include/vimbax_camera/loader/vmbc_api.hpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="include/vimbax_camera/result.hpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="include/vimbax_camera/vimbax_camera.hpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="include/vimbax_camera/vimbax_camera_helper.hpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="include/vimbax_camera/vimbax_camera_node.hpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="src/loader/library_loader_unix.cpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="src/loader/vmbc_api.cpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="src/vimbax_camera.cpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="src/vimbax_camera_helper.cpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="src/vimbax_camera_node.cpp"
+    classname="vimbax_camera.uncrustify"
+  >
+      <failure message="Diff with 19 lines"><![CDATA[--- src/vimbax_camera_node.cpp
++++ src/vimbax_camera_node.cpp.uncrustify
+@@ -97 +97,5 @@
+-  if (fstat(fd, &file_stat) != 0 || file_stat.st_size < static_cast<off_t>(sizeof(GpsTimestampSharedMemory))) {
++  if (fstat(
++      fd,
++      &file_stat) != 0 ||
++    file_stat.st_size < static_cast<off_t>(sizeof(GpsTimestampSharedMemory)))
++  {
+@@ -202 +206,2 @@
+-        last_gps_timestamp_ns + static_cast<int64_t>(camera_timestamp_ns - last_camera_timestamp_ns);
++        last_gps_timestamp_ns +
++        static_cast<int64_t>(camera_timestamp_ns - last_camera_timestamp_ns);
+@@ -1804 +1809 @@
+-              std::chrono::duration_cast<std::chrono::nanoseconds>(gps_ts - gps_seconds);
++          std::chrono::duration_cast<std::chrono::nanoseconds>(gps_ts - gps_seconds);
+@@ -1812 +1817 @@
+-              std::chrono::duration_cast<std::chrono::nanoseconds>(vmbTimeStamp - seconds);
++          std::chrono::duration_cast<std::chrono::nanoseconds>(vmbTimeStamp - seconds);
+]]></failure>
+  </testcase>
+  <testcase
+    name="test/integration_tests/vmbc_load_test.cpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="test/unit_tests/api_loader_test.cpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="test/unit_tests/library_loader_test.cpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="test/unit_tests/mocks/api_mock.cpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="test/unit_tests/mocks/api_mock.hpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="test/unit_tests/mocks/library_loader_mock.hpp"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="test/unit_tests/test_lib.c"
+    classname="vimbax_camera.uncrustify"/>
+  <testcase
+    name="test/unit_tests/vimbax_camera_test.cpp"
+    classname="vimbax_camera.uncrustify"/>
+  <system-out>Checked files:
+* include/vimbax_camera/loader/library_loader.hpp
+* include/vimbax_camera/loader/vmbc_api.hpp
+* include/vimbax_camera/result.hpp
+* include/vimbax_camera/vimbax_camera.hpp
+* include/vimbax_camera/vimbax_camera_helper.hpp
+* include/vimbax_camera/vimbax_camera_node.hpp
+* src/loader/library_loader_unix.cpp
+* src/loader/vmbc_api.cpp
+* src/vimbax_camera.cpp
+* src/vimbax_camera_helper.cpp
+* src/vimbax_camera_node.cpp
+* test/integration_tests/vmbc_load_test.cpp
+* test/unit_tests/api_loader_test.cpp
+* test/unit_tests/library_loader_test.cpp
+* test/unit_tests/mocks/api_mock.cpp
+* test/unit_tests/mocks/api_mock.hpp
+* test/unit_tests/mocks/library_loader_mock.hpp
+* test/unit_tests/test_lib.c
+* test/unit_tests/vimbax_camera_test.cpp</system-out>
+</testsuite>

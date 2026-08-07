@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="vimbax_camera.lint_cmake"
+  tests="5"
+  errors="0"
+  failures="0"
+  time="0.002"
+>
+  <testcase
+    name="CMakeLists.txt"
+    classname="vimbax_camera.lint_cmake"/>
+  <testcase
+    name="test/CMakeLists.txt"
+    classname="vimbax_camera.lint_cmake"/>
+  <testcase
+    name="test/integration_tests/CMakeLists.txt"
+    classname="vimbax_camera.lint_cmake"/>
+  <testcase
+    name="test/system_tests/CMakeLists.txt"
+    classname="vimbax_camera.lint_cmake"/>
+  <testcase
+    name="test/unit_tests/CMakeLists.txt"
+    classname="vimbax_camera.lint_cmake"/>
+  <system-out>Checked files:
+* CMakeLists.txt
+* test/CMakeLists.txt
+* test/integration_tests/CMakeLists.txt
+* test/system_tests/CMakeLists.txt
+* test/unit_tests/CMakeLists.txt</system-out>
+</testsuite>

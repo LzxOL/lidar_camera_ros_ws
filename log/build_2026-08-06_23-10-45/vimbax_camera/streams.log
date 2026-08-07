@@ -1,0 +1,131 @@
+[0.051s] Invoking command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera': AMENT_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/lib:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/local/lib/python3.10/dist-packages:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera
+[0.082s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.173s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.199s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.237s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.242s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.252s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.267s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.286s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.337s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.340s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.371s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.442s] -- Found rclcpp_components: 16.0.16 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.472s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[0.533s] -- Found camera_info_manager: 3.1.12 (/opt/ros/humble/share/camera_info_manager/cmake)
+[0.544s] -- Found vimbax_camera_msgs: 1.0.2 (/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/share/vimbax_camera_msgs/cmake)
+[0.557s] -- Found vimbax_camera_events: 1.0.2 (/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/share/vimbax_camera_events/cmake)
+[0.561s] -- Found vmbc_interface: 1.0.2 (/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/cmake)
+[0.563s] -- Setting executor non-default value MultiThreadedExecutor
+[0.568s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.672s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.676s] -- Found ament_cmake_gmock: 1.3.12 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[0.678s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.683s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[0.688s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.697s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.701s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.701s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include>
+[0.701s] -- Configured cppcheck exclude dirs and/or files: 
+[0.704s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.704s] -- Configured cpplint exclude dirs and/or files: 
+[0.705s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.706s] -- Added test 'lint_cmake' to check CMake code style
+[0.707s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.710s] -- Added test 'uncrustify' to check C / C++ code style
+[0.710s] -- Configured uncrustify additional arguments: 
+[0.711s] -- Added test 'xmllint' to check XML markup files
+[0.715s] -- Configuring done
+[0.853s] -- Generating done
+[0.872s] -- Build files have been written to: /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera
+[0.880s] Invoked command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera' returned '0': AMENT_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/lib:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/local/lib/python3.10/dist-packages:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera
+[0.881s] Invoking command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera': AMENT_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/lib:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/local/lib/python3.10/dist-packages:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera -- -j16 -l16
+[0.898s] Consolidate compiler generated dependencies of target test_lib
+[0.900s] Consolidate compiler generated dependencies of target gtest_main
+[0.900s] Consolidate compiler generated dependencies of target gmock_main
+[0.901s] Consolidate compiler generated dependencies of target gtest
+[0.902s] Consolidate compiler generated dependencies of target vimbax_camera_node
+[0.902s] [  3%] Building C object test/unit_tests/CMakeFiles/test_lib.dir/test_lib.c.o
+[0.903s] Consolidate compiler generated dependencies of target gmock
+[0.907s] [  6%] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[0.907s] [ 10%] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[0.909s] [ 13%] Building CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o
+[0.909s] [ 17%] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[0.910s] [ 20%] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[0.913s] [ 24%] Building CXX object CMakeFiles/vimbax_camera_node.dir/rclcpp_components/node_main_vimbax_camera_node.cpp.o
+[0.920s] Consolidate compiler generated dependencies of target vimbax_camera
+[0.992s] [ 27%] Building CXX object CMakeFiles/vimbax_camera.dir/src/vimbax_camera_node.cpp.o
+[0.992s] [ 31%] Building CXX object CMakeFiles/vimbax_camera.dir/src/loader/library_loader_unix.cpp.o
+[0.993s] [ 34%] Building CXX object CMakeFiles/vimbax_camera.dir/src/loader/vmbc_api.cpp.o
+[0.994s] [ 37%] Building CXX object CMakeFiles/vimbax_camera.dir/src/vimbax_camera.cpp.o
+[0.998s] [ 41%] Building CXX object CMakeFiles/vimbax_camera.dir/src/vimbax_camera_helper.cpp.o
+[1.011s] [ 44%] Linking C shared library libtest_lib.so
+[1.048s] [ 44%] Built target test_lib
+[3.025s] [ 48%] Linking CXX static library libgtest_main.a
+[3.051s] [ 48%] Built target gtest_main
+[3.375s] [ 51%] Linking CXX static library libgmock_main.a
+[3.390s] [ 51%] Built target gmock_main
+[5.845s] [ 55%] Linking CXX executable vimbax_camera_node
+[6.070s] [ 55%] Built target vimbax_camera_node
+[8.702s] [ 58%] Linking CXX static library libgtest.a
+[8.723s] [ 58%] Built target gtest
+[8.982s] [ 62%] Linking CXX static library libgmock.a
+[9.005s] [ 62%] Built target gmock
+[24.540s] [ 65%] Linking CXX shared library libvimbax_camera.so
+[24.767s] [ 65%] Built target vimbax_camera
+[24.775s] Consolidate compiler generated dependencies of target vimbax_camera_library_loader_test
+[24.777s] Consolidate compiler generated dependencies of target vimbax_camera_vmbc_load_test
+[24.778s] Consolidate compiler generated dependencies of target vimbax_camera_vimbax_camera_test
+[24.778s] Consolidate compiler generated dependencies of target vimbax_camera_api_loader_test
+[24.780s] [ 68%] Building CXX object test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_test.cpp.o
+[24.784s] [ 72%] Building CXX object test/integration_tests/CMakeFiles/vimbax_camera_vmbc_load_test.dir/vmbc_load_test.cpp.o
+[24.786s] [ 75%] Building CXX object test/unit_tests/CMakeFiles/vimbax_camera_api_loader_test.dir/api_loader_test.cpp.o
+[24.786s] [ 79%] Building CXX object test/unit_tests/CMakeFiles/vimbax_camera_vimbax_camera_test.dir/vimbax_camera_test.cpp.o
+[24.786s] [ 82%] Building CXX object test/unit_tests/CMakeFiles/vimbax_camera_api_loader_test.dir/mocks/api_mock.cpp.o
+[24.786s] [ 86%] Building CXX object test/unit_tests/CMakeFiles/vimbax_camera_vimbax_camera_test.dir/mocks/api_mock.cpp.o
+[26.416s] [ 89%] Linking CXX executable vimbax_camera_library_loader_test
+[26.594s] [ 89%] Built target vimbax_camera_library_loader_test
+[28.357s] [ 93%] Linking CXX executable vimbax_camera_vmbc_load_test
+[28.499s] [ 93%] Built target vimbax_camera_vmbc_load_test
+[36.628s] [ 96%] Linking CXX executable vimbax_camera_api_loader_test
+[36.787s] [ 96%] Built target vimbax_camera_api_loader_test
+[36.815s] [100%] Linking CXX executable vimbax_camera_vimbax_camera_test
+[37.001s] [100%] Built target vimbax_camera_vimbax_camera_test
+[37.005s] Invoked command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera' returned '0': AMENT_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/lib:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/local/lib/python3.10/dist-packages:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera -- -j16 -l16
+[37.006s] Invoking command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera': AMENT_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/lib:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/local/lib/python3.10/dist-packages:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera
+[37.008s] -- Install configuration: "Release"
+[37.008s] -- Execute custom install script
+[37.008s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/lib/vimbax_camera/vimbax_camera_node
+[37.009s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/lib/libvimbax_camera.so
+[37.009s] -- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/launch/__pycache__/dual_camera_stream_launch.cpython-310.pyc
+[37.011s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/launch/__pycache__/vimbax_camera_param_launch.cpython-310.pyc
+[37.012s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/launch/dual_camera_stream_launch.py
+[37.012s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/launch/vimbax_camera_param_launch.py
+[37.013s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/camera_parameter.yaml
+[37.013s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/camera_settings.xml
+[37.013s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/camera_settings_custom.xml
+[37.014s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/color_correction_lut_left.bin
+[37.014s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/color_correction_lut_left.npy
+[37.014s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/color_correction_lut_right.bin
+[37.014s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/color_correction_lut_right.npy
+[37.015s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/library_path.sh
+[37.015s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/library_path.dsv
+[37.015s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/ament_index/resource_index/package_run_dependencies/vimbax_camera
+[37.015s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/ament_index/resource_index/parent_prefix_path/vimbax_camera
+[37.016s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/ament_prefix_path.sh
+[37.016s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/ament_prefix_path.dsv
+[37.016s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/path.sh
+[37.016s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/path.dsv
+[37.017s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/local_setup.bash
+[37.017s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/local_setup.sh
+[37.017s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/local_setup.zsh
+[37.017s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/local_setup.dsv
+[37.018s] -- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/package.dsv
+[37.020s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/ament_index/resource_index/packages/vimbax_camera
+[37.020s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/ament_index/resource_index/rclcpp_components/vimbax_camera
+[37.020s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[37.021s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/cmake/vimbax_cameraConfig.cmake
+[37.021s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/cmake/vimbax_cameraConfig-version.cmake
+[37.021s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/package.xml
+[37.022s] -- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/lib/vimbax_camera/vimbax_camera_timestamp_sync
+[37.025s] Invoked command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera' returned '0': AMENT_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/lib:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/local/lib/python3.10/dist-packages:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera

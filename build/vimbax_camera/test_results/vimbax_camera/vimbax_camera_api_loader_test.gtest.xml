@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="6" failures="0" disabled="0" errors="0" time="0" timestamp="2026-08-06T23:17:50" name="AllTests">
+  <testsuite name="APILoader" tests="6" failures="0" disabled="0" errors="0" time="0" timestamp="2026-08-06T23:17:50">
+    <testcase name="library_load_fail" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.APILoader" />
+    <testcase name="library_load_env" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.APILoader" />
+    <testcase name="symbol_load_fail" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.APILoader" />
+    <testcase name="load_sucess" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.APILoader" />
+    <testcase name="load_sucess_same_instance" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.APILoader" />
+    <testcase name="load_destory" status="run" result="completed" time="0" timestamp="2026-08-06T23:17:50" classname="vimbax_camera.APILoader" />
+  </testsuite>
+</testsuites>

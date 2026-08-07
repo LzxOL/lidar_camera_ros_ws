@@ -1,0 +1,41 @@
+-- run_test.py: invoking following command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera':
+ - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/pep257.xunit.xml
+
+checking ./camera_timestamp_sync.py
+./camera_timestamp_sync.py:3 at module level: D400: First line should end with a period (not '）')
+./camera_timestamp_sync.py:3 at module level: D415: First line should end with a period, question mark, or exclamation point (not '）')
+./camera_timestamp_sync.py:176 in private method `_get_nearest_left`: D400: First line should end with a period (not '帧')
+./camera_timestamp_sync.py:176 in private method `_get_nearest_left`: D415: First line should end with a period, question mark, or exclamation point (not '帧')
+checking ./launch/dual_camera_stream_launch.py
+./launch/dual_camera_stream_launch.py:4 at module level: D400: First line should end with a period (not '称')
+./launch/dual_camera_stream_launch.py:4 at module level: D415: First line should end with a period, question mark, or exclamation point (not '称')
+./launch/dual_camera_stream_launch.py:36 in private function `_detect_allied_vision_serials`: D205: 1 blank line required between summary line and description (found 0)
+./launch/dual_camera_stream_launch.py:36 in private function `_detect_allied_vision_serials`: D400: First line should end with a period (not '。')
+./launch/dual_camera_stream_launch.py:36 in private function `_detect_allied_vision_serials`: D415: First line should end with a period, question mark, or exclamation point (not '。')
+./launch/dual_camera_stream_launch.py:69 in private function `_make_camera_actions`: D205: 1 blank line required between summary line and description (found 0)
+./launch/dual_camera_stream_launch.py:69 in private function `_make_camera_actions`: D400: First line should end with a period (not '。')
+./launch/dual_camera_stream_launch.py:69 in private function `_make_camera_actions`: D415: First line should end with a period, question mark, or exclamation point (not '。')
+checking ./launch/vimbax_camera_param_launch.py
+./launch/vimbax_camera_param_launch.py:4 at module level: D400: First line should end with a period (not '置')
+./launch/vimbax_camera_param_launch.py:4 at module level: D415: First line should end with a period, question mark, or exclamation point (not '置')
+./launch/vimbax_camera_param_launch.py:40 in private function `_detect_allied_vision_serials`: D205: 1 blank line required between summary line and description (found 0)
+./launch/vimbax_camera_param_launch.py:40 in private function `_detect_allied_vision_serials`: D400: First line should end with a period (not '。')
+./launch/vimbax_camera_param_launch.py:40 in private function `_detect_allied_vision_serials`: D415: First line should end with a period, question mark, or exclamation point (not '。')
+./launch/vimbax_camera_param_launch.py:73 in private function `_make_camera_actions`: D205: 1 blank line required between summary line and description (found 0)
+./launch/vimbax_camera_param_launch.py:73 in private function `_make_camera_actions`: D400: First line should end with a period (not '。')
+./launch/vimbax_camera_param_launch.py:73 in private function `_make_camera_actions`: D415: First line should end with a period, question mark, or exclamation point (not '。')
+./launch/vimbax_camera_param_launch.py:199 in private function `_get_cc_launch_file`: D400: First line should end with a period (not '。')
+./launch/vimbax_camera_param_launch.py:199 in private function `_get_cc_launch_file`: D415: First line should end with a period, question mark, or exclamation point (not '。')
+checking ./test/system_tests/conftest.py
+checking ./test/system_tests/test_autostream_param.py
+checking ./test/system_tests/test_events.py
+checking ./test/system_tests/test_features.py
+checking ./test/system_tests/test_helper.py
+checking ./test/system_tests/test_load_save_settings.py
+checking ./test/system_tests/test_pixel_formats.py
+checking ./test/system_tests/test_streaming.py
+22 errors
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/pep257.xunit.xml'

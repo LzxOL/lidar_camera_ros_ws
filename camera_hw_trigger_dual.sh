@@ -7,10 +7,10 @@
 # ============================================================
 # 默认参数
 # ============================================================
-TRIGGER_SOURCE="Line0"
-EXPOSURE=240000.0
-LEFT_TOPIC="vimbax_camera_left"
-RIGHT_TOPIC="vimbax_camera_right"
+TRIGGER_SOURCE="${TRIGGER_SOURCE:-Line0}"
+EXPOSURE="${EXPOSURE:-240000.0}"
+LEFT_TOPIC="${LEFT_TOPIC:-vimbax_camera_left}"
+RIGHT_TOPIC="${RIGHT_TOPIC:-vimbax_camera_right}"
 
 # 检测相机是否在线
 is_camera_online() {

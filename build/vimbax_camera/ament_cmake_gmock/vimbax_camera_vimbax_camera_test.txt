@@ -1,0 +1,276 @@
+-- run_test.py: invoking following command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test/unit_tests':
+ - /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test/unit_tests/vimbax_camera_vimbax_camera_test --gtest_output=xml:/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/vimbax_camera_vimbax_camera_test.gtest.xml
+
+[==========] Running 19 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 8 tests from VimbaXCameraTest
+[ RUN      ] VimbaXCameraTest.open_first_camera
+[INFO] [1786029470.444739837] [vimbax_camera_fb]: No camera requested opening first available
+[INFO] [1786029470.444755068] [vimbax_camera_fb]: Try opening camera with extended id testCam1ExtId
+[INFO] [1786029470.444762753] [vimbax_camera_fb]: Opened camera info model name: Test Camera, camera name: Test Camera 1, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x7ffc9aae12d8, NULL, 0, 0x7ffc9aae0184, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x7ffc9aae12d8, NULL, 0, 0x7ffc9aae0184, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraTest.open_first_camera (0 ms)
+[ RUN      ] VimbaXCameraTest.open_second_camera
+[INFO] [1786029470.444902415] [vimbax_camera_fb]: No camera requested opening first available
+[INFO] [1786029470.444908144] [vimbax_camera_fb]: Try opening camera with extended id testCam2ExtId
+[INFO] [1786029470.444913523] [vimbax_camera_fb]: Opened camera info model name: Test Camera, camera name: Test Camera 2, serial: 5678
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x7ffc9aae12d8, NULL, 0, 0x7ffc9aae0184, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x7ffc9aae12d8, NULL, 0, 0x7ffc9aae0184, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraTest.open_second_camera (0 ms)
+[ RUN      ] VimbaXCameraTest.open_camera_no_access
+[INFO] [1786029470.445015946] [vimbax_camera_fb]: No camera requested opening first available
+[ERROR] [1786029470.445021606] [vimbax_camera_fb]: No camera available!
+[       OK ] VimbaXCameraTest.open_camera_no_access (1 ms)
+[ RUN      ] VimbaXCameraTest.open_camera_no_available
+[INFO] [1786029470.445112291] [vimbax_camera_fb]: No camera requested opening first available
+[ERROR] [1786029470.445117461] [vimbax_camera_fb]: List cameras returned 0
+[       OK ] VimbaXCameraTest.open_camera_no_available (0 ms)
+[ RUN      ] VimbaXCameraTest.open_by_id_fail
+[ERROR] [1786029470.445208217] [vimbax_camera_fb]: Failed to open camera testCamera1ById. Error -28 (VmbErrorUnknown)
+[ERROR] [1786029470.445213387] [vimbax_camera_fb]: Failed to open given camera testCamera1ById
+[       OK ] VimbaXCameraTest.open_by_id_fail (0 ms)
+[ RUN      ] VimbaXCameraTest.open_by_id_success_fallback
+[INFO] [1786029470.445305120] [vimbax_camera_fb]: Opened camera info model name: Test Camera, camera name: Test Camera 2, serial: 5678
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x7ffc9aae1378, NULL, 0, 0x7ffc9aae0214, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x7ffc9aae1378, NULL, 0, 0x7ffc9aae0214, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraTest.open_by_id_success_fallback (0 ms)
+[ RUN      ] VimbaXCameraTest.open_by_id_success
+[INFO] [1786029470.445406216] [vimbax_camera_fb]: Opened camera info model name: Test Camera, camera name: Test Camera 2, serial: 5678
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x7ffc9aae12d8, NULL, 0, 0x7ffc9aae0164, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x7ffc9aae12d8, NULL, 0, 0x7ffc9aae0164, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraTest.open_by_id_success (0 ms)
+[ RUN      ] VimbaXCameraTest.open_by_serial
+[INFO] [1786029470.445508150] [vimbax_camera_fb]: Opened camera info model name: Test Camera, camera name: Test Camera 1, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x7ffc9aae1318, NULL, 0, 0x7ffc9aae01c4, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x7ffc9aae1318, NULL, 0, 0x7ffc9aae01c4, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraTest.open_by_serial (0 ms)
+[----------] 8 tests from VimbaXCameraTest (1 ms total)
+
+[----------] 11 tests from VimbaXCameraOpenedTest
+[ RUN      ] VimbaXCameraOpenedTest.frame_create_announce_fail
+[INFO] [1786029470.445613787] [vimbax_camera_fb]: Opened camera info model name: TestCamera, camera name: TestCamera, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraOpenedTest.frame_create_announce_fail (4 ms)
+[ RUN      ] VimbaXCameraOpenedTest.frame_create_format_info_fail
+[INFO] [1786029470.449288091] [vimbax_camera_fb]: Opened camera info model name: TestCamera, camera name: TestCamera, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[ERROR] [1786029470.449313382] [vimbax_camera_fb]: Reading feature info for 'PixelFormat' failed with error -9 (VmbErrorMoreData)
+[       OK ] VimbaXCameraOpenedTest.frame_create_format_info_fail (0 ms)
+[ RUN      ] VimbaXCameraOpenedTest.frame_create_success_by_announce
+[INFO] [1786029470.449415945] [vimbax_camera_fb]: Opened camera info model name: TestCamera, camera name: TestCamera, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraOpenedTest.frame_create_success_by_announce (3 ms)
+[ RUN      ] VimbaXCameraOpenedTest.frame_create_success_by_alloc_and_announce
+[INFO] [1786029470.452522521] [vimbax_camera_fb]: Opened camera info model name: TestCamera, camera name: TestCamera, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraOpenedTest.frame_create_success_by_alloc_and_announce (0 ms)
+[ RUN      ] VimbaXCameraOpenedTest.settings_save_invalid_directory
+[INFO] [1786029470.452843694] [vimbax_camera_fb]: Opened camera info model name: TestCamera, camera name: TestCamera, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraOpenedTest.settings_save_invalid_directory (0 ms)
+[ RUN      ] VimbaXCameraOpenedTest.settings_save_invalid_file_name
+[INFO] [1786029470.452971129] [vimbax_camera_fb]: Opened camera info model name: TestCamera, camera name: TestCamera, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraOpenedTest.settings_save_invalid_file_name (1 ms)
+[ RUN      ] VimbaXCameraOpenedTest.settings_save_valid_error
+[INFO] [1786029470.453083403] [vimbax_camera_fb]: Opened camera info model name: TestCamera, camera name: TestCamera, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraOpenedTest.settings_save_valid_error (0 ms)
+[ RUN      ] VimbaXCameraOpenedTest.settings_save_valid_ok
+[INFO] [1786029470.453288528] [vimbax_camera_fb]: Opened camera info model name: TestCamera, camera name: TestCamera, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraOpenedTest.settings_save_valid_ok (0 ms)
+[ RUN      ] VimbaXCameraOpenedTest.settings_load_invalid
+[INFO] [1786029470.453452503] [vimbax_camera_fb]: Opened camera info model name: TestCamera, camera name: TestCamera, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraOpenedTest.settings_load_invalid (0 ms)
+[ RUN      ] VimbaXCameraOpenedTest.settings_load_valid_error
+[INFO] [1786029470.453567013] [vimbax_camera_fb]: Opened camera info model name: TestCamera, camera name: TestCamera, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraOpenedTest.settings_load_valid_error (0 ms)
+[ RUN      ] VimbaXCameraOpenedTest.settings_load_valid_ok
+[INFO] [1786029470.453735459] [vimbax_camera_fb]: Opened camera info model name: TestCamera, camera name: TestCamera, serial: 1234
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 0)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+
+GMOCK WARNING:
+Uninteresting mock function call - returning default value.
+    Function call: FeaturesList(0x64f09a7ae2c0, NULL, 0, 0x7ffc9aae0084, 88)
+          Returns: 0
+NOTE: You can safely ignore the above warning unless this call should not happen.  Do not suppress it by blindly adding an EXPECT_CALL() if you don't mean to enforce the call.  See https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md#knowing-when-to-expect for details.
+[       OK ] VimbaXCameraOpenedTest.settings_load_valid_ok (0 ms)
+[----------] 11 tests from VimbaXCameraOpenedTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 19 tests from 2 test suites ran. (9 ms total)
+[  PASSED  ] 19 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/vimbax_camera_vimbax_camera_test.gtest.xml'
+-- run_test.py: verify result file '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/vimbax_camera_vimbax_camera_test.gtest.xml'

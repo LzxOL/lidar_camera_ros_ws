@@ -1,0 +1,8 @@
+-- run_test.py: invoking following command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/cppcheck.xunit.xml --include_dirs /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include
+
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/cppcheck.xunit.xml'

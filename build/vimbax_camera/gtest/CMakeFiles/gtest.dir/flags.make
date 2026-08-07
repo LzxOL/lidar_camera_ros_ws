@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/opt/ros/humble/src/gtest_vendor/. -isystem /opt/ros/humble/src/gtest_vendor/include
 
-CXX_FLAGS = -fPIC -Wno-missing-field-initializers -Wall -Wextra -Wpedantic -Wno-null-dereference
+CXX_FLAGS = -O3 -DNDEBUG -fPIC -Wno-missing-field-initializers -Wall -Wextra -Wpedantic -Wno-null-dereference
 

@@ -1,0 +1,9 @@
+-- run_test.py: invoking following command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera':
+ - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/lint_cmake.xunit.xml
+
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/lint_cmake.xunit.xml'

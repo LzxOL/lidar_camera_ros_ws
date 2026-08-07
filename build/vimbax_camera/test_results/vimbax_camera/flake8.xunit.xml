@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="vimbax_camera.flake8"
+  tests="55"
+  errors="0"
+  failures="55"
+  time="0.214"
+>
+  <testcase
+    name="E741 (./camera_timestamp_sync.py:129:56)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="ambiguous variable name 'l':&#10;            best_diff = min(abs(l - expected_left) for l, _ in self.left_buf)&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./camera_timestamp_sync.py:138:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (103 &gt; 99 characters):&#10;            if self._last_detected_period is not None and abs(period - self._last_detected_period) &gt; 2:&#10;"/>
+  </testcase>
+  <testcase
+    name="F541 (./camera_timestamp_sync.py:239:23)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="f-string is missing placeholders:&#10;                print(f'[时间戳同步] 缓存读取失败，改用自动检测')&#10;"/>
+  </testcase>
+  <testcase
+    name="F541 (./camera_timestamp_sync.py:242:19)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="f-string is missing placeholders:&#10;            print(f'[时间戳同步] 未找到缓存，改用自动检测')&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./camera_timestamp_sync.py:248:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (128 &gt; 99 characters):&#10;    print(f'[时间戳同步] 模式: {&quot;手动 &quot; + str(args.offset_ms) + &quot; ms&quot; if not args.auto else &quot;自动检测 (&quot; + str(args.detect_frames) + &quot; 帧)&quot;}')&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/dual_camera_stream_launch.py:9:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message='line too long (106 &gt; 99 characters):&#10;"""&#10;Dual Camera Stream Launch 文件 - 仅启动左右两个相机推流，支持指定 topic 名称&#10;&#10;用法:&#10;    ros2 launch vimbax_camera dual_camera_stream_launch.py&#10;    ros2 launch vimbax_camera dual_camera_stream_launch.py left_topic:=left_image right_topic:=right_image&#10;&#10;参数:&#10;    left_serial:       左相机序列号 (默认 03R47)&#10;    right_serial:      右相机序列号 (默认 06HV5)&#10;    left_topic:        左相机 topic 命名空间前缀 (默认 vimbax_camera_left)&#10;    right_topic:       右相机 topic 命名空间前缀 (默认 vimbax_camera_right)&#10;    pixel_format:      像素格式 (默认 Mono8)&#10;    throughput:        设备链路吞吐量限制 (默认 450000000)&#10;    exposure:          曝光时间，微秒 (默认 600000.0)&#10;    width:             图像宽度 (默认 4512)&#10;    height:            图像高度 (默认 4512)&#10;    settings_file:     相机配置文件路径&#10;    autostream:        启动后自动推流 (默认 1)&#10;&#10;注意: 时间戳同步请使用独立的 launch 文件:&#10;    ros2 launch vimbax_camera camera_timestamp_sync_launch.py&#10;"""&#10;'/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/dual_camera_stream_launch.py:126:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (101 &gt; 99 characters):&#10;                 f'{{feature_name: {feature_name}, feature_module: {{id: 0}}, value: \'{value}\'}}'],&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/dual_camera_stream_launch.py:184:16)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    left_serial    = LaunchConfiguration('left_serial').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/dual_camera_stream_launch.py:185:17)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    right_serial   = LaunchConfiguration('right_serial').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/dual_camera_stream_launch.py:186:15)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    left_topic     = LaunchConfiguration('left_topic').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/dual_camera_stream_launch.py:187:16)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    right_topic    = LaunchConfiguration('right_topic').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/dual_camera_stream_launch.py:188:17)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    pixel_format   = LaunchConfiguration('pixel_format').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/dual_camera_stream_launch.py:189:15)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    throughput     = LaunchConfiguration('device_throughput_limit').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/dual_camera_stream_launch.py:190:13)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    exposure       = LaunchConfiguration('exposure_time').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/dual_camera_stream_launch.py:191:10)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    width          = LaunchConfiguration('width').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/dual_camera_stream_launch.py:192:11)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    height         = LaunchConfiguration('height').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/dual_camera_stream_launch.py:193:18)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    settings_file  = LaunchConfiguration('settings_file').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/dual_camera_stream_launch.py:194:15)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    autostream     = LaunchConfiguration('autostream').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/dual_camera_stream_launch.py:201:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (114 &gt; 99 characters):&#10;        role = left_topic.replace('vimbax_camera_', '') if left_topic.startswith('vimbax_camera_') else left_topic&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/dual_camera_stream_launch.py:216:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (117 &gt; 99 characters):&#10;        role = right_topic.replace('vimbax_camera_', '') if right_topic.startswith('vimbax_camera_') else right_topic&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/dual_camera_stream_launch.py:290:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (102 &gt; 99 characters):&#10;            default_value='/home/root1/lzx_ws/project/lidar_camera_ros_ws/config/camera_settings.xml',&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/dual_camera_stream_launch.py:301:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (101 &gt; 99 characters):&#10;            description='Read LiDAR GPS timestamp from /dev/shm/rslidar_gps_timestamp and use it as '&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/vimbax_camera_param_launch.py:32:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (119 &gt; 99 characters):&#10;from launch.actions import DeclareLaunchArgument, TimerAction, ExecuteProcess, OpaqueFunction, IncludeLaunchDescription&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/vimbax_camera_param_launch.py:131:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (101 &gt; 99 characters):&#10;                 f'{{feature_name: {feature_name}, feature_module: {{id: 0}}, value: \'{value}\'}}'],&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:239:14)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    camera_id        = LaunchConfiguration('camera_id').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:240:16)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    left_serial      = LaunchConfiguration('left_serial').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:241:17)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    right_serial     = LaunchConfiguration('right_serial').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:242:18)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    color_correct    = LaunchConfiguration('color_correct').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:243:17)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    use_cpp_node     = LaunchConfiguration('use_cpp_node').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:244:17)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    pixel_format     = LaunchConfiguration('pixel_format').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:245:15)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    throughput       = LaunchConfiguration('device_throughput_limit').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:246:13)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    exposure         = LaunchConfiguration('exposure_time').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:247:10)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    width            = LaunchConfiguration('width').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:248:11)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    height           = LaunchConfiguration('height').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:249:18)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    settings_file    = LaunchConfiguration('settings_file').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:250:13)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    lut_size         = LaunchConfiguration('lut_size').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:251:16)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    num_threads      = LaunchConfiguration('num_threads').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:252:14)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    enable_cc        = LaunchConfiguration('enable_color_correction').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:253:12)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    verbose          = LaunchConfiguration('verbose').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:254:11)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    in_enc           = LaunchConfiguration('input_encoding').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/vimbax_camera_param_launch.py:255:12)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    out_enc          = LaunchConfiguration('output_encoding').perform(context)&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/vimbax_camera_param_launch.py:286:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (105 &gt; 99 characters):&#10;                     f'{{feature_name: {feature_name}, feature_module: {{id: 0}}, value: \'{value}\'}}'],&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/vimbax_camera_param_launch.py:295:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (101 &gt; 99 characters):&#10;                     f'{{feature_name: {feature_name}, feature_module: {{id: 0}}, value: {value}}}'],&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/vimbax_camera_param_launch.py:304:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (101 &gt; 99 characters):&#10;                     f'{{feature_name: {feature_name}, feature_module: {{id: 0}}, value: {value}}}'],&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/vimbax_camera_param_launch.py:328:22)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                     f'{namespace}/stream_stop',&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/vimbax_camera_param_launch.py:329:22)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                     'vimbax_camera_msgs/srv/StreamStartStop', '{}'],&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/vimbax_camera_param_launch.py:330:21)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                    shell=False, output='screen')&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/vimbax_camera_param_launch.py:341:22)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                     f'{namespace}/stream_start',&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/vimbax_camera_param_launch.py:342:22)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                     'vimbax_camera_msgs/srv/StreamStartStop', '{}'],&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/vimbax_camera_param_launch.py:343:21)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                    shell=False, output='screen')&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/vimbax_camera_param_launch.py:399:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message='line too long (111 &gt; 99 characters):&#10;            print(f"[vimbax_camera_param_launch] WARNING: color correction launch not found: {cc_launch_path}")&#10;'/>
+  </testcase>
+  <testcase
+    name="F541 (./launch/vimbax_camera_param_launch.py:400:19)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message='f-string is missing placeholders:&#10;            print(f"[vimbax_camera_param_launch] Di d you build vimbax_camera_color_correction(_cpp)?")&#10;'/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/vimbax_camera_param_launch.py:400:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message='line too long (103 &gt; 99 characters):&#10;            print(f"[vimbax_camera_param_launch] Di d you build vimbax_camera_color_correction(_cpp)?")&#10;'/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/vimbax_camera_param_launch.py:471:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (102 &gt; 99 characters):&#10;            default_value='/home/root1/lzx_ws/project/lidar_camera_ros_ws/config/camera_settings.xml',&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/vimbax_camera_param_launch.py:508:100)"
+    classname="vimbax_camera.flake8"
+  >
+      <failure message="line too long (101 &gt; 99 characters):&#10;            description='Read LiDAR GPS timestamp from /dev/shm/rslidar_gps_timestamp and use it as '&#10;"/>
+  </testcase>
+  <system-out>Checked files:
+* ./camera_timestamp_sync.py
+* ./launch/dual_camera_stream_launch.py
+* ./launch/vimbax_camera_param_launch.py
+* ./test/system_tests/test_events.py
+* ./test/system_tests/test_streaming.py
+* ./test/system_tests/test_features.py
+* ./test/system_tests/test_helper.py
+* ./test/system_tests/test_load_save_settings.py
+* ./test/system_tests/conftest.py
+* ./test/system_tests/test_pixel_formats.py
+* ./test/system_tests/test_autostream_param.py</system-out>
+</testsuite>

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/vimbax_camera_node" "TARGETS" "vimbax_camera_node" "DESTINATION" "lib/vimbax_camera")

@@ -26,7 +26,14 @@ Dual Camera Stream Launch 文件 - 仅启动左右两个相机推流，支持指
 """
 
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, TimerAction, ExecuteProcess, OpaqueFunction
+from launch.actions import (
+    DeclareLaunchArgument,
+    TimerAction,
+    ExecuteProcess,
+    OpaqueFunction,
+    RegisterEventHandler,
+)
+from launch.event_handlers import OnProcessExit
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 import os
@@ -73,17 +80,8 @@ def _make_camera_actions(*, role: str, camera_id: str, pixel_format: str, throug
     autostream: 1=自动推流, 0=手动控制
     use_shm_gps_time: 是否从共享内存读取雷达 GPS 时间戳作为图像 header.stamp
 
-    流程（参考 dual_camera_setup.sh 成功模式）:
-      t=0    : 启动 vimbax_camera_node
-      t=1.5  : 等待节点初始化完成
-      t=2.0  : AcquisitionStop      （停止采集）
-      t=2.3  : stream_stop        （停止推流）
-      t=2.8  : set PixelFormat    （设置像素格式）
-      t=2.9  : set DeviceLinkThroughputLimit
-      t=3.0  : set ExposureTime
-      t=3.1  : set Width
-      t=3.2  : set Height
-      t=3.5  : stream_start       （启动推流，仅 autostream=0 时需要）
+    每个服务命令都等待前一个命令退出后才执行。不能依赖固定时间点，
+    因为节点服务延迟就绪时会让多个固定 TimerAction 同时发起请求。
     """
     namespace = f"vimbax_camera_{role}"
     stream_prefix = f"/{namespace}"
@@ -158,24 +156,30 @@ def _make_camera_actions(*, role: str, camera_id: str, pixel_format: str, throug
             output='screen'
         )
 
+    sequence = [
+        _command_run('AcquisitionStop'),
+        stream_stop_cmd,
+        _enum_set('PixelFormat', pixel_format),
+        _int_set('DeviceLinkThroughputLimit', throughput),
+        _float_set('ExposureTime', exposure),
+        _int_set('Width', width),
+        _int_set('Height', height),
+    ]
+    if autostream == '0':
+        sequence.append(stream_start_cmd)
+
     actions = [
         vimbax_camera_node,
-        # 1. 等待节点初始化完成
-        TimerAction(period=1.5, actions=[]),
-        # 2. 先停止采集
-        TimerAction(period=2.0, actions=[_command_run('AcquisitionStop')]),
-        # 3. 等待后停止推流
-        TimerAction(period=2.3, actions=[stream_stop_cmd]),
-        # 4. 设置参数
-        TimerAction(period=2.8, actions=[_enum_set('PixelFormat', pixel_format)]),
-        TimerAction(period=2.9, actions=[_int_set('DeviceLinkThroughputLimit', throughput)]),
-        TimerAction(period=3.0, actions=[_float_set('ExposureTime', exposure)]),
-        TimerAction(period=3.1, actions=[_int_set('Width', width)]),
-        TimerAction(period=3.2, actions=[_int_set('Height', height)]),
+        # 首条命令等待服务出现；后续命令由退出事件严格串接。
+        TimerAction(period=2.0, actions=[sequence[0]]),
     ]
-
-    if autostream == '0':
-        actions.append(TimerAction(period=3.5, actions=[stream_start_cmd]))
+    for previous, following in zip(sequence, sequence[1:]):
+        actions.append(RegisterEventHandler(
+            OnProcessExit(
+                target_action=previous,
+                on_exit=[TimerAction(period=0.3, actions=[following])],
+            )
+        ))
 
     return actions
 
@@ -194,8 +198,24 @@ def launch_setup(context, *args, **kwargs):
     autostream     = LaunchConfiguration('autostream').perform(context)
     use_shm_gps_time = LaunchConfiguration('use_shared_memory_gps_time').perform(context)
 
-    actions = []
     connected_serials = _detect_allied_vision_serials()
+    requested = [
+        ("left", left_serial, left_topic),
+        ("right", right_serial, right_topic),
+    ]
+    missing = [
+        f"{role}_serial={serial}"
+        for role, serial, topic in requested
+        if topic and serial and serial not in connected_serials
+    ]
+    if missing:
+        print(
+            f"[dual_camera_stream_launch] Required camera not found: {', '.join(missing)}. "
+            f"Connected Allied Vision serials={sorted(connected_serials)}."
+        )
+        return []
+
+    actions = []
 
     if left_topic and left_serial and left_serial in connected_serials:
         role = left_topic.replace('vimbax_camera_', '') if left_topic.startswith('vimbax_camera_') else left_topic
@@ -297,7 +317,7 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'use_shared_memory_gps_time',
-            default_value='true',
+            default_value='false',
             description='Read LiDAR GPS timestamp from /dev/shm/rslidar_gps_timestamp and use it as '
                         'image header.stamp instead of camera local timestamp. '
                         'Requires radar running with use_lidar_clock=true. '

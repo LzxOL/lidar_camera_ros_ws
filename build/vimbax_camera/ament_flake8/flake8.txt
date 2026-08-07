@@ -1,0 +1,279 @@
+-- run_test.py: invoking following command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera':
+ - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/flake8.xunit.xml
+
+            best_diff = min(abs(l - expected_left) for l, _ in self.left_buf)
+                                                       ^
+            if self._last_detected_period is not None and abs(period - self._last_detected_period) > 2:
+                                                                                                   ^
+                print(f'[时间戳同步] 缓存读取失败，改用自动检测')
+                      ^
+            print(f'[时间戳同步] 未找到缓存，改用自动检测')
+                  ^
+    print(f'[时间戳同步] 模式: {"手动 " + str(args.offset_ms) + " ms" if not args.auto else "自动检测 (" + str(args.detect_frames) + " 帧)"}')
+                                                                                                   ^
+"""
+Dual Camera Stream Launch 文件 - 仅启动左右两个相机推流，支持指定 topic 名称
+
+用法:
+    ros2 launch vimbax_camera dual_camera_stream_launch.py
+    ros2 launch vimbax_camera dual_camera_stream_launch.py left_topic:=left_image right_topic:=right_image
+
+参数:
+    left_serial:       左相机序列号 (默认 03R47)
+    right_serial:      右相机序列号 (默认 06HV5)
+    left_topic:        左相机 topic 命名空间前缀 (默认 vimbax_camera_left)
+    right_topic:       右相机 topic 命名空间前缀 (默认 vimbax_camera_right)
+    pixel_format:      像素格式 (默认 Mono8)
+    throughput:        设备链路吞吐量限制 (默认 450000000)
+    exposure:          曝光时间，微秒 (默认 600000.0)
+    width:             图像宽度 (默认 4512)
+    height:            图像高度 (默认 4512)
+    settings_file:     相机配置文件路径
+    autostream:        启动后自动推流 (默认 1)
+
+注意: 时间戳同步请使用独立的 launch 文件:
+    ros2 launch vimbax_camera camera_timestamp_sync_launch.py
+"""
+   
+                                                        
+
+   
+                                 ^
+                 f'{{feature_name: {feature_name}, feature_module: {{id: 0}}, value: \'{value}\'}}'],
+                                                                                                   ^
+    left_serial    = LaunchConfiguration('left_serial').perform(context)
+               ^
+    right_serial   = LaunchConfiguration('right_serial').perform(context)
+                ^
+    left_topic     = LaunchConfiguration('left_topic').perform(context)
+              ^
+    right_topic    = LaunchConfiguration('right_topic').perform(context)
+               ^
+    pixel_format   = LaunchConfiguration('pixel_format').perform(context)
+                ^
+    throughput     = LaunchConfiguration('device_throughput_limit').perform(context)
+              ^
+    exposure       = LaunchConfiguration('exposure_time').perform(context)
+            ^
+    width          = LaunchConfiguration('width').perform(context)
+         ^
+    height         = LaunchConfiguration('height').perform(context)
+          ^
+    settings_file  = LaunchConfiguration('settings_file').perform(context)
+                 ^
+    autostream     = LaunchConfiguration('autostream').perform(context)
+              ^
+        role = left_topic.replace('vimbax_camera_', '') if left_topic.startswith('vimbax_camera_') else left_topic
+                                                                                                   ^
+        role = right_topic.replace('vimbax_camera_', '') if right_topic.startswith('vimbax_camera_') else right_topic
+                                                                                                   ^
+            default_value='/home/root1/lzx_ws/project/lidar_camera_ros_ws/config/camera_settings.xml',
+                                                                                                   ^
+            description='Read LiDAR GPS timestamp from /dev/shm/rslidar_gps_timestamp and use it as '
+                                                                                                   ^
+from launch.actions import DeclareLaunchArgument, TimerAction, ExecuteProcess, OpaqueFunction, IncludeLaunchDescription
+                                                                                                   ^
+                 f'{{feature_name: {feature_name}, feature_module: {{id: 0}}, value: \'{value}\'}}'],
+                                                                                                   ^
+    camera_id        = LaunchConfiguration('camera_id').perform(context)
+             ^
+    left_serial      = LaunchConfiguration('left_serial').perform(context)
+               ^
+    right_serial     = LaunchConfiguration('right_serial').perform(context)
+                ^
+    color_correct    = LaunchConfiguration('color_correct').perform(context)
+                 ^
+    use_cpp_node     = LaunchConfiguration('use_cpp_node').perform(context)
+                ^
+    pixel_format     = LaunchConfiguration('pixel_format').perform(context)
+                ^
+    throughput       = LaunchConfiguration('device_throughput_limit').perform(context)
+              ^
+    exposure         = LaunchConfiguration('exposure_time').perform(context)
+            ^
+    width            = LaunchConfiguration('width').perform(context)
+         ^
+    height           = LaunchConfiguration('height').perform(context)
+          ^
+    settings_file    = LaunchConfiguration('settings_file').perform(context)
+                 ^
+    lut_size         = LaunchConfiguration('lut_size').perform(context)
+            ^
+    num_threads      = LaunchConfiguration('num_threads').perform(context)
+               ^
+    enable_cc        = LaunchConfiguration('enable_color_correction').perform(context)
+             ^
+    verbose          = LaunchConfiguration('verbose').perform(context)
+           ^
+    in_enc           = LaunchConfiguration('input_encoding').perform(context)
+          ^
+    out_enc          = LaunchConfiguration('output_encoding').perform(context)
+           ^
+                     f'{{feature_name: {feature_name}, feature_module: {{id: 0}}, value: \'{value}\'}}'],
+                                                                                                   ^
+                     f'{{feature_name: {feature_name}, feature_module: {{id: 0}}, value: {value}}}'],
+                                                                                                   ^
+                     f'{{feature_name: {feature_name}, feature_module: {{id: 0}}, value: {value}}}'],
+                                                                                                   ^
+                     f'{namespace}/stream_stop',
+                     ^
+                     'vimbax_camera_msgs/srv/StreamStartStop', '{}'],
+                     ^
+                    shell=False, output='screen')
+                    ^
+                     f'{namespace}/stream_start',
+                     ^
+                     'vimbax_camera_msgs/srv/StreamStartStop', '{}'],
+                     ^
+                    shell=False, output='screen')
+                    ^
+            print(f"[vimbax_camera_param_launch] WARNING: color correction launch not found: {cc_launch_path}")
+                                                                                                   ^
+            print(f"[vimbax_camera_param_launch] Di d you build vimbax_camera_color_correction(_cpp)?")
+                  ^
+            print(f"[vimbax_camera_param_launch] Di d you build vimbax_camera_color_correction(_cpp)?")
+                                                                                                   ^
+            default_value='/home/root1/lzx_ws/project/lidar_camera_ros_ws/config/camera_settings.xml',
+                                                                                                   ^
+            description='Read LiDAR GPS timestamp from /dev/shm/rslidar_gps_timestamp and use it as '
+                                                                                                   ^
+6     E128 continuation line under-indented for visual indent
+28    E221 multiple spaces before operator
+17    E501 line too long (103 > 99 characters)
+1     E741 ambiguous variable name 'l'
+3     F541 f-string is missing placeholders
+
+./camera_timestamp_sync.py:129:56: E741 ambiguous variable name 'l'
+
+./camera_timestamp_sync.py:138:100: E501 line too long (103 > 99 characters)
+
+./camera_timestamp_sync.py:239:23: F541 f-string is missing placeholders
+
+./camera_timestamp_sync.py:242:19: F541 f-string is missing placeholders
+
+./camera_timestamp_sync.py:248:100: E501 line too long (128 > 99 characters)
+
+./launch/dual_camera_stream_launch.py:9:100: E501 line too long (106 > 99 characters)
+
+./launch/dual_camera_stream_launch.py:126:100: E501 line too long (101 > 99 characters)
+
+./launch/dual_camera_stream_launch.py:184:16: E221 multiple spaces before operator
+
+./launch/dual_camera_stream_launch.py:185:17: E221 multiple spaces before operator
+
+./launch/dual_camera_stream_launch.py:186:15: E221 multiple spaces before operator
+
+./launch/dual_camera_stream_launch.py:187:16: E221 multiple spaces before operator
+
+./launch/dual_camera_stream_launch.py:188:17: E221 multiple spaces before operator
+
+./launch/dual_camera_stream_launch.py:189:15: E221 multiple spaces before operator
+
+./launch/dual_camera_stream_launch.py:190:13: E221 multiple spaces before operator
+
+./launch/dual_camera_stream_launch.py:191:10: E221 multiple spaces before operator
+
+./launch/dual_camera_stream_launch.py:192:11: E221 multiple spaces before operator
+
+./launch/dual_camera_stream_launch.py:193:18: E221 multiple spaces before operator
+
+./launch/dual_camera_stream_launch.py:194:15: E221 multiple spaces before operator
+
+./launch/dual_camera_stream_launch.py:201:100: E501 line too long (114 > 99 characters)
+
+./launch/dual_camera_stream_launch.py:216:100: E501 line too long (117 > 99 characters)
+
+./launch/dual_camera_stream_launch.py:290:100: E501 line too long (102 > 99 characters)
+
+./launch/dual_camera_stream_launch.py:301:100: E501 line too long (101 > 99 characters)
+
+./launch/vimbax_camera_param_launch.py:32:100: E501 line too long (119 > 99 characters)
+
+./launch/vimbax_camera_param_launch.py:131:100: E501 line too long (101 > 99 characters)
+
+./launch/vimbax_camera_param_launch.py:239:14: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:240:16: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:241:17: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:242:18: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:243:17: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:244:17: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:245:15: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:246:13: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:247:10: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:248:11: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:249:18: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:250:13: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:251:16: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:252:14: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:253:12: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:254:11: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:255:12: E221 multiple spaces before operator
+
+./launch/vimbax_camera_param_launch.py:286:100: E501 line too long (105 > 99 characters)
+
+./launch/vimbax_camera_param_launch.py:295:100: E501 line too long (101 > 99 characters)
+
+./launch/vimbax_camera_param_launch.py:304:100: E501 line too long (101 > 99 characters)
+
+./launch/vimbax_camera_param_launch.py:328:22: E128 continuation line under-indented for visual indent
+
+./launch/vimbax_camera_param_launch.py:329:22: E128 continuation line under-indented for visual indent
+
+./launch/vimbax_camera_param_launch.py:330:21: E128 continuation line under-indented for visual indent
+
+./launch/vimbax_camera_param_launch.py:341:22: E128 continuation line under-indented for visual indent
+
+./launch/vimbax_camera_param_launch.py:342:22: E128 continuation line under-indented for visual indent
+
+./launch/vimbax_camera_param_launch.py:343:21: E128 continuation line under-indented for visual indent
+
+./launch/vimbax_camera_param_launch.py:399:100: E501 line too long (111 > 99 characters)
+
+./launch/vimbax_camera_param_launch.py:400:19: F541 f-string is missing placeholders
+
+./launch/vimbax_camera_param_launch.py:400:100: E501 line too long (103 > 99 characters)
+
+./launch/vimbax_camera_param_launch.py:471:100: E501 line too long (102 > 99 characters)
+
+./launch/vimbax_camera_param_launch.py:508:100: E501 line too long (101 > 99 characters)
+
+
+11 files checked
+55 errors
+
+'E'-type errors: 52
+'F'-type errors: 3
+
+Checked files:
+
+* ./camera_timestamp_sync.py
+* ./launch/dual_camera_stream_launch.py
+* ./launch/vimbax_camera_param_launch.py
+* ./test/system_tests/test_events.py
+* ./test/system_tests/test_streaming.py
+* ./test/system_tests/test_features.py
+* ./test/system_tests/test_helper.py
+* ./test/system_tests/test_load_save_settings.py
+* ./test/system_tests/conftest.py
+* ./test/system_tests/test_pixel_formats.py
+* ./test/system_tests/test_autostream_param.py
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/flake8.xunit.xml'

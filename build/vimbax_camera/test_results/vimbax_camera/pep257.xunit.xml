@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="vimbax_camera.pep257"
+  tests="30"
+  errors="0"
+  failures="22"
+  time="0.108"
+>
+  <testcase
+    name="D400 (./camera_timestamp_sync.py:3)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D400: First line should end with a period (not '）')"/>
+  </testcase>
+  <testcase
+    name="D415 (./camera_timestamp_sync.py:3)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D415: First line should end with a period, question mark, or exclamation point (not '）')"/>
+  </testcase>
+  <testcase
+    name="D400 (./camera_timestamp_sync.py:176)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D400: First line should end with a period (not '帧')"/>
+  </testcase>
+  <testcase
+    name="D415 (./camera_timestamp_sync.py:176)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D415: First line should end with a period, question mark, or exclamation point (not '帧')"/>
+  </testcase>
+  <testcase
+    name="D400 (./launch/dual_camera_stream_launch.py:4)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D400: First line should end with a period (not '称')"/>
+  </testcase>
+  <testcase
+    name="D415 (./launch/dual_camera_stream_launch.py:4)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D415: First line should end with a period, question mark, or exclamation point (not '称')"/>
+  </testcase>
+  <testcase
+    name="D205 (./launch/dual_camera_stream_launch.py:36)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D205: 1 blank line required between summary line and description (found 0)"/>
+  </testcase>
+  <testcase
+    name="D400 (./launch/dual_camera_stream_launch.py:36)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D400: First line should end with a period (not '。')"/>
+  </testcase>
+  <testcase
+    name="D415 (./launch/dual_camera_stream_launch.py:36)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D415: First line should end with a period, question mark, or exclamation point (not '。')"/>
+  </testcase>
+  <testcase
+    name="D205 (./launch/dual_camera_stream_launch.py:69)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D205: 1 blank line required between summary line and description (found 0)"/>
+  </testcase>
+  <testcase
+    name="D400 (./launch/dual_camera_stream_launch.py:69)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D400: First line should end with a period (not '。')"/>
+  </testcase>
+  <testcase
+    name="D415 (./launch/dual_camera_stream_launch.py:69)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D415: First line should end with a period, question mark, or exclamation point (not '。')"/>
+  </testcase>
+  <testcase
+    name="D400 (./launch/vimbax_camera_param_launch.py:4)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D400: First line should end with a period (not '置')"/>
+  </testcase>
+  <testcase
+    name="D415 (./launch/vimbax_camera_param_launch.py:4)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D415: First line should end with a period, question mark, or exclamation point (not '置')"/>
+  </testcase>
+  <testcase
+    name="D205 (./launch/vimbax_camera_param_launch.py:40)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D205: 1 blank line required between summary line and description (found 0)"/>
+  </testcase>
+  <testcase
+    name="D400 (./launch/vimbax_camera_param_launch.py:40)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D400: First line should end with a period (not '。')"/>
+  </testcase>
+  <testcase
+    name="D415 (./launch/vimbax_camera_param_launch.py:40)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D415: First line should end with a period, question mark, or exclamation point (not '。')"/>
+  </testcase>
+  <testcase
+    name="D205 (./launch/vimbax_camera_param_launch.py:73)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D205: 1 blank line required between summary line and description (found 0)"/>
+  </testcase>
+  <testcase
+    name="D400 (./launch/vimbax_camera_param_launch.py:73)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D400: First line should end with a period (not '。')"/>
+  </testcase>
+  <testcase
+    name="D415 (./launch/vimbax_camera_param_launch.py:73)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D415: First line should end with a period, question mark, or exclamation point (not '。')"/>
+  </testcase>
+  <testcase
+    name="D400 (./launch/vimbax_camera_param_launch.py:199)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D400: First line should end with a period (not '。')"/>
+  </testcase>
+  <testcase
+    name="D415 (./launch/vimbax_camera_param_launch.py:199)"
+    classname="vimbax_camera.pep257"
+  >
+      <failure message="D415: First line should end with a period, question mark, or exclamation point (not '。')"/>
+  </testcase>
+  <testcase
+    name="./test/system_tests/conftest.py"
+    classname="vimbax_camera.pep257"/>
+  <testcase
+    name="./test/system_tests/test_autostream_param.py"
+    classname="vimbax_camera.pep257"/>
+  <testcase
+    name="./test/system_tests/test_events.py"
+    classname="vimbax_camera.pep257"/>
+  <testcase
+    name="./test/system_tests/test_features.py"
+    classname="vimbax_camera.pep257"/>
+  <testcase
+    name="./test/system_tests/test_helper.py"
+    classname="vimbax_camera.pep257"/>
+  <testcase
+    name="./test/system_tests/test_load_save_settings.py"
+    classname="vimbax_camera.pep257"/>
+  <testcase
+    name="./test/system_tests/test_pixel_formats.py"
+    classname="vimbax_camera.pep257"/>
+  <testcase
+    name="./test/system_tests/test_streaming.py"
+    classname="vimbax_camera.pep257"/>
+  <system-out>Checked files:
+* ./camera_timestamp_sync.py
+* ./launch/dual_camera_stream_launch.py
+* ./launch/vimbax_camera_param_launch.py
+* ./test/system_tests/conftest.py
+* ./test/system_tests/test_autostream_param.py
+* ./test/system_tests/test_events.py
+* ./test/system_tests/test_features.py
+* ./test/system_tests/test_helper.py
+* ./test/system_tests/test_load_save_settings.py
+* ./test/system_tests/test_pixel_formats.py
+* ./test/system_tests/test_streaming.py</system-out>
+</testsuite>

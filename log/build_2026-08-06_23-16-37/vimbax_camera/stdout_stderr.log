@@ -1,0 +1,63 @@
+Consolidate compiler generated dependencies of target test_lib
+Consolidate compiler generated dependencies of target gtest_main
+Consolidate compiler generated dependencies of target gmock_main
+Consolidate compiler generated dependencies of target gtest
+[  6%] Built target test_lib
+Consolidate compiler generated dependencies of target vimbax_camera_node
+Consolidate compiler generated dependencies of target gmock
+[ 13%] Built target gtest_main
+[ 20%] Built target gmock_main
+[ 27%] Built target gtest
+[ 37%] Built target gmock
+[ 44%] Built target vimbax_camera_node
+Consolidate compiler generated dependencies of target vimbax_camera
+[ 48%] Building CXX object CMakeFiles/vimbax_camera.dir/src/vimbax_camera_node.cpp.o
+[ 51%] Linking CXX shared library libvimbax_camera.so
+[ 65%] Built target vimbax_camera
+Consolidate compiler generated dependencies of target vimbax_camera_library_loader_test
+Consolidate compiler generated dependencies of target vimbax_camera_vmbc_load_test
+Consolidate compiler generated dependencies of target vimbax_camera_api_loader_test
+Consolidate compiler generated dependencies of target vimbax_camera_vimbax_camera_test
+[ 68%] Linking CXX executable vimbax_camera_library_loader_test
+[ 72%] Linking CXX executable vimbax_camera_vmbc_load_test
+[ 75%] Linking CXX executable vimbax_camera_api_loader_test
+[ 79%] Linking CXX executable vimbax_camera_vimbax_camera_test
+[ 82%] Built target vimbax_camera_library_loader_test
+[ 86%] Built target vimbax_camera_vmbc_load_test
+[ 93%] Built target vimbax_camera_api_loader_test
+[100%] Built target vimbax_camera_vimbax_camera_test
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/lib/vimbax_camera/vimbax_camera_node
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/lib/libvimbax_camera.so
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/launch/__pycache__/dual_camera_stream_launch.cpython-310.pyc
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/launch/__pycache__/vimbax_camera_param_launch.cpython-310.pyc
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/launch/dual_camera_stream_launch.py
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/launch/vimbax_camera_param_launch.py
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/camera_parameter.yaml
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/camera_settings.xml
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/camera_settings_custom.xml
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/color_correction_lut_left.bin
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/color_correction_lut_left.npy
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/color_correction_lut_right.bin
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/color_correction_lut_right.npy
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/library_path.sh
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/library_path.dsv
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/ament_index/resource_index/package_run_dependencies/vimbax_camera
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/ament_index/resource_index/parent_prefix_path/vimbax_camera
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/path.sh
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/path.dsv
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/local_setup.bash
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/local_setup.sh
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/local_setup.zsh
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/local_setup.dsv
+-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/package.dsv
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/ament_index/resource_index/packages/vimbax_camera
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/ament_index/resource_index/rclcpp_components/vimbax_camera
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/cmake/vimbax_cameraConfig.cmake
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/cmake/vimbax_cameraConfig-version.cmake
+-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/package.xml
+-- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/lib/vimbax_camera/vimbax_camera_timestamp_sync

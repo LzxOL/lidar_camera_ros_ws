@@ -1,0 +1,30 @@
+-- run_test.py: invoking following command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test/unit_tests':
+ - /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test/unit_tests/vimbax_camera_api_loader_test --gtest_output=xml:/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/vimbax_camera_api_loader_test.gtest.xml
+
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from APILoader
+[ RUN      ] APILoader.library_load_fail
+[ERROR] [1786029470.384450884] [vimbax_camera_fb]: Failed to load VmbC library
+[       OK ] APILoader.library_load_fail (0 ms)
+[ RUN      ] APILoader.library_load_env
+[ERROR] [1786029470.384486166] [vimbax_camera_fb]: Failed to load VmbC library
+[       OK ] APILoader.library_load_env (0 ms)
+[ RUN      ] APILoader.symbol_load_fail
+[       OK ] APILoader.symbol_load_fail (0 ms)
+[ RUN      ] APILoader.load_sucess
+[       OK ] APILoader.load_sucess (0 ms)
+[ RUN      ] APILoader.load_sucess_same_instance
+[       OK ] APILoader.load_sucess_same_instance (0 ms)
+[ RUN      ] APILoader.load_destory
+[       OK ] APILoader.load_destory (0 ms)
+[----------] 6 tests from APILoader (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 6 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/vimbax_camera_api_loader_test.gtest.xml'
+-- run_test.py: verify result file '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/vimbax_camera_api_loader_test.gtest.xml'

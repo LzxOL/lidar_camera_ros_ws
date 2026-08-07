@@ -1,0 +1,6 @@
+1:copyright
+3:cpplint
+4:flake8
+6:pep257
+7:uncrustify
+8:xmllint

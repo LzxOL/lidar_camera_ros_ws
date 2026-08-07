@@ -13182,9 +13182,9 @@
             <Feature Name="MultipleRegionEnable" Value="0" Type="Bool" />
             <Feature Name="OffsetX" Value="0" Type="Int" />
             <Feature Name="OffsetY" Value="0" Type="Int" />
-            <Feature Name="PayloadSize" Value="61074432" Type="Int" />
-            <Feature Name="PixelFormat" Value="RGB8" Type="Enum" />
-            <Feature Name="PixelSize" Value="Bpp24" Type="Enum" />  
+            <Feature Name="PayloadSize" Value="20358144" Type="Int" />
+            <Feature Name="PixelFormat" Value="Mono8" Type="Enum" />
+            <Feature Name="PixelSize" Value="Bpp8" Type="Enum" />
             <Feature Name="ReverseX" Value="0" Type="Bool" />
             <Feature Name="ReverseY" Value="0" Type="Bool" />
             <Feature Name="SensorBitDepth" Value="Bpp12" Type="Enum" />

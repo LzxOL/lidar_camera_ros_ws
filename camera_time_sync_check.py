@@ -27,6 +27,7 @@ from sensor_msgs.msg import Image
 import argparse
 import sys
 import os
+import statistics
 
 
 # 缓存文件路径（供 camera_timestamp_sync.py 自动读取）
@@ -53,18 +54,27 @@ def _clear_offset_cache():
 
 
 class CameraTimeSyncChecker(Node):
-    def __init__(self, left_topic: str, right_topic: str, max_msgs: int, timeout: float):
+    def __init__(
+        self,
+        left_topic: str,
+        right_topic: str,
+        max_msgs: int,
+        timeout: float,
+        write_offset_cache: bool,
+    ):
         super().__init__('camera_time_sync_checker')
 
         self.left_topic = left_topic
         self.right_topic = right_topic
         self.max_msgs = max_msgs
         self.timeout = timeout
+        self.write_offset_cache = write_offset_cache
 
         self.left_times = []      # (seq, stamp)
         self.right_times = []    # (seq, stamp)
         self.left_last_stamp = None
         self.right_last_stamp = None
+        self.analysis_started = False
 
         self.sub_left = self.create_subscription(
             Image, left_topic, self.left_cb, 10
@@ -127,6 +137,9 @@ class CameraTimeSyncChecker(Node):
 
     def analyze_and_shutdown(self):
         """分析并输出结果"""
+        if self.analysis_started:
+            return
+        self.analysis_started = True
         self.timer.cancel()
 
         print("\n" + "=" * 70)
@@ -143,6 +156,7 @@ class CameraTimeSyncChecker(Node):
         if len(self.left_times) == 0 or len(self.right_times) == 0:
             print(f"\n[错误] 某个相机没有收到消息，无法进行同步分析！")
             self._do_shutdown()
+            return
 
         # 计算帧率
         left_intervals = []
@@ -176,6 +190,7 @@ class CameraTimeSyncChecker(Node):
         # 使用时间最近邻匹配（而不是索引配对）
         # 对于每对相邻的左右帧，找到时间戳最接近的配对
         matched_diffs = []
+        matched_offsets = []
 
         # 将右相机时间按升序排列，逐一与左相机匹配
         right_used = set()
@@ -186,18 +201,23 @@ class CameraTimeSyncChecker(Node):
         for li, (left_seq, left_t) in enumerate(self.left_times):
             for ri, (right_seq, right_t) in enumerate(self.right_times):
                 diff = abs(left_t - right_t)
-                all_pairs.append((diff, li, ri, left_t, right_t))
+                offset = right_t - left_t
+                all_pairs.append((diff, li, ri, left_t, right_t, offset))
 
         # 按时间差排序，选择互不重叠的最佳配对
         all_pairs.sort()
 
-        for diff, li, ri, left_t, right_t in all_pairs:
+        for diff, li, ri, left_t, right_t, offset in all_pairs:
             if li in left_used or ri in right_used:
                 continue
             left_used.add(li)
             right_used.add(ri)
             matched_diffs.append(diff)
-            print(f"  配对[{len(matched_diffs)-1:2d}]: LEFT={left_t:.9f}  RIGHT={right_t:.9f}  差值={diff*1000:.3f} ms")
+            matched_offsets.append(offset)
+            print(
+                f"  配对[{len(matched_diffs)-1:2d}]: LEFT={left_t:.9f}  "
+                f"RIGHT={right_t:.9f}  RIGHT-LEFT={offset*1000:+.3f} ms"
+            )
 
         if not matched_diffs:
             # 如果没有匹配到，使用简单索引配对作为后备
@@ -206,21 +226,27 @@ class CameraTimeSyncChecker(Node):
                 left_t = self.left_times[i][1]
                 right_t = self.right_times[i][1]
                 diff = abs(left_t - right_t)
+                offset = right_t - left_t
                 matched_diffs.append(diff)
-                print(f"  配对[{i:2d}]: LEFT={left_t:.9f}  RIGHT={right_t:.9f}  差值={diff*1000:.3f} ms")
+                matched_offsets.append(offset)
+                print(
+                    f"  配对[{i:2d}]: LEFT={left_t:.9f}  "
+                    f"RIGHT={right_t:.9f}  RIGHT-LEFT={offset*1000:+.3f} ms"
+                )
 
         # 计算平均时间差（用于软件同步补偿）
-        if matched_diffs:
-            avg_diff = sum(matched_diffs) / len(matched_diffs)
-            avg_diff_ms = avg_diff * 1000.0
+        if matched_offsets:
+            offset_ms = statistics.median(matched_offsets) * 1000.0
             print(f"\n[补偿偏移量]")
-            print(f"  ★ 检测到时间差: {avg_diff_ms:.3f} ms")
-            # 写入缓存文件，供 camera_timestamp_sync.py 自动读取
-            if _write_offset_cache(avg_diff_ms):
+            print(f"  ★ RIGHT-LEFT 中位偏移: {offset_ms:+.3f} ms")
+            # 只有显式请求时才写软件补偿缓存，避免硬件同步检查污染后续运行。
+            if not self.write_offset_cache:
+                print("  未写入软件补偿缓存（使用 --write-offset-cache 可显式写入）")
+            elif _write_offset_cache(offset_ms):
                 print(f"  ★ 已写入缓存: {CACHE_FILE}")
-                print(f"  ★ 下次使用同步节点时加参数: --auto-offset")
+                print("  ★ 下次使用同步节点时加参数: --auto-offset")
             else:
-                print(f"  ✗ 写入缓存失败，请手动指定: --offset-ms {avg_diff_ms:.3f}")
+                print(f"  ✗ 写入缓存失败，请手动指定: --offset-ms {offset_ms:+.3f}")
 
         if matched_diffs:
             avg_diff = sum(matched_diffs) / len(matched_diffs)
@@ -306,7 +332,7 @@ def main():
     )
     parser.add_argument(
         '--right-topic', '-r',
-        default='/vimbax_camera_right/image_sync',
+        default='/vimbax_camera_right/image_raw',
         help='右相机 image topic (默认: /vimbax_camera_right/image_raw)'
     )
     parser.add_argument(
@@ -318,6 +344,11 @@ def main():
         '--timeout', '-t',
         type=float, default=10.0,
         help='超时时间秒 (默认: 10.0)'
+    )
+    parser.add_argument(
+        '--write-offset-cache',
+        action='store_true',
+        help='将有符号 RIGHT-LEFT 偏移写入软件同步缓存'
     )
 
     # 过滤掉 ROS2 追加的运行时参数，避免 argparse 报错
@@ -345,7 +376,8 @@ def main():
         left_topic=args.left_topic,
         right_topic=args.right_topic,
         max_msgs=args.max_msgs,
-        timeout=args.timeout
+        timeout=args.timeout,
+        write_offset_cache=args.write_offset_cache,
     )
 
     print("\n" + "=" * 70)

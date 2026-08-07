@@ -87,6 +87,7 @@ CMakeFiles/vimbax_camera_node.dir/rclcpp_components/node_main_vimbax_camera_node
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/c++/11/bits/shared_ptr_base.h
  /usr/include/c++/11/typeinfo
  /usr/include/c++/11/bits/allocated_ptr.h
@@ -163,8 +164,11 @@ CMakeFiles/vimbax_camera_node.dir/rclcpp_components/node_main_vimbax_camera_node
  /usr/include/x86_64-linux-gnu/sys/select.h
  /usr/include/x86_64-linux-gnu/bits/select.h
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/cstdio
  /usr/include/stdio.h
@@ -173,6 +177,8 @@ CMakeFiles/vimbax_camera_node.dir/rclcpp_components/node_main_vimbax_camera_node
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -231,6 +237,8 @@ CMakeFiles/vimbax_camera_node.dir/rclcpp_components/node_main_vimbax_camera_node
  /opt/ros/humble/include/rcutils/rcutils/shared_library.h
  /usr/include/string.h
  /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /opt/ros/humble/include/rcutils/rcutils/allocator.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
  /opt/ros/humble/include/rcutils/rcutils/macros.h
@@ -266,6 +274,7 @@ CMakeFiles/vimbax_camera_node.dir/rclcpp_components/node_main_vimbax_camera_node
  /usr/include/x86_64-linux-gnu/bits/confname.h
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h
+ /usr/include/x86_64-linux-gnu/bits/unistd.h
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
  /usr/include/linux/close_range.h
  /usr/include/x86_64-linux-gnu/bits/ss_flags.h

@@ -1,0 +1,39 @@
+-- run_test.py: extra environment variables to append:
+ - LD_LIBRARY_PATH+=/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test/unit_tests
+-- run_test.py: invoking following command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test/unit_tests':
+ - /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test/unit_tests/vimbax_camera_library_loader_test --gtest_output=xml:/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/vimbax_camera_library_loader_test.gtest.xml
+
+[==========] Running 9 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 9 tests from library_loader
+[ RUN      ] library_loader.single_default_instance
+[       OK ] library_loader.single_default_instance (0 ms)
+[ RUN      ] library_loader.build_library_name
+[       OK ] library_loader.build_library_name (0 ms)
+[ RUN      ] library_loader.open_error_by_name
+[ERROR] [1786029470.324385780] [vimbax_camera_fb]: Loading shared library libMissing.so failed with: libMissing.so: cannot open shared object file: No such file or directory
+[       OK ] library_loader.open_error_by_name (0 ms)
+[ RUN      ] library_loader.open_error_by_path
+[ERROR] [1786029470.324414844] [vimbax_camera_fb]: Loading shared library ./libMissing.so failed with: ./libMissing.so: cannot open shared object file: No such file or directory
+[       OK ] library_loader.open_error_by_path (0 ms)
+[ RUN      ] library_loader.open_by_path
+[       OK ] library_loader.open_by_path (0 ms)
+[ RUN      ] library_loader.open_by_name
+[       OK ] library_loader.open_by_name (0 ms)
+[ RUN      ] library_loader.invalid_symbol
+[ERROR] [1786029470.324640370] [vimbax_camera_fb]: Loading symbol invalid failed with: /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test/unit_tests/libtest_lib.so: undefined symbol: invalid
+[       OK ] library_loader.invalid_symbol (0 ms)
+[ RUN      ] library_loader.valid_symbol
+[       OK ] library_loader.valid_symbol (0 ms)
+[ RUN      ] library_loader.test_func_call
+[       OK ] library_loader.test_func_call (0 ms)
+[----------] 9 tests from library_loader (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 9 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/vimbax_camera_library_loader_test.gtest.xml'
+-- run_test.py: verify result file '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/vimbax_camera_library_loader_test.gtest.xml'

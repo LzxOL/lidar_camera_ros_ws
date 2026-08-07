@@ -15,20 +15,137 @@
 # 用法:
 #   ./lidar_camera_gps_sync.sh              # 启动全部（雷达 + 双相机 + 硬件触发）
 #   ./lidar_camera_gps_sync.sh --lidar-only   # 仅启动雷达
-#   ./lidar_camera_only --camera-only     # 仅启动双相机（不带硬件触发）
+#   ./lidar_camera_gps_sync.sh --camera-only # 仅启动双相机（要求雷达已在运行）
 #   ./lidar_camera_gps_sync.sh --no-trigger   # 启动全部但不配置硬件触发
+#   ./lidar_camera_gps_sync.sh --camera-only --no-trigger --no-gps-sync
 # ============================================================================
 
-set -e
+set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WS_ROOT="$SCRIPT_DIR"
 
-# 默认值
+# 相机默认参数（集中在这里，便于现场调整）
+# 曝光 120000 是 8hz
+PIXEL_FORMAT="Mono8"
+THROUGHPUT=450000000
+EXPOSURE=120000.0
+WIDTH=4512
+HEIGHT=4512
+LEFT_SERIAL="03R47"
+RIGHT_SERIAL="06HV5"
+LEFT_TOPIC="vimbax_camera_left"
+RIGHT_TOPIC="vimbax_camera_right"
+TIME_SYNC=true
+TRIGGER_SOURCE="Line0"
+
+# 启动模式默认值
 LIDAR_ONLY=false
 CAMERA_ONLY=false
 HW_TRIGGER=true
-USE_GPS_SYNC=true
+USE_GPS_SYNC="$TIME_SYNC"
+LIDAR_PID=""
+CAMERA_PID=""
+SHM_PATH="/dev/shm/rslidar_gps_timestamp"
+
+cleanup() {
+    local exit_code=$?
+    trap - EXIT INT TERM
+    for pid in "$CAMERA_PID" "$LIDAR_PID"; do
+        if [[ -n "$pid" ]] && kill -0 "$pid" 2>/dev/null; then
+            kill "$pid" 2>/dev/null || true
+        fi
+    done
+    wait 2>/dev/null || true
+    exit "$exit_code"
+}
+
+read_committed_sequence() {
+    python3 - "$SHM_PATH" <<'PY' 2>/dev/null || true
+import struct
+import sys
+
+header_format = "<IIIIQ"
+header_size = struct.calcsize(header_format)
+entry_size = struct.calcsize("<Qq")
+
+try:
+    with open(sys.argv[1], "rb") as stream:
+        header = stream.read(header_size)
+        file_size = stream.seek(0, 2)
+    magic, version, capacity, _reserved, committed = struct.unpack(header_format, header)
+    expected_size = header_size + capacity * entry_size
+    if (
+        magic == 0x52534754
+        and version == 2
+        and capacity == 256
+        and file_size >= expected_size
+    ):
+        print(committed)
+except (OSError, struct.error):
+    pass
+PY
+}
+
+ensure_cameras_not_in_use() {
+    local running_camera_nodes
+
+    running_camera_nodes="$(pgrep -af vimbax_camera_node || true)"
+    if [[ -n "$running_camera_nodes" ]]; then
+        echo "[ERROR] 检测到已有 vimbax_camera_node 进程正在占用相机："
+        printf '%s\n' "$running_camera_nodes"
+        echo "        请在原启动终端按 Ctrl+C 停止它，确认退出后再运行本脚本。"
+        return 1
+    fi
+}
+
+is_camera_online() {
+    local expected_serial="$1"
+    local serial_file serial vendor_file vendor
+
+    for serial_file in /sys/bus/usb/devices/*/serial; do
+        [[ -r "$serial_file" ]] || continue
+        serial="$(tr -d '\n' < "$serial_file")"
+        [[ "$serial" == "$expected_serial" ]] || continue
+        vendor_file="${serial_file%/*}/idVendor"
+        [[ -r "$vendor_file" ]] || continue
+        vendor="$(tr '[:upper:]' '[:lower:]' < "$vendor_file" | tr -d '\n')"
+        [[ "$vendor" == "1ab2" ]] && return 0
+    done
+    return 1
+}
+
+ensure_required_cameras_connected() {
+    local -a missing=()
+    local -a connected=()
+    local serial_file serial vendor_file vendor
+
+    for serial_file in /sys/bus/usb/devices/*/serial; do
+        [[ -r "$serial_file" ]] || continue
+        vendor_file="${serial_file%/*}/idVendor"
+        [[ -r "$vendor_file" ]] || continue
+        vendor="$(tr '[:upper:]' '[:lower:]' < "$vendor_file" | tr -d '\n')"
+        [[ "$vendor" == "1ab2" ]] || continue
+        serial="$(tr -d '\n' < "$serial_file")"
+        [[ -n "$serial" ]] && connected+=("$serial")
+    done
+
+    is_camera_online "$LEFT_SERIAL" || missing+=("左相机 ${LEFT_SERIAL}")
+    is_camera_online "$RIGHT_SERIAL" || missing+=("右相机 ${RIGHT_SERIAL}")
+    if (( ${#missing[@]} == 0 )); then
+        return 0
+    fi
+
+    echo "[ERROR] 未检测到所需的 Allied Vision USB 相机:"
+    printf '        %s\n' "${missing[@]}"
+    if (( ${#connected[@]} > 0 )); then
+        echo "        当前检测到的 Allied Vision 序列号: ${connected[*]}"
+    else
+        echo "        当前未检测到 Allied Vision（vendor=1ab2）相机。"
+    fi
+    echo "        请检查 USB 连接、供电及 LEFT_SERIAL/RIGHT_SERIAL 配置后重试。"
+    return 1
+}
 
 while [[ $# -gt 0 ]]; do
     case $1 in
@@ -48,11 +165,16 @@ while [[ $# -gt 0 ]]; do
             USE_GPS_SYNC=false
             shift
             ;;
+        --gps-sync)
+            USE_GPS_SYNC=true
+            shift
+            ;;
         --help|-h)
             echo "用法: $0 [选项]"
             echo "  --lidar-only      仅启动雷达"
             echo "  --camera-only    仅启动双相机"
             echo "  --no-trigger     不配置硬件触发"
+            echo "  --gps-sync       启用 GPS 时间戳同步"
             echo "  --no-gps-sync    不启用 GPS 时间戳同步"
             echo "  --help, -h       显示此帮助"
             exit 0
@@ -64,25 +186,42 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
+if [[ "$LIDAR_ONLY" == true && "$CAMERA_ONLY" == true ]]; then
+    echo "[ERROR] --lidar-only 与 --camera-only 不能同时使用"
+    exit 1
+fi
+
+START_LIDAR=true
+START_CAMERAS=true
+[[ "$CAMERA_ONLY" == true ]] && START_LIDAR=false
+[[ "$LIDAR_ONLY" == true ]] && START_CAMERAS=false
+[[ "$START_CAMERAS" == false ]] && HW_TRIGGER=false
+
 echo "============================================"
 echo "雷达 + 双目相机 GPS 时间戳同步"
 echo "============================================"
-echo "  雷达:       $([ "$LIDAR_ONLY" = true ] && echo "启动" || echo "启动")"
-echo "  双相机:     $([ "$CAMERA_ONLY" = true ] && echo "启动" || echo "启动")"
+echo "  雷达:       $([ "$START_LIDAR" = true ] && echo "启动" || echo "跳过")"
+echo "  双相机:     $([ "$START_CAMERAS" = true ] && echo "启动" || echo "跳过")"
 echo "  硬件触发:   $([ "$HW_TRIGGER" = true ] && echo "是" || echo "否")"
 echo "  GPS 时间戳: $([ "$USE_GPS_SYNC" = true ] && echo "是" || echo "否")"
 echo "============================================"
 
-# source ROS 环境
-source /opt/ros/humble/setup.bash 2>/dev/null
-source "$WS_ROOT/install/setup.bash" 2>/dev/null
+# ROS 2 的 setup 脚本会读取可能未定义的环境变量（例如
+# AMENT_TRACE_SETUP_FILES），所以加载环境时暂时关闭 nounset。
+set +u
+# shellcheck disable=SC1091
+source /opt/ros/humble/setup.bash
+# shellcheck disable=SC1091
+source "$WS_ROOT/install/setup.bash"
+set -u
+trap cleanup EXIT INT TERM
 
 # GPS 同步参数
 GPS_SYNC_ARG=""
 if [ "$USE_GPS_SYNC" = true ]; then
     GPS_SYNC_ARG="use_shared_memory_gps_time:=true"
     echo "[*] GPS 时间戳同步: 启用"
-    echo "[*] 共享内存路径: /dev/shm/rslidar_gps_timestamp"
+    echo "[*] 共享内存路径: $SHM_PATH"
 else
     echo "[*] GPS 时间戳同步: 禁用（使用相机本地时间戳）"
 fi
@@ -90,31 +229,79 @@ fi
 # --------------------------------------------------------------------------
 # 1. 启动雷达
 # --------------------------------------------------------------------------
-if [ "$CAMERA_ONLY" = false ]; then
+if [[ "$START_LIDAR" == true ]]; then
     echo ""
     echo "[1/2] 启动激光雷达..."
+    # This path belongs exclusively to this timestamp bridge. Removing it before
+    # launching a new writer prevents a previous run from satisfying readiness.
+    rm -f -- "$SHM_PATH"
     ros2 launch rslidar_sdk humble_start.py &
     LIDAR_PID=$!
     echo "    雷达节点 PID: $LIDAR_PID"
-    sleep 2
+
+    if [[ "$USE_GPS_SYNC" == true ]]; then
+        echo "    等待雷达写入有效 GPS 时间戳..."
+        for _attempt in {1..80}; do
+            committed_sequence="$(read_committed_sequence)"
+            if [[ "${committed_sequence:-0}" =~ ^[0-9]+$ ]] && (( committed_sequence > 0 )); then
+                echo "    共享内存已就绪，序号: $committed_sequence"
+                break
+            fi
+            if ! kill -0 "$LIDAR_PID" 2>/dev/null; then
+                echo "[ERROR] 雷达启动进程已退出"
+                exit 1
+            fi
+            sleep 0.1
+        done
+        if [[ "${committed_sequence:-0}" == 0 ]]; then
+            echo "[ERROR] 8 秒内未收到雷达 GPS 时间戳，停止启动相机"
+            exit 1
+        fi
+    fi
 fi
 
 # --------------------------------------------------------------------------
 # 2. 启动双相机
 # --------------------------------------------------------------------------
-if [ "$LIDAR_ONLY" = false ]; then
+if [[ "$START_CAMERAS" == true ]]; then
+    ensure_cameras_not_in_use
+    ensure_required_cameras_connected
+
+    if [[ "$START_LIDAR" == false && "$USE_GPS_SYNC" == true ]]; then
+        initial_sequence="$(read_committed_sequence)"
+        live_sequence=""
+        if [[ "${initial_sequence:-}" =~ ^[1-9][0-9]*$ ]]; then
+            for _attempt in {1..30}; do
+                sleep 0.1
+                current_sequence="$(read_committed_sequence)"
+                if [[ "${current_sequence:-}" =~ ^[1-9][0-9]*$ ]] &&
+                    (( current_sequence != initial_sequence ))
+                then
+                    live_sequence="$current_sequence"
+                    break
+                fi
+            done
+        fi
+        if [[ -z "$live_sequence" ]]; then
+            echo "[ERROR] --camera-only + GPS 同步要求已有雷达进程写入共享内存"
+            echo "        共享内存序号在 3 秒内没有推进，可能是上次运行的残留文件"
+            echo "        请先启动雷达，或添加 --no-gps-sync"
+            exit 1
+        fi
+        echo "    检测到共享内存持续更新，序号: $initial_sequence -> $live_sequence"
+    fi
     echo ""
     echo "[2/2] 启动双相机..."
     CAMERA_ARGS=(
-        "left_serial:=03R47"
-        "right_serial:=06HV5"
-        "left_topic:=vimbax_camera_left"
-        "right_topic:=vimbax_camera_right"
-        "pixel_format:=Mono8"
-        "device_throughput_limit:=450000000"
-        "exposure_time:=240000.0"
-        "width:=4512"
-        "height:=4512"
+        "left_serial:=$LEFT_SERIAL"
+        "right_serial:=$RIGHT_SERIAL"
+        "left_topic:=$LEFT_TOPIC"
+        "right_topic:=$RIGHT_TOPIC"
+        "pixel_format:=$PIXEL_FORMAT"
+        "device_throughput_limit:=$THROUGHPUT"
+        "exposure_time:=$EXPOSURE"
+        "width:=$WIDTH"
+        "height:=$HEIGHT"
         "settings_file:=$WS_ROOT/config/camera_settings.xml"
         "autostream:=0"
     )
@@ -129,14 +316,23 @@ if [ "$LIDAR_ONLY" = false ]; then
     # 等待相机启动完成
     echo "    等待相机初始化..."
     sleep 5
+    if ! kill -0 "$CAMERA_PID" 2>/dev/null; then
+        echo "[ERROR] 相机启动进程已退出"
+        exit 1
+    fi
+
 fi
 
 # --------------------------------------------------------------------------
 # 3. 配置硬件触发（可选）
 # --------------------------------------------------------------------------
-if [ "$HW_TRIGGER" = true ] && [ "$LIDAR_ONLY" = false ]; then
+if [[ "$HW_TRIGGER" == true && "$START_CAMERAS" == true ]]; then
     echo ""
     echo "[*] 配置硬件触发..."
+    TRIGGER_SOURCE="$TRIGGER_SOURCE" \
+    EXPOSURE="$EXPOSURE" \
+    LEFT_TOPIC="$LEFT_TOPIC" \
+    RIGHT_TOPIC="$RIGHT_TOPIC" \
     bash "$WS_ROOT/camera_hw_trigger_dual.sh"
 fi
 
@@ -144,10 +340,10 @@ echo ""
 echo "============================================"
 echo "所有节点已启动"
 echo "============================================"
-if [ "$CAMERA_ONLY" = false ]; then
+if [[ "$START_LIDAR" == true ]]; then
     echo "  雷达 PID:  $LIDAR_PID"
 fi
-if [ "$LIDAR_ONLY" = false ]; then
+if [[ "$START_CAMERAS" == true ]]; then
     echo "  相机 PID:  $CAMERA_PID"
 fi
 echo ""
@@ -164,9 +360,8 @@ echo ""
 echo "  # 时间戳对比验证:"
 echo "    ./verify_timestamp_sync.sh"
 echo ""
-echo "  # 停止所有节点:"
-echo "    kill $LIDAR_PID $CAMERA_PID 2>/dev/null; pkill -f rslidar_sdk; pkill -f vimbax_camera"
+echo "  # 停止所有节点: 在当前终端按 Ctrl+C"
 echo "============================================"
 
-# 保持运行
-wait
+# 保持运行并让任一子进程异常退出时触发统一清理。
+wait -n

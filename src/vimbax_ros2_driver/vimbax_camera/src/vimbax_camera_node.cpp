@@ -94,7 +94,9 @@ const GpsTimestampSharedMemory * get_gps_timestamp_shmem()
   }
 
   struct stat file_stat {};
-  if (fstat(fd, &file_stat) != 0 || file_stat.st_size < static_cast<off_t>(sizeof(GpsTimestampSharedMemory))) {
+  if (fstat(fd, &file_stat) != 0 ||
+    file_stat.st_size < static_cast<off_t>(sizeof(GpsTimestampSharedMemory)))
+  {
     close(fd);
     return nullptr;
   }
@@ -142,11 +144,17 @@ bool read_queue_entry(
   }
 
   const auto & entry = shm->entries[(sequence - 1) % kGpsTimestampQueueCapacity];
-  if (entry.sequence != sequence || entry.timestamp_ns <= 0) {
+  const uint64_t sequence_before = __atomic_load_n(&entry.sequence, __ATOMIC_ACQUIRE);
+  const int64_t observed_timestamp = __atomic_load_n(&entry.timestamp_ns, __ATOMIC_RELAXED);
+  const uint64_t sequence_after = __atomic_load_n(&entry.sequence, __ATOMIC_ACQUIRE);
+
+  // The writer may wrap and replace this slot while it is being read. Requiring
+  // the sequence to match on both sides prevents returning a torn entry.
+  if (sequence_before != sequence || sequence_after != sequence || observed_timestamp <= 0) {
     return false;
   }
 
-  timestamp_ns = entry.timestamp_ns;
+  timestamp_ns = observed_timestamp;
   return true;
 }
 
@@ -192,8 +200,9 @@ int64_t read_gps_timestamp_from_shmem(
       last_camera_timestamp_ns > 0 &&
       camera_timestamp_ns > last_camera_timestamp_ns)
     {
-      const int64_t extrapolated_ts_ns =
-        last_gps_timestamp_ns + static_cast<int64_t>(camera_timestamp_ns - last_camera_timestamp_ns);
+      const int64_t camera_elapsed_ns =
+        static_cast<int64_t>(camera_timestamp_ns - last_camera_timestamp_ns);
+      const int64_t extrapolated_ts_ns = last_gps_timestamp_ns + camera_elapsed_ns;
       last_camera_timestamp_ns = camera_timestamp_ns;
       last_gps_timestamp_ns = extrapolated_ts_ns;
       return extrapolated_ts_ns;

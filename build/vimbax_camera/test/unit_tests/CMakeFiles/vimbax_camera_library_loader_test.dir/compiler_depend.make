@@ -89,6 +89,7 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/typeinfo \
   /usr/include/c++/11/bits/allocated_ptr.h \
@@ -169,8 +170,11 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -179,6 +183,8 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -215,6 +221,8 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
   /usr/include/c++/11/stdlib.h \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/x86_64-linux-gnu/sys/stat.h \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
@@ -262,6 +270,7 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/regex.h \
@@ -391,9 +400,9 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 
 /usr/include/regex.h:
 
-/usr/include/x86_64-linux-gnu/bits/environments.h:
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
 
-/opt/ros/humble/src/gtest_vendor/include/gtest/internal/custom/gtest-port.h:
+/usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-port-arch.h:
 
@@ -410,8 +419,6 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 /usr/include/c++/11/bits/unordered_map.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
-
-/usr/include/c++/11/unordered_map:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
@@ -445,8 +452,6 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 
 /usr/include/asm-generic/types.h:
 
-/usr/include/x86_64-linux-gnu/asm/types.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
 /usr/include/linux/types.h:
@@ -460,6 +465,8 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/x86_64-linux-gnu/sys/stat.h:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
 
 /usr/include/strings.h:
 
@@ -491,13 +498,11 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+/usr/include/c++/11/bits/basic_ios.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
-/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-string.h:
-
-/usr/include/stdlib.h:
+/usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
@@ -520,6 +525,8 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 /usr/include/c++/11/cwchar:
 
 /usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
@@ -574,6 +581,10 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/11/pstl/glue_memory_defs.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
@@ -681,6 +692,10 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 
 /usr/include/c++/11/cstdint:
 
+/usr/include/c++/11/unordered_map:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
 /usr/include/c++/11/cxxabi.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
@@ -730,8 +745,6 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 /usr/include/c++/11/bits/char_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/c++/11/bits/predefined_ops.h:
 
@@ -793,6 +806,14 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 
 /usr/include/errno.h:
 
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+/opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-string.h:
+
+/usr/include/stdlib.h:
+
 /usr/include/pthread.h:
 
 /usr/include/c++/11/exception:
@@ -825,6 +846,8 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
@@ -844,10 +867,6 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/11/iosfwd:
-
-/usr/include/c++/11/ext/concurrence.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
 
@@ -939,6 +958,16 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
+/usr/include/x86_64-linux-gnu/asm/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
+/opt/ros/humble/src/gtest_vendor/include/gtest/internal/custom/gtest-port.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
 /usr/include/c++/11/clocale:
 
 /usr/include/c++/11/cstdio:
@@ -948,6 +977,12 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/c++/11/iosfwd:
+
+/usr/include/c++/11/ext/concurrence.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 /usr/include/libintl.h:
 
@@ -978,11 +1013,3 @@ test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_
 /usr/include/ctype.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
-
-/usr/include/c++/11/bits/streambuf.tcc:
-
-/usr/include/c++/11/pstl/glue_memory_defs.h:
-
-/usr/include/wctype.h:

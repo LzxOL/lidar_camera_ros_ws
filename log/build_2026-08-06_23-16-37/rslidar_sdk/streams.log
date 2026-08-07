@@ -1,0 +1,32 @@
+[0.017s] Invoking command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk': AMENT_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk -- -j16 -l16
+[0.040s] Consolidate compiler generated dependencies of target rslidar_sdk_node
+[0.050s] [ 33%] Building CXX object CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o
+[16.061s] [ 66%] Linking CXX executable rslidar_sdk_node
+[16.216s] [100%] Built target rslidar_sdk_node
+[20.797s] Invoked command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk' returned '0': AMENT_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk -- -j16 -l16
+[20.801s] Invoking command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk': AMENT_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk
+[20.801s] -- Install configuration: "Release"
+[20.802s] -- Execute custom install script
+[20.802s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/lib/rslidar_sdk/rslidar_sdk_node
+[20.802s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/launch/elequent_start.py
+[20.803s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/launch/humble_start.py
+[20.803s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/launch/start.launch
+[20.803s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/launch/start.py
+[20.803s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/rviz/rviz.rviz
+[20.803s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/rviz/rviz2.rviz
+[20.803s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/ament_index/resource_index/package_run_dependencies/rslidar_sdk
+[20.803s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/ament_index/resource_index/parent_prefix_path/rslidar_sdk
+[20.804s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/environment/ament_prefix_path.sh
+[20.804s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/environment/ament_prefix_path.dsv
+[20.804s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/environment/path.sh
+[20.804s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/environment/path.dsv
+[20.804s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.bash
+[20.804s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.sh
+[20.805s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.zsh
+[20.805s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.dsv
+[20.805s] -- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/package.dsv
+[20.807s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/ament_index/resource_index/packages/rslidar_sdk
+[20.807s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/cmake/rslidar_sdkConfig.cmake
+[20.807s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/cmake/rslidar_sdkConfig-version.cmake
+[20.807s] -- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/package.xml
+[20.808s] Invoked command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk' returned '0': AMENT_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk

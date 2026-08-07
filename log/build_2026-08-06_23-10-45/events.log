@@ -1,0 +1,588 @@
+[0.000000] (-) TimerEvent: {}
+[0.000566] (-) JobUnselected: {'identifier': 'rslidar_msg'}
+[0.000594] (-) JobUnselected: {'identifier': 'vimbax_camera_color_correction'}
+[0.000611] (-) JobUnselected: {'identifier': 'vimbax_camera_color_correction_cpp'}
+[0.000626] (-) JobUnselected: {'identifier': 'vimbax_camera_events'}
+[0.000640] (-) JobUnselected: {'identifier': 'vimbax_camera_examples'}
+[0.000653] (-) JobUnselected: {'identifier': 'vimbax_camera_msgs'}
+[0.000667] (-) JobUnselected: {'identifier': 'vmbc_interface'}
+[0.000681] (rslidar_sdk) JobQueued: {'identifier': 'rslidar_sdk', 'dependencies': OrderedDict([('rslidar_msg', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg')])}
+[0.000700] (vimbax_camera) JobQueued: {'identifier': 'vimbax_camera', 'dependencies': OrderedDict([('vimbax_camera_msgs', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs'), ('vmbc_interface', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface'), ('vimbax_camera_events', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events')])}
+[0.000726] (rslidar_sdk) JobStarted: {'identifier': 'rslidar_sdk'}
+[0.011304] (vimbax_camera) JobStarted: {'identifier': 'vimbax_camera'}
+[0.018294] (rslidar_sdk) JobProgress: {'identifier': 'rslidar_sdk', 'progress': 'cmake'}
+[0.019610] (rslidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/rslidar_sdk', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk'], 'cwd': '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', ''), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'root1'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib:/home/root1/.local/lib:/home/root1/ros2_ws/install/robot_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64'), ('HOME', '/home/root1'), ('CONDA_SHLVL', '0'), ('CYCLONEDDS_URI', 'file:///home/root1/robot_workspace/scripts/cyclonedds.xml'), ('OLDPWD', '/home/root1/下载'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2339'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/root1/anaconda3'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/root1/ros2_ws/install'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'root1'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'root1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/root1/.codex/packages/standalone/releases/0.146.1-x86_64-unknown-linux-musl/codex-path:/home/root1/.local/bin:/home/root1/.codex/tmp/arg0/codex-arg0WOlfCK:/home/root1/.codex/packages/standalone/releases/0.146.1-x86_64-unknown-linux-musl/codex-path:/home/root1/.npm-global/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/home/root1/anaconda3/condabin:/home/root1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/cuda-12.2/bin'), ('SESSION_MANAGER', 'local/linzhaoxian:@/tmp/.ICE-unix/2265,unix/linzhaoxian:/tmp/.ICE-unix/2265'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f3a4e1d2_6e1b_4cb3_8339_ed0223a20150'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.298'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:/home/root1/ros2_ws/install/robot_interface:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/root1/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', ''), ('CODEX_THREAD_ID', '019fd76f-b1c3-7af0-8193-1158ee4db85e'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('_CONDA_EXE', '/home/root1/anaconda3/bin/conda'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk'), ('LC_ALL', 'C.UTF-8'), ('CUDA_HOME', '/usr/local/cuda-12.2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/root1/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:/home/root1/ros2_ws/install/robot_interface/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('ROS_HOSTNAME', 'localhost'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', ':/home/root1/lzx_ws/materials/VimbaX_2026-1/cti:/home/root1/lzx_ws/materials/VimbaX_2026-1/cti'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:/home/root1/ros2_ws/install/robot_interface:/opt/ros/humble')]), 'shell': False}
+[0.059926] (vimbax_camera) JobProgress: {'identifier': 'vimbax_camera', 'progress': 'cmake'}
+[0.061387] (vimbax_camera) Command: {'cmd': ['/usr/bin/cmake', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera'], 'cwd': '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', ''), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'root1'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/lib:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/lib:/home/root1/.local/lib:/home/root1/ros2_ws/install/robot_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64'), ('HOME', '/home/root1'), ('CONDA_SHLVL', '0'), ('CYCLONEDDS_URI', 'file:///home/root1/robot_workspace/scripts/cyclonedds.xml'), ('OLDPWD', '/home/root1/下载'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2339'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/root1/anaconda3'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/root1/ros2_ws/install'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'root1'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'root1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/root1/.codex/packages/standalone/releases/0.146.1-x86_64-unknown-linux-musl/codex-path:/home/root1/.local/bin:/home/root1/.codex/tmp/arg0/codex-arg0WOlfCK:/home/root1/.codex/packages/standalone/releases/0.146.1-x86_64-unknown-linux-musl/codex-path:/home/root1/.npm-global/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/home/root1/anaconda3/condabin:/home/root1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/cuda-12.2/bin'), ('SESSION_MANAGER', 'local/linzhaoxian:@/tmp/.ICE-unix/2265,unix/linzhaoxian:/tmp/.ICE-unix/2265'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f3a4e1d2_6e1b_4cb3_8339_ed0223a20150'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.298'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:/home/root1/ros2_ws/install/robot_interface:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/root1/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', ''), ('CODEX_THREAD_ID', '019fd76f-b1c3-7af0-8193-1158ee4db85e'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('_CONDA_EXE', '/home/root1/anaconda3/bin/conda'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera'), ('LC_ALL', 'C.UTF-8'), ('CUDA_HOME', '/usr/local/cuda-12.2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/root1/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/local/lib/python3.10/dist-packages:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/local/lib/python3.10/dist-packages:/home/root1/ros2_ws/install/robot_interface/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('ROS_HOSTNAME', 'localhost'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', ':/home/root1/lzx_ws/materials/VimbaX_2026-1/cti:/home/root1/lzx_ws/materials/VimbaX_2026-1/cti'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:/home/root1/ros2_ws/install/robot_interface:/opt/ros/humble')]), 'shell': False}
+[0.093478] (vimbax_camera) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.094154] (rslidar_sdk) StderrLine: {'line': b'=============================================================\n'}
+[0.094257] (rslidar_sdk) StderrLine: {'line': b'-- POINT_TYPE is XYZI\n'}
+[0.094321] (rslidar_sdk) StderrLine: {'line': b'=============================================================\n'}
+[0.094378] (rslidar_sdk) StderrLine: {'line': b'=============================================================\n'}
+[0.094428] (rslidar_sdk) StderrLine: {'line': b'-- ROS Not Found. ROS Support is turned Off.\n'}
+[0.094481] (rslidar_sdk) StderrLine: {'line': b'=============================================================\n'}
+[0.099818] (-) TimerEvent: {}
+[0.184006] (rslidar_sdk) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.184248] (vimbax_camera) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.199915] (-) TimerEvent: {}
+[0.209806] (vimbax_camera) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.248287] (vimbax_camera) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.248426] (rslidar_sdk) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.253116] (vimbax_camera) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.253232] (rslidar_sdk) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.263472] (vimbax_camera) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.263623] (rslidar_sdk) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.278526] (rslidar_sdk) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.278641] (vimbax_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.296824] (rslidar_sdk) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.296941] (vimbax_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299993] (-) TimerEvent: {}
+[0.348297] (rslidar_sdk) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.348452] (vimbax_camera) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.351519] (vimbax_camera) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.351661] (rslidar_sdk) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.381959] (rslidar_sdk) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.382079] (vimbax_camera) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.400078] (-) TimerEvent: {}
+[0.452096] (rslidar_sdk) StderrLine: {'line': b'=============================================================\n'}
+[0.452251] (rslidar_sdk) StderrLine: {'line': b'-- ROS2 Found. ROS2 Support is turned On.\n'}
+[0.452315] (rslidar_sdk) StderrLine: {'line': b'=============================================================\n'}
+[0.453183] (vimbax_camera) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.16 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[0.453368] (rslidar_sdk) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.483584] (vimbax_camera) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[0.493080] (rslidar_sdk) StdoutLine: {'line': b'-- Found rslidar_msg: 0.0.0 (/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/share/rslidar_msg/cmake)\n'}
+[0.500162] (-) TimerEvent: {}
+[0.514175] (rslidar_sdk) StderrLine: {'line': b'=============================================================\n'}
+[0.514308] (rslidar_sdk) StderrLine: {'line': b'-- CMake run for UNIX GNU Compiler\n'}
+[0.514389] (rslidar_sdk) StderrLine: {'line': b'=============================================================\n'}
+[0.514449] (rslidar_sdk) StderrLine: {'line': b'=============================================================\n'}
+[0.514530] (rslidar_sdk) StderrLine: {'line': b'-- Enable Transform Fucntions\n'}
+[0.514600] (rslidar_sdk) StderrLine: {'line': b'=============================================================\n'}
+[0.515600] (rslidar_sdk) StderrLine: {'line': b'=============================================================\n'}
+[0.515662] (rslidar_sdk) StderrLine: {'line': b'-- rs_driver Version : v1.5.18\n'}
+[0.515707] (rslidar_sdk) StderrLine: {'line': b'=============================================================\n'}
+[0.544001] (vimbax_camera) StdoutLine: {'line': b'-- Found camera_info_manager: 3.1.12 (/opt/ros/humble/share/camera_info_manager/cmake)\n'}
+[0.555039] (vimbax_camera) StdoutLine: {'line': b'-- Found vimbax_camera_msgs: 1.0.2 (/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/share/vimbax_camera_msgs/cmake)\n'}
+[0.568466] (vimbax_camera) StdoutLine: {'line': b'-- Found vimbax_camera_events: 1.0.2 (/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/share/vimbax_camera_events/cmake)\n'}
+[0.571881] (vimbax_camera) StdoutLine: {'line': b'-- Found vmbc_interface: 1.0.2 (/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface/share/vmbc_interface/cmake)\n'}
+[0.574519] (vimbax_camera) StdoutLine: {'line': b'-- Setting executor non-default value MultiThreadedExecutor\n'}
+[0.578911] (vimbax_camera) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.600263] (-) TimerEvent: {}
+[0.601651] (rslidar_sdk) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.630174] (rslidar_sdk) StdoutLine: {'line': b'-- Generating done\n'}
+[0.634441] (rslidar_sdk) StdoutLine: {'line': b'-- Build files have been written to: /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk\n'}
+[0.642120] (rslidar_sdk) CommandEnded: {'returncode': 0}
+[0.642698] (rslidar_sdk) JobProgress: {'identifier': 'rslidar_sdk', 'progress': 'build'}
+[0.643201] (rslidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk', '--', '-j16', '-l16'], 'cwd': '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', ''), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'root1'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib:/home/root1/.local/lib:/home/root1/ros2_ws/install/robot_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64'), ('HOME', '/home/root1'), ('CONDA_SHLVL', '0'), ('CYCLONEDDS_URI', 'file:///home/root1/robot_workspace/scripts/cyclonedds.xml'), ('OLDPWD', '/home/root1/下载'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2339'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/root1/anaconda3'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/root1/ros2_ws/install'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'root1'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'root1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/root1/.codex/packages/standalone/releases/0.146.1-x86_64-unknown-linux-musl/codex-path:/home/root1/.local/bin:/home/root1/.codex/tmp/arg0/codex-arg0WOlfCK:/home/root1/.codex/packages/standalone/releases/0.146.1-x86_64-unknown-linux-musl/codex-path:/home/root1/.npm-global/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/home/root1/anaconda3/condabin:/home/root1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/cuda-12.2/bin'), ('SESSION_MANAGER', 'local/linzhaoxian:@/tmp/.ICE-unix/2265,unix/linzhaoxian:/tmp/.ICE-unix/2265'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f3a4e1d2_6e1b_4cb3_8339_ed0223a20150'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.298'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:/home/root1/ros2_ws/install/robot_interface:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/root1/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', ''), ('CODEX_THREAD_ID', '019fd76f-b1c3-7af0-8193-1158ee4db85e'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('_CONDA_EXE', '/home/root1/anaconda3/bin/conda'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk'), ('LC_ALL', 'C.UTF-8'), ('CUDA_HOME', '/usr/local/cuda-12.2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/root1/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:/home/root1/ros2_ws/install/robot_interface/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('ROS_HOSTNAME', 'localhost'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', ':/home/root1/lzx_ws/materials/VimbaX_2026-1/cti:/home/root1/lzx_ws/materials/VimbaX_2026-1/cti'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:/home/root1/ros2_ws/install/robot_interface:/opt/ros/humble')]), 'shell': False}
+[0.669732] (rslidar_sdk) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target rslidar_sdk_node\n'}
+[0.683640] (vimbax_camera) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[0.686831] (vimbax_camera) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 1.3.12 (/opt/ros/humble/share/ament_cmake_gmock/cmake)\n'}
+[0.689048] (vimbax_camera) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[0.694004] (vimbax_camera) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[0.699212] (vimbax_camera) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[0.700330] (-) TimerEvent: {}
+[0.708650] (vimbax_camera) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.711844] (vimbax_camera) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.712022] (vimbax_camera) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include>\n'}
+[0.712090] (vimbax_camera) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.715125] (vimbax_camera) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.715212] (vimbax_camera) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.715927] (vimbax_camera) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.717038] (vimbax_camera) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.717985] (vimbax_camera) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.720950] (rslidar_sdk) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/rslidar_sdk_node.dir/node/rslidar_sdk_node.cpp.o\n'}
+[0.721133] (vimbax_camera) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.721204] (vimbax_camera) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.722086] (vimbax_camera) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.726501] (vimbax_camera) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.741008] (rslidar_sdk) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/rslidar_sdk_node.dir/src/manager/node_manager.cpp.o\n'}
+[0.800467] (-) TimerEvent: {}
+[0.863837] (vimbax_camera) StdoutLine: {'line': b'-- Generating done\n'}
+[0.883750] (vimbax_camera) StdoutLine: {'line': b'-- Build files have been written to: /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera\n'}
+[0.891582] (vimbax_camera) CommandEnded: {'returncode': 0}
+[0.892174] (vimbax_camera) JobProgress: {'identifier': 'vimbax_camera', 'progress': 'build'}
+[0.892380] (vimbax_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera', '--', '-j16', '-l16'], 'cwd': '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', ''), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'root1'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/lib:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/lib:/home/root1/.local/lib:/home/root1/ros2_ws/install/robot_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64'), ('HOME', '/home/root1'), ('CONDA_SHLVL', '0'), ('CYCLONEDDS_URI', 'file:///home/root1/robot_workspace/scripts/cyclonedds.xml'), ('OLDPWD', '/home/root1/下载'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2339'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/root1/anaconda3'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/root1/ros2_ws/install'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'root1'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'root1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/root1/.codex/packages/standalone/releases/0.146.1-x86_64-unknown-linux-musl/codex-path:/home/root1/.local/bin:/home/root1/.codex/tmp/arg0/codex-arg0WOlfCK:/home/root1/.codex/packages/standalone/releases/0.146.1-x86_64-unknown-linux-musl/codex-path:/home/root1/.npm-global/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/home/root1/anaconda3/condabin:/home/root1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/cuda-12.2/bin'), ('SESSION_MANAGER', 'local/linzhaoxian:@/tmp/.ICE-unix/2265,unix/linzhaoxian:/tmp/.ICE-unix/2265'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f3a4e1d2_6e1b_4cb3_8339_ed0223a20150'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.298'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:/home/root1/ros2_ws/install/robot_interface:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/root1/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', ''), ('CODEX_THREAD_ID', '019fd76f-b1c3-7af0-8193-1158ee4db85e'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('_CONDA_EXE', '/home/root1/anaconda3/bin/conda'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera'), ('LC_ALL', 'C.UTF-8'), ('CUDA_HOME', '/usr/local/cuda-12.2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/root1/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/local/lib/python3.10/dist-packages:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/local/lib/python3.10/dist-packages:/home/root1/ros2_ws/install/robot_interface/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('ROS_HOSTNAME', 'localhost'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', ':/home/root1/lzx_ws/materials/VimbaX_2026-1/cti:/home/root1/lzx_ws/materials/VimbaX_2026-1/cti'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:/home/root1/ros2_ws/install/robot_interface:/opt/ros/humble')]), 'shell': False}
+[0.900550] (-) TimerEvent: {}
+[0.909577] (vimbax_camera) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target test_lib\n'}
+[0.910908] (vimbax_camera) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target gtest_main\n'}
+[0.911711] (vimbax_camera) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target gmock_main\n'}
+[0.912594] (vimbax_camera) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target gtest\n'}
+[0.913389] (vimbax_camera) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target vimbax_camera_node\n'}
+[0.913723] (vimbax_camera) StdoutLine: {'line': b'[  3%] Building C object test/unit_tests/CMakeFiles/test_lib.dir/test_lib.c.o\n'}
+[0.914373] (vimbax_camera) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target gmock\n'}
+[0.917887] (vimbax_camera) StdoutLine: {'line': b'[  6%] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\n'}
+[0.918094] (vimbax_camera) StdoutLine: {'line': b'[ 10%] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\n'}
+[0.919996] (vimbax_camera) StdoutLine: {'line': b'[ 13%] Building CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o\n'}
+[0.920564] (vimbax_camera) StdoutLine: {'line': b'[ 17%] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\n'}
+[0.921304] (vimbax_camera) StdoutLine: {'line': b'[ 20%] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o\n'}
+[0.924536] (vimbax_camera) StdoutLine: {'line': b'[ 24%] Building CXX object CMakeFiles/vimbax_camera_node.dir/rclcpp_components/node_main_vimbax_camera_node.cpp.o\n'}
+[0.931128] (vimbax_camera) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target vimbax_camera\n'}
+[1.000652] (-) TimerEvent: {}
+[1.003490] (vimbax_camera) StdoutLine: {'line': b'[ 27%] Building CXX object CMakeFiles/vimbax_camera.dir/src/vimbax_camera_node.cpp.o\n'}
+[1.003728] (vimbax_camera) StdoutLine: {'line': b'[ 31%] Building CXX object CMakeFiles/vimbax_camera.dir/src/loader/library_loader_unix.cpp.o\n'}
+[1.003923] (vimbax_camera) StdoutLine: {'line': b'[ 34%] Building CXX object CMakeFiles/vimbax_camera.dir/src/loader/vmbc_api.cpp.o\n'}
+[1.004957] (vimbax_camera) StdoutLine: {'line': b'[ 37%] Building CXX object CMakeFiles/vimbax_camera.dir/src/vimbax_camera.cpp.o\n'}
+[1.009124] (vimbax_camera) StdoutLine: {'line': b'[ 41%] Building CXX object CMakeFiles/vimbax_camera.dir/src/vimbax_camera_helper.cpp.o\n'}
+[1.022663] (vimbax_camera) StdoutLine: {'line': b'[ 44%] Linking C shared library libtest_lib.so\n'}
+[1.058709] (vimbax_camera) StdoutLine: {'line': b'[ 44%] Built target test_lib\n'}
+[1.100753] (-) TimerEvent: {}
+[1.200964] (-) TimerEvent: {}
+[1.301179] (-) TimerEvent: {}
+[1.401419] (-) TimerEvent: {}
+[1.503196] (-) TimerEvent: {}
+[1.603461] (-) TimerEvent: {}
+[1.703753] (-) TimerEvent: {}
+[1.804020] (-) TimerEvent: {}
+[1.904273] (-) TimerEvent: {}
+[2.004517] (-) TimerEvent: {}
+[2.105653] (-) TimerEvent: {}
+[2.205867] (-) TimerEvent: {}
+[2.306197] (-) TimerEvent: {}
+[2.406472] (-) TimerEvent: {}
+[2.506688] (-) TimerEvent: {}
+[2.606877] (-) TimerEvent: {}
+[2.707068] (-) TimerEvent: {}
+[2.807648] (-) TimerEvent: {}
+[2.907882] (-) TimerEvent: {}
+[3.008098] (-) TimerEvent: {}
+[3.035855] (vimbax_camera) StdoutLine: {'line': b'[ 48%] Linking CXX static library libgtest_main.a\n'}
+[3.062456] (vimbax_camera) StdoutLine: {'line': b'[ 48%] Built target gtest_main\n'}
+[3.108278] (-) TimerEvent: {}
+[3.208552] (-) TimerEvent: {}
+[3.308811] (-) TimerEvent: {}
+[3.385798] (vimbax_camera) StdoutLine: {'line': b'[ 51%] Linking CXX static library libgmock_main.a\n'}
+[3.401342] (vimbax_camera) StdoutLine: {'line': b'[ 51%] Built target gmock_main\n'}
+[3.408934] (-) TimerEvent: {}
+[3.509188] (-) TimerEvent: {}
+[3.609437] (-) TimerEvent: {}
+[3.709648] (-) TimerEvent: {}
+[3.809890] (-) TimerEvent: {}
+[3.910154] (-) TimerEvent: {}
+[4.010430] (-) TimerEvent: {}
+[4.110656] (-) TimerEvent: {}
+[4.210928] (-) TimerEvent: {}
+[4.311173] (-) TimerEvent: {}
+[4.411415] (-) TimerEvent: {}
+[4.511661] (-) TimerEvent: {}
+[4.611898] (-) TimerEvent: {}
+[4.712142] (-) TimerEvent: {}
+[4.812394] (-) TimerEvent: {}
+[4.912653] (-) TimerEvent: {}
+[5.012909] (-) TimerEvent: {}
+[5.113164] (-) TimerEvent: {}
+[5.213416] (-) TimerEvent: {}
+[5.313662] (-) TimerEvent: {}
+[5.413895] (-) TimerEvent: {}
+[5.514114] (-) TimerEvent: {}
+[5.614358] (-) TimerEvent: {}
+[5.714660] (-) TimerEvent: {}
+[5.814918] (-) TimerEvent: {}
+[5.856203] (vimbax_camera) StdoutLine: {'line': b'[ 55%] Linking CXX executable vimbax_camera_node\n'}
+[5.915049] (-) TimerEvent: {}
+[6.015309] (-) TimerEvent: {}
+[6.081548] (vimbax_camera) StdoutLine: {'line': b'[ 55%] Built target vimbax_camera_node\n'}
+[6.115434] (-) TimerEvent: {}
+[6.215632] (-) TimerEvent: {}
+[6.315843] (-) TimerEvent: {}
+[6.416079] (-) TimerEvent: {}
+[6.516304] (-) TimerEvent: {}
+[6.616488] (-) TimerEvent: {}
+[6.716680] (-) TimerEvent: {}
+[6.816865] (-) TimerEvent: {}
+[6.917063] (-) TimerEvent: {}
+[7.017257] (-) TimerEvent: {}
+[7.117446] (-) TimerEvent: {}
+[7.217634] (-) TimerEvent: {}
+[7.317823] (-) TimerEvent: {}
+[7.418008] (-) TimerEvent: {}
+[7.518195] (-) TimerEvent: {}
+[7.618380] (-) TimerEvent: {}
+[7.718594] (-) TimerEvent: {}
+[7.818791] (-) TimerEvent: {}
+[7.918978] (-) TimerEvent: {}
+[8.019173] (-) TimerEvent: {}
+[8.119368] (-) TimerEvent: {}
+[8.219571] (-) TimerEvent: {}
+[8.319763] (-) TimerEvent: {}
+[8.419954] (-) TimerEvent: {}
+[8.520146] (-) TimerEvent: {}
+[8.620337] (-) TimerEvent: {}
+[8.713578] (vimbax_camera) StdoutLine: {'line': b'[ 58%] Linking CXX static library libgtest.a\n'}
+[8.720449] (-) TimerEvent: {}
+[8.734729] (vimbax_camera) StdoutLine: {'line': b'[ 58%] Built target gtest\n'}
+[8.820551] (-) TimerEvent: {}
+[8.920738] (-) TimerEvent: {}
+[8.993078] (vimbax_camera) StdoutLine: {'line': b'[ 62%] Linking CXX static library libgmock.a\n'}
+[9.016054] (vimbax_camera) StdoutLine: {'line': b'[ 62%] Built target gmock\n'}
+[9.020828] (-) TimerEvent: {}
+[9.121002] (-) TimerEvent: {}
+[9.221185] (-) TimerEvent: {}
+[9.321367] (-) TimerEvent: {}
+[9.421549] (-) TimerEvent: {}
+[9.521754] (-) TimerEvent: {}
+[9.621963] (-) TimerEvent: {}
+[9.722163] (-) TimerEvent: {}
+[9.822349] (-) TimerEvent: {}
+[9.922537] (-) TimerEvent: {}
+[10.022724] (-) TimerEvent: {}
+[10.122968] (-) TimerEvent: {}
+[10.223170] (-) TimerEvent: {}
+[10.323361] (-) TimerEvent: {}
+[10.423544] (-) TimerEvent: {}
+[10.523743] (-) TimerEvent: {}
+[10.623932] (-) TimerEvent: {}
+[10.724114] (-) TimerEvent: {}
+[10.824312] (-) TimerEvent: {}
+[10.924493] (-) TimerEvent: {}
+[11.024687] (-) TimerEvent: {}
+[11.124876] (-) TimerEvent: {}
+[11.225063] (-) TimerEvent: {}
+[11.325245] (-) TimerEvent: {}
+[11.425438] (-) TimerEvent: {}
+[11.525624] (-) TimerEvent: {}
+[11.625809] (-) TimerEvent: {}
+[11.726007] (-) TimerEvent: {}
+[11.826192] (-) TimerEvent: {}
+[11.926397] (-) TimerEvent: {}
+[12.026591] (-) TimerEvent: {}
+[12.126795] (-) TimerEvent: {}
+[12.226977] (-) TimerEvent: {}
+[12.327160] (-) TimerEvent: {}
+[12.427342] (-) TimerEvent: {}
+[12.527523] (-) TimerEvent: {}
+[12.627716] (-) TimerEvent: {}
+[12.727899] (-) TimerEvent: {}
+[12.828082] (-) TimerEvent: {}
+[12.928266] (-) TimerEvent: {}
+[13.028446] (-) TimerEvent: {}
+[13.128633] (-) TimerEvent: {}
+[13.228827] (-) TimerEvent: {}
+[13.329018] (-) TimerEvent: {}
+[13.429206] (-) TimerEvent: {}
+[13.529393] (-) TimerEvent: {}
+[13.629579] (-) TimerEvent: {}
+[13.729758] (-) TimerEvent: {}
+[13.829953] (-) TimerEvent: {}
+[13.930145] (-) TimerEvent: {}
+[14.030339] (-) TimerEvent: {}
+[14.130531] (-) TimerEvent: {}
+[14.230735] (-) TimerEvent: {}
+[14.330917] (-) TimerEvent: {}
+[14.431105] (-) TimerEvent: {}
+[14.531294] (-) TimerEvent: {}
+[14.631488] (-) TimerEvent: {}
+[14.731632] (-) TimerEvent: {}
+[14.831807] (-) TimerEvent: {}
+[14.932000] (-) TimerEvent: {}
+[15.032182] (-) TimerEvent: {}
+[15.132371] (-) TimerEvent: {}
+[15.232571] (-) TimerEvent: {}
+[15.332758] (-) TimerEvent: {}
+[15.432958] (-) TimerEvent: {}
+[15.533152] (-) TimerEvent: {}
+[15.633343] (-) TimerEvent: {}
+[15.733533] (-) TimerEvent: {}
+[15.833718] (-) TimerEvent: {}
+[15.933905] (-) TimerEvent: {}
+[16.034093] (-) TimerEvent: {}
+[16.134296] (-) TimerEvent: {}
+[16.234500] (-) TimerEvent: {}
+[16.334698] (-) TimerEvent: {}
+[16.434891] (-) TimerEvent: {}
+[16.535082] (-) TimerEvent: {}
+[16.635267] (-) TimerEvent: {}
+[16.735447] (-) TimerEvent: {}
+[16.835623] (-) TimerEvent: {}
+[16.935819] (-) TimerEvent: {}
+[17.035998] (-) TimerEvent: {}
+[17.136188] (-) TimerEvent: {}
+[17.236366] (-) TimerEvent: {}
+[17.336540] (-) TimerEvent: {}
+[17.436734] (-) TimerEvent: {}
+[17.536949] (-) TimerEvent: {}
+[17.637123] (-) TimerEvent: {}
+[17.737313] (-) TimerEvent: {}
+[17.837506] (-) TimerEvent: {}
+[17.937710] (-) TimerEvent: {}
+[18.037903] (-) TimerEvent: {}
+[18.138105] (-) TimerEvent: {}
+[18.238302] (-) TimerEvent: {}
+[18.338499] (-) TimerEvent: {}
+[18.438691] (-) TimerEvent: {}
+[18.538876] (-) TimerEvent: {}
+[18.639055] (-) TimerEvent: {}
+[18.739239] (-) TimerEvent: {}
+[18.839413] (-) TimerEvent: {}
+[18.939627] (-) TimerEvent: {}
+[19.039812] (-) TimerEvent: {}
+[19.140009] (-) TimerEvent: {}
+[19.240206] (-) TimerEvent: {}
+[19.340399] (-) TimerEvent: {}
+[19.440591] (-) TimerEvent: {}
+[19.540769] (-) TimerEvent: {}
+[19.640950] (-) TimerEvent: {}
+[19.741127] (-) TimerEvent: {}
+[19.841308] (-) TimerEvent: {}
+[19.941493] (-) TimerEvent: {}
+[20.041682] (-) TimerEvent: {}
+[20.141871] (-) TimerEvent: {}
+[20.188642] (rslidar_sdk) StdoutLine: {'line': b'[100%] Linking CXX executable rslidar_sdk_node\n'}
+[20.241975] (-) TimerEvent: {}
+[20.342150] (-) TimerEvent: {}
+[20.385246] (rslidar_sdk) StdoutLine: {'line': b'[100%] Built target rslidar_sdk_node\n'}
+[20.388341] (rslidar_sdk) CommandEnded: {'returncode': 0}
+[20.388950] (rslidar_sdk) JobProgress: {'identifier': 'rslidar_sdk', 'progress': 'install'}
+[20.391196] (rslidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk'], 'cwd': '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', ''), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'root1'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/lib:/home/root1/.local/lib:/home/root1/ros2_ws/install/robot_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64'), ('HOME', '/home/root1'), ('CONDA_SHLVL', '0'), ('CYCLONEDDS_URI', 'file:///home/root1/robot_workspace/scripts/cyclonedds.xml'), ('OLDPWD', '/home/root1/下载'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2339'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/root1/anaconda3'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/root1/ros2_ws/install'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'root1'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'root1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/root1/.codex/packages/standalone/releases/0.146.1-x86_64-unknown-linux-musl/codex-path:/home/root1/.local/bin:/home/root1/.codex/tmp/arg0/codex-arg0WOlfCK:/home/root1/.codex/packages/standalone/releases/0.146.1-x86_64-unknown-linux-musl/codex-path:/home/root1/.npm-global/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/home/root1/anaconda3/condabin:/home/root1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/cuda-12.2/bin'), ('SESSION_MANAGER', 'local/linzhaoxian:@/tmp/.ICE-unix/2265,unix/linzhaoxian:/tmp/.ICE-unix/2265'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f3a4e1d2_6e1b_4cb3_8339_ed0223a20150'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.298'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:/home/root1/ros2_ws/install/robot_interface:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/root1/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', ''), ('CODEX_THREAD_ID', '019fd76f-b1c3-7af0-8193-1158ee4db85e'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('_CONDA_EXE', '/home/root1/anaconda3/bin/conda'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/rslidar_sdk'), ('LC_ALL', 'C.UTF-8'), ('CUDA_HOME', '/usr/local/cuda-12.2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/root1/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg/local/lib/python3.10/dist-packages:/home/root1/ros2_ws/install/robot_interface/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('ROS_HOSTNAME', 'localhost'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', ':/home/root1/lzx_ws/materials/VimbaX_2026-1/cti:/home/root1/lzx_ws/materials/VimbaX_2026-1/cti'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_msg:/home/root1/ros2_ws/install/robot_interface:/opt/ros/humble')]), 'shell': False}
+[20.393443] (rslidar_sdk) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[20.393880] (rslidar_sdk) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[20.394672] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/lib/rslidar_sdk/rslidar_sdk_node\n'}
+[20.395224] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/launch/elequent_start.py\n'}
+[20.395524] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/launch/humble_start.py\n'}
+[20.395864] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/launch/start.launch\n'}
+[20.396105] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/launch/start.py\n'}
+[20.396545] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/rviz/rviz.rviz\n'}
+[20.396798] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/rviz/rviz2.rviz\n'}
+[20.397097] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/ament_index/resource_index/package_run_dependencies/rslidar_sdk\n'}
+[20.397394] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/ament_index/resource_index/parent_prefix_path/rslidar_sdk\n'}
+[20.397681] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/environment/ament_prefix_path.sh\n'}
+[20.397841] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/environment/ament_prefix_path.dsv\n'}
+[20.398126] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/environment/path.sh\n'}
+[20.398255] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/environment/path.dsv\n'}
+[20.398646] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.bash\n'}
+[20.398917] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.sh\n'}
+[20.399193] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.zsh\n'}
+[20.399320] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/local_setup.dsv\n'}
+[20.399433] (rslidar_sdk) StdoutLine: {'line': b'-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/package.dsv\n'}
+[20.402083] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/ament_index/resource_index/packages/rslidar_sdk\n'}
+[20.402377] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/cmake/rslidar_sdkConfig.cmake\n'}
+[20.402651] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/cmake/rslidar_sdkConfig-version.cmake\n'}
+[20.402969] (rslidar_sdk) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/rslidar_sdk/share/rslidar_sdk/package.xml\n'}
+[20.442255] (-) TimerEvent: {}
+[20.542435] (-) TimerEvent: {}
+[20.642633] (-) TimerEvent: {}
+[20.742806] (-) TimerEvent: {}
+[20.842985] (-) TimerEvent: {}
+[20.943162] (-) TimerEvent: {}
+[21.043342] (-) TimerEvent: {}
+[21.143519] (-) TimerEvent: {}
+[21.243706] (-) TimerEvent: {}
+[21.343896] (-) TimerEvent: {}
+[21.444070] (-) TimerEvent: {}
+[21.544263] (-) TimerEvent: {}
+[21.644550] (-) TimerEvent: {}
+[21.744775] (-) TimerEvent: {}
+[21.844968] (-) TimerEvent: {}
+[21.945161] (-) TimerEvent: {}
+[22.045343] (-) TimerEvent: {}
+[22.145531] (-) TimerEvent: {}
+[22.245749] (-) TimerEvent: {}
+[22.345924] (-) TimerEvent: {}
+[22.446117] (-) TimerEvent: {}
+[22.546312] (-) TimerEvent: {}
+[22.646528] (-) TimerEvent: {}
+[22.746740] (-) TimerEvent: {}
+[22.846920] (-) TimerEvent: {}
+[22.947108] (-) TimerEvent: {}
+[23.047299] (-) TimerEvent: {}
+[23.147489] (-) TimerEvent: {}
+[23.247676] (-) TimerEvent: {}
+[23.347866] (-) TimerEvent: {}
+[23.448077] (-) TimerEvent: {}
+[23.548267] (-) TimerEvent: {}
+[23.648443] (-) TimerEvent: {}
+[23.748627] (-) TimerEvent: {}
+[23.848825] (-) TimerEvent: {}
+[23.949009] (-) TimerEvent: {}
+[24.049203] (-) TimerEvent: {}
+[24.149393] (-) TimerEvent: {}
+[24.249580] (-) TimerEvent: {}
+[24.349782] (-) TimerEvent: {}
+[24.449976] (-) TimerEvent: {}
+[24.550163] (-) TimerEvent: {}
+[24.551642] (vimbax_camera) StdoutLine: {'line': b'[ 65%] Linking CXX shared library libvimbax_camera.so\n'}
+[24.551974] (rslidar_sdk) CommandEnded: {'returncode': 0}
+[24.573644] (rslidar_sdk) JobEnded: {'identifier': 'rslidar_sdk', 'rc': 0}
+[24.650268] (-) TimerEvent: {}
+[24.750411] (-) TimerEvent: {}
+[24.778249] (vimbax_camera) StdoutLine: {'line': b'[ 65%] Built target vimbax_camera\n'}
+[24.785861] (vimbax_camera) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target vimbax_camera_library_loader_test\n'}
+[24.788254] (vimbax_camera) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target vimbax_camera_vmbc_load_test\n'}
+[24.789506] (vimbax_camera) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target vimbax_camera_vimbax_camera_test\n'}
+[24.789724] (vimbax_camera) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target vimbax_camera_api_loader_test\n'}
+[24.791042] (vimbax_camera) StdoutLine: {'line': b'[ 68%] Building CXX object test/unit_tests/CMakeFiles/vimbax_camera_library_loader_test.dir/library_loader_test.cpp.o\n'}
+[24.795274] (vimbax_camera) StdoutLine: {'line': b'[ 72%] Building CXX object test/integration_tests/CMakeFiles/vimbax_camera_vmbc_load_test.dir/vmbc_load_test.cpp.o\n'}
+[24.796771] (vimbax_camera) StdoutLine: {'line': b'[ 75%] Building CXX object test/unit_tests/CMakeFiles/vimbax_camera_api_loader_test.dir/api_loader_test.cpp.o\n'}
+[24.797021] (vimbax_camera) StdoutLine: {'line': b'[ 79%] Building CXX object test/unit_tests/CMakeFiles/vimbax_camera_vimbax_camera_test.dir/vimbax_camera_test.cpp.o\n'}
+[24.797270] (vimbax_camera) StdoutLine: {'line': b'[ 82%] Building CXX object test/unit_tests/CMakeFiles/vimbax_camera_api_loader_test.dir/mocks/api_mock.cpp.o\n'}
+[24.797344] (vimbax_camera) StdoutLine: {'line': b'[ 86%] Building CXX object test/unit_tests/CMakeFiles/vimbax_camera_vimbax_camera_test.dir/mocks/api_mock.cpp.o\n'}
+[24.850516] (-) TimerEvent: {}
+[24.950719] (-) TimerEvent: {}
+[25.050907] (-) TimerEvent: {}
+[25.151098] (-) TimerEvent: {}
+[25.251288] (-) TimerEvent: {}
+[25.351497] (-) TimerEvent: {}
+[25.451720] (-) TimerEvent: {}
+[25.551913] (-) TimerEvent: {}
+[25.652106] (-) TimerEvent: {}
+[25.752308] (-) TimerEvent: {}
+[25.852512] (-) TimerEvent: {}
+[25.952733] (-) TimerEvent: {}
+[26.052960] (-) TimerEvent: {}
+[26.153206] (-) TimerEvent: {}
+[26.253445] (-) TimerEvent: {}
+[26.353656] (-) TimerEvent: {}
+[26.426848] (vimbax_camera) StdoutLine: {'line': b'[ 89%] Linking CXX executable vimbax_camera_library_loader_test\n'}
+[26.453792] (-) TimerEvent: {}
+[26.554016] (-) TimerEvent: {}
+[26.605218] (vimbax_camera) StdoutLine: {'line': b'[ 89%] Built target vimbax_camera_library_loader_test\n'}
+[26.654149] (-) TimerEvent: {}
+[26.754369] (-) TimerEvent: {}
+[26.854583] (-) TimerEvent: {}
+[26.954794] (-) TimerEvent: {}
+[27.055020] (-) TimerEvent: {}
+[27.155249] (-) TimerEvent: {}
+[27.255482] (-) TimerEvent: {}
+[27.355710] (-) TimerEvent: {}
+[27.455930] (-) TimerEvent: {}
+[27.556131] (-) TimerEvent: {}
+[27.656344] (-) TimerEvent: {}
+[27.756542] (-) TimerEvent: {}
+[27.856737] (-) TimerEvent: {}
+[27.956944] (-) TimerEvent: {}
+[28.057142] (-) TimerEvent: {}
+[28.157337] (-) TimerEvent: {}
+[28.257544] (-) TimerEvent: {}
+[28.357743] (-) TimerEvent: {}
+[28.368183] (vimbax_camera) StdoutLine: {'line': b'[ 93%] Linking CXX executable vimbax_camera_vmbc_load_test\n'}
+[28.457866] (-) TimerEvent: {}
+[28.510287] (vimbax_camera) StdoutLine: {'line': b'[ 93%] Built target vimbax_camera_vmbc_load_test\n'}
+[28.557975] (-) TimerEvent: {}
+[28.658174] (-) TimerEvent: {}
+[28.758374] (-) TimerEvent: {}
+[28.858552] (-) TimerEvent: {}
+[28.958734] (-) TimerEvent: {}
+[29.058921] (-) TimerEvent: {}
+[29.159133] (-) TimerEvent: {}
+[29.259340] (-) TimerEvent: {}
+[29.359542] (-) TimerEvent: {}
+[29.459759] (-) TimerEvent: {}
+[29.559958] (-) TimerEvent: {}
+[29.660138] (-) TimerEvent: {}
+[29.760314] (-) TimerEvent: {}
+[29.860496] (-) TimerEvent: {}
+[29.960689] (-) TimerEvent: {}
+[30.060873] (-) TimerEvent: {}
+[30.161072] (-) TimerEvent: {}
+[30.261270] (-) TimerEvent: {}
+[30.361466] (-) TimerEvent: {}
+[30.461646] (-) TimerEvent: {}
+[30.561837] (-) TimerEvent: {}
+[30.662039] (-) TimerEvent: {}
+[30.762231] (-) TimerEvent: {}
+[30.862415] (-) TimerEvent: {}
+[30.962628] (-) TimerEvent: {}
+[31.062811] (-) TimerEvent: {}
+[31.163005] (-) TimerEvent: {}
+[31.263184] (-) TimerEvent: {}
+[31.363373] (-) TimerEvent: {}
+[31.463572] (-) TimerEvent: {}
+[31.563752] (-) TimerEvent: {}
+[31.663925] (-) TimerEvent: {}
+[31.764101] (-) TimerEvent: {}
+[31.864284] (-) TimerEvent: {}
+[31.964465] (-) TimerEvent: {}
+[32.064621] (-) TimerEvent: {}
+[32.164804] (-) TimerEvent: {}
+[32.264998] (-) TimerEvent: {}
+[32.365178] (-) TimerEvent: {}
+[32.465369] (-) TimerEvent: {}
+[32.565552] (-) TimerEvent: {}
+[32.665759] (-) TimerEvent: {}
+[32.765936] (-) TimerEvent: {}
+[32.866116] (-) TimerEvent: {}
+[32.966313] (-) TimerEvent: {}
+[33.066508] (-) TimerEvent: {}
+[33.166709] (-) TimerEvent: {}
+[33.266886] (-) TimerEvent: {}
+[33.367078] (-) TimerEvent: {}
+[33.467276] (-) TimerEvent: {}
+[33.567461] (-) TimerEvent: {}
+[33.667646] (-) TimerEvent: {}
+[33.767830] (-) TimerEvent: {}
+[33.868011] (-) TimerEvent: {}
+[33.968205] (-) TimerEvent: {}
+[34.068410] (-) TimerEvent: {}
+[34.168614] (-) TimerEvent: {}
+[34.268798] (-) TimerEvent: {}
+[34.368991] (-) TimerEvent: {}
+[34.469215] (-) TimerEvent: {}
+[34.569399] (-) TimerEvent: {}
+[34.669595] (-) TimerEvent: {}
+[34.769786] (-) TimerEvent: {}
+[34.869990] (-) TimerEvent: {}
+[34.970189] (-) TimerEvent: {}
+[35.070384] (-) TimerEvent: {}
+[35.170577] (-) TimerEvent: {}
+[35.270762] (-) TimerEvent: {}
+[35.370950] (-) TimerEvent: {}
+[35.471145] (-) TimerEvent: {}
+[35.571343] (-) TimerEvent: {}
+[35.671537] (-) TimerEvent: {}
+[35.771739] (-) TimerEvent: {}
+[35.871940] (-) TimerEvent: {}
+[35.972155] (-) TimerEvent: {}
+[36.072352] (-) TimerEvent: {}
+[36.172546] (-) TimerEvent: {}
+[36.272742] (-) TimerEvent: {}
+[36.372945] (-) TimerEvent: {}
+[36.473134] (-) TimerEvent: {}
+[36.573315] (-) TimerEvent: {}
+[36.638829] (vimbax_camera) StdoutLine: {'line': b'[ 96%] Linking CXX executable vimbax_camera_api_loader_test\n'}
+[36.673439] (-) TimerEvent: {}
+[36.773639] (-) TimerEvent: {}
+[36.798595] (vimbax_camera) StdoutLine: {'line': b'[ 96%] Built target vimbax_camera_api_loader_test\n'}
+[36.826646] (vimbax_camera) StdoutLine: {'line': b'[100%] Linking CXX executable vimbax_camera_vimbax_camera_test\n'}
+[36.873752] (-) TimerEvent: {}
+[36.973959] (-) TimerEvent: {}
+[37.011833] (vimbax_camera) StdoutLine: {'line': b'[100%] Built target vimbax_camera_vimbax_camera_test\n'}
+[37.015679] (vimbax_camera) CommandEnded: {'returncode': 0}
+[37.016314] (vimbax_camera) JobProgress: {'identifier': 'vimbax_camera', 'progress': 'install'}
+[37.017000] (vimbax_camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera'], 'cwd': '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', ''), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('CODEX_CI', '1'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'root1'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/lib:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/lib:/home/root1/.local/lib:/home/root1/ros2_ws/install/robot_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64'), ('HOME', '/home/root1'), ('CONDA_SHLVL', '0'), ('CYCLONEDDS_URI', 'file:///home/root1/robot_workspace/scripts/cyclonedds.xml'), ('OLDPWD', '/home/root1/下载'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NO_PROXY', 'localhost,127.0.0.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '2339'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/root1/anaconda3'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/root1/ros2_ws/install'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'root1'), ('http_proxy', 'http://127.0.0.1:7890'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'root1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/root1/.codex/packages/standalone/releases/0.146.1-x86_64-unknown-linux-musl/codex-path:/home/root1/.local/bin:/home/root1/.codex/tmp/arg0/codex-arg0WOlfCK:/home/root1/.codex/packages/standalone/releases/0.146.1-x86_64-unknown-linux-musl/codex-path:/home/root1/.npm-global/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/home/root1/anaconda3/condabin:/home/root1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/cuda-12.2/bin'), ('SESSION_MANAGER', 'local/linzhaoxian:@/tmp/.ICE-unix/2265,unix/linzhaoxian:/tmp/.ICE-unix/2265'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f3a4e1d2_6e1b_4cb3_8339_ed0223a20150'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.298'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:/home/root1/ros2_ws/install/robot_interface:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/root1/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', ''), ('CODEX_THREAD_ID', '019fd76f-b1c3-7af0-8193-1158ee4db85e'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('_CONDA_EXE', '/home/root1/anaconda3/bin/conda'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera'), ('LC_ALL', 'C.UTF-8'), ('CUDA_HOME', '/usr/local/cuda-12.2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/root1/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events/local/lib/python3.10/dist-packages:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs/local/lib/python3.10/dist-packages:/home/root1/ros2_ws/install/robot_interface/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('ROS_HOSTNAME', 'localhost'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', ':/home/root1/lzx_ws/materials/VimbaX_2026-1/cti:/home/root1/lzx_ws/materials/VimbaX_2026-1/cti'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_events:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vmbc_interface:/home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera_msgs:/home/root1/ros2_ws/install/robot_interface:/opt/ros/humble')]), 'shell': False}
+[37.018822] (vimbax_camera) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[37.019203] (vimbax_camera) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[37.019768] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/lib/vimbax_camera/vimbax_camera_node\n'}
+[37.020246] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/lib/libvimbax_camera.so\n'}
+[37.020482] (vimbax_camera) StdoutLine: {'line': b'-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/launch/__pycache__/dual_camera_stream_launch.cpython-310.pyc\n'}
+[37.022583] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/launch/__pycache__/vimbax_camera_param_launch.cpython-310.pyc\n'}
+[37.023005] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/launch/dual_camera_stream_launch.py\n'}
+[37.023434] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/launch/vimbax_camera_param_launch.py\n'}
+[37.024055] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/camera_parameter.yaml\n'}
+[37.024376] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/camera_settings.xml\n'}
+[37.024647] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/camera_settings_custom.xml\n'}
+[37.024855] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/color_correction_lut_left.bin\n'}
+[37.025091] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/color_correction_lut_left.npy\n'}
+[37.025367] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/color_correction_lut_right.bin\n'}
+[37.025604] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/config/color_correction_lut_right.npy\n'}
+[37.025899] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/library_path.sh\n'}
+[37.026018] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/library_path.dsv\n'}
+[37.026387] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/ament_index/resource_index/package_run_dependencies/vimbax_camera\n'}
+[37.026696] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/ament_index/resource_index/parent_prefix_path/vimbax_camera\n'}
+[37.026972] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/ament_prefix_path.sh\n'}
+[37.027089] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/ament_prefix_path.dsv\n'}
+[37.027452] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/path.sh\n'}
+[37.027617] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/environment/path.dsv\n'}
+[37.027953] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/local_setup.bash\n'}
+[37.028257] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/local_setup.sh\n'}
+[37.028549] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/local_setup.zsh\n'}
+[37.028704] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/local_setup.dsv\n'}
+[37.028831] (vimbax_camera) StdoutLine: {'line': b'-- Symlinking: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/package.dsv\n'}
+[37.030925] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/ament_index/resource_index/packages/vimbax_camera\n'}
+[37.031287] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/ament_index/resource_index/rclcpp_components/vimbax_camera\n'}
+[37.031669] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[37.032008] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/cmake/vimbax_cameraConfig.cmake\n'}
+[37.032276] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/cmake/vimbax_cameraConfig-version.cmake\n'}
+[37.032686] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/share/vimbax_camera/package.xml\n'}
+[37.032817] (vimbax_camera) StdoutLine: {'line': b'-- Up-to-date: /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/vimbax_camera/lib/vimbax_camera/vimbax_camera_timestamp_sync\n'}
+[37.036047] (vimbax_camera) CommandEnded: {'returncode': 0}
+[37.047291] (vimbax_camera) JobEnded: {'identifier': 'vimbax_camera', 'rc': 0}
+[37.047690] (-) EventReactorShutdown: {}

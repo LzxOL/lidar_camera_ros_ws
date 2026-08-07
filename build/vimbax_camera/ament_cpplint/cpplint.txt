@@ -1,0 +1,55 @@
+-- run_test.py: invoking following command in '/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/cpplint.xunit.xml
+
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/vimbax_camera_node.cpp:97:  Lines should be <= 100 characters long  [whitespace/line_length] [2]
+/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/vimbax_camera_node.cpp:202:  Lines should be <= 100 characters long  [whitespace/line_length] [2]
+Category 'whitespace/line_length' errors found: 2
+Total errors found: 2
+Using '--root=/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include' argument
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/loader/library_loader.hpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/loader/vmbc_api.hpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/result.hpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/vimbax_camera.hpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/vimbax_camera_helper.hpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/vimbax_camera_node.hpp
+
+Using '--root=/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src' argument
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/loader/library_loader_unix.cpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/loader/vmbc_api.cpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/vimbax_camera.cpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/vimbax_camera_helper.cpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/vimbax_camera_node.cpp
+
+Using '--root=/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test' argument
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/integration_tests/vmbc_load_test.cpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/api_loader_test.cpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/library_loader_test.cpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/mocks/api_mock.cpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/mocks/api_mock.hpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/mocks/library_loader_mock.hpp
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/test_lib.c
+
+Done processing /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/vimbax_camera_test.cpp
+
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/root1/lzx_ws/project/lidar_camera_ros_ws/build/vimbax_camera/test_results/vimbax_camera/cpplint.xunit.xml'

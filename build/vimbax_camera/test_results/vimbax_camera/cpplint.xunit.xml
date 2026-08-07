@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="vimbax_camera.cpplint"
+  tests="20"
+  failures="2"
+  errors="0"
+  time="1.095"
+>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/loader/library_loader.hpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/loader/vmbc_api.hpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/result.hpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/vimbax_camera.hpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/vimbax_camera_helper.hpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/vimbax_camera_node.hpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/loader/library_loader_unix.cpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/loader/vmbc_api.cpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/vimbax_camera.cpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/vimbax_camera_helper.cpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="whitespace/line_length [2] (/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/vimbax_camera_node.cpp:97)"
+    classname="vimbax_camera.cpplint"
+  >
+      <failure message="Lines should be &lt;= 100 characters long"/>
+  </testcase>
+  <testcase
+    name="whitespace/line_length [2] (/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/vimbax_camera_node.cpp:202)"
+    classname="vimbax_camera.cpplint"
+  >
+      <failure message="Lines should be &lt;= 100 characters long"/>
+  </testcase>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/integration_tests/vmbc_load_test.cpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/api_loader_test.cpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/library_loader_test.cpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/mocks/api_mock.cpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/mocks/api_mock.hpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/mocks/library_loader_mock.hpp"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/test_lib.c"
+    classname="vimbax_camera.cpplint"/>
+  <testcase
+    name="/home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/vimbax_camera_test.cpp"
+    classname="vimbax_camera.cpplint"/>
+  <system-out>Checked files:
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/loader/library_loader.hpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/loader/vmbc_api.hpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/result.hpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/vimbax_camera.hpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/vimbax_camera_helper.hpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/include/vimbax_camera/vimbax_camera_node.hpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/loader/library_loader_unix.cpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/loader/vmbc_api.cpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/vimbax_camera.cpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/vimbax_camera_helper.cpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/src/vimbax_camera_node.cpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/integration_tests/vmbc_load_test.cpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/api_loader_test.cpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/library_loader_test.cpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/mocks/api_mock.cpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/mocks/api_mock.hpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/mocks/library_loader_mock.hpp
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/test_lib.c
+* /home/root1/lzx_ws/project/lidar_camera_ros_ws/src/vimbax_ros2_driver/vimbax_camera/test/unit_tests/vimbax_camera_test.cpp</system-out>
+</testsuite>
