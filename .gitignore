@@ -1,0 +1,9 @@
+/datasets/
+/calibration_results/
+/calibration_artifacts
+/aprilgrid-*
+/aprilgrid_8_21-*
+/mul-board-*
+/aprilgrid_9_4_3_right_baseline_results.md
+/run_remaining_meters_kb.log
+/kalibr_successful_results_20260828.tar.gz
