@@ -11,6 +11,7 @@ TRIGGER_SOURCE="${TRIGGER_SOURCE:-Line0}"
 EXPOSURE="${EXPOSURE:-240000.0}"
 LEFT_TOPIC="${LEFT_TOPIC:-vimbax_camera_left}"
 RIGHT_TOPIC="${RIGHT_TOPIC:-vimbax_camera_right}"
+ACTIVE_CAMERA_SIDE="${ACTIVE_CAMERA_SIDE:-both}"
 
 # 检测相机是否在线
 is_camera_online() {
@@ -98,8 +99,8 @@ setup_camera_hw_trigger() {
 source /opt/ros/humble/setup.bash 2>/dev/null
 source /home/root1/lzx_ws/project/lidar_camera_ros_ws/install/setup.bash 2>/dev/null
 
-LEFT_SERIAL="03R47"
-RIGHT_SERIAL="06HV5"
+LEFT_SERIAL="${LEFT_SERIAL:-03R47}"
+RIGHT_SERIAL="${RIGHT_SERIAL:-06HV5}"
 
 LEFT_ONLINE=0
 RIGHT_ONLINE=0
@@ -110,14 +111,14 @@ echo "============================================"
 echo "左相机序列号: ${LEFT_SERIAL}"
 echo "右相机序列号: ${RIGHT_SERIAL}"
 
-if is_camera_online "${LEFT_SERIAL}"; then
+if [[ "$ACTIVE_CAMERA_SIDE" != right ]] && is_camera_online "${LEFT_SERIAL}"; then
     echo "左相机 (${LEFT_SERIAL}): 已连接"
     LEFT_ONLINE=1
 else
     echo "左相机 (${LEFT_SERIAL}): 未检测到"
 fi
 
-if is_camera_online "${RIGHT_SERIAL}"; then
+if [[ "$ACTIVE_CAMERA_SIDE" != left ]] && is_camera_online "${RIGHT_SERIAL}"; then
     echo "右相机 (${RIGHT_SERIAL}): 已连接"
     RIGHT_ONLINE=1
 else

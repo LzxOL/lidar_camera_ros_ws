@@ -32,6 +32,7 @@ from launch.actions import (
     ExecuteProcess,
     OpaqueFunction,
     RegisterEventHandler,
+    Shutdown,
 )
 from launch.event_handlers import OnProcessExit
 from launch.substitutions import LaunchConfiguration
@@ -170,6 +171,14 @@ def _make_camera_actions(*, role: str, camera_id: str, pixel_format: str, throug
 
     actions = [
         vimbax_camera_node,
+        # Prevent a failed camera node from leaving the service configuration
+        # commands blocked forever while waiting for unavailable services.
+        RegisterEventHandler(
+            OnProcessExit(
+                target_action=vimbax_camera_node,
+                on_exit=[Shutdown(reason=f"{namespace} camera node exited")],
+            )
+        ),
         # 首条命令等待服务出现；后续命令由退出事件严格串接。
         TimerAction(period=2.0, actions=[sequence[0]]),
     ]
@@ -203,6 +212,13 @@ def launch_setup(context, *args, **kwargs):
         ("left", left_serial, left_topic),
         ("right", right_serial, right_topic),
     ]
+    # The wrapper script uses __disabled__ for the inactive side because
+    # launch arguments cannot contain an empty value (e.g. left_serial:=).
+    requested = [
+        (role, serial, topic)
+        for role, serial, topic in requested
+        if serial != '__disabled__' and topic != '__disabled__'
+    ]
     missing = [
         f"{role}_serial={serial}"
         for role, serial, topic in requested
@@ -210,14 +226,14 @@ def launch_setup(context, *args, **kwargs):
     ]
     if missing:
         print(
-            f"[dual_camera_stream_launch] Required camera not found: {', '.join(missing)}. "
+            f"[dual_camera_stream_launch] Camera not found, skipping: {', '.join(missing)}. "
             f"Connected Allied Vision serials={sorted(connected_serials)}."
         )
-        return []
 
     actions = []
 
     if left_topic and left_serial and left_serial in connected_serials:
+        print(f"[dual_camera_stream_launch] Starting left camera: {left_serial} -> {left_topic}")
         role = left_topic.replace('vimbax_camera_', '') if left_topic.startswith('vimbax_camera_') else left_topic
         actions += _make_camera_actions(
             role=role,
@@ -233,6 +249,7 @@ def launch_setup(context, *args, **kwargs):
         )
 
     if right_topic and right_serial and right_serial in connected_serials:
+        print(f"[dual_camera_stream_launch] Starting right camera: {right_serial} -> {right_topic}")
         role = right_topic.replace('vimbax_camera_', '') if right_topic.startswith('vimbax_camera_') else right_topic
         actions += _make_camera_actions(
             role=role,

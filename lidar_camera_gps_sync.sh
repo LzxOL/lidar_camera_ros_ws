@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # ============================================================================
-# 雷达 + 双目相机 GPS 时间戳同步启动脚本
+# 雷达 + 相机 GPS 时间戳同步启动脚本
 #
 # 功能：
 #   1. 启动 rslidar_sdk 雷达节点（发点云时写入 GPS 时间戳到 /dev/shm/rslidar_gps_timestamp）
-#   2. 启动双相机，自动设置硬件触发 + GPS 时间戳同步
+#   2. 启动单相机或双相机，自动设置硬件触发 + GPS 时间戳同步
 #   3. 自动设置硬件触发（可选）
 #
 # 前提条件：
@@ -14,6 +14,8 @@
 #
 # 用法:
 #   ./lidar_camera_gps_sync.sh              # 启动全部（雷达 + 双相机 + 硬件触发）
+#   ./lidar_camera_gps_sync.sh --camera left       # 只启动左相机，不启动雷达
+#   ./lidar_camera_gps_sync.sh --camera right      # 只启动右相机，不启动雷达
 #   ./lidar_camera_gps_sync.sh --lidar-only   # 仅启动雷达
 #   ./lidar_camera_gps_sync.sh --camera-only # 仅启动双相机（要求雷达已在运行）
 #   ./lidar_camera_gps_sync.sh --no-trigger   # 启动全部但不配置硬件触发
@@ -27,9 +29,10 @@ WS_ROOT="$SCRIPT_DIR"
 
 # 相机默认参数（集中在这里，便于现场调整）
 # 曝光 120000 是 8hz
+# 230000 -> 2.5
 PIXEL_FORMAT="Mono8"
 THROUGHPUT=450000000
-EXPOSURE=120000.0
+EXPOSURE=100000.0
 WIDTH=4512
 HEIGHT=4512
 LEFT_SERIAL="03R47"
@@ -38,6 +41,7 @@ LEFT_TOPIC="vimbax_camera_left"
 RIGHT_TOPIC="vimbax_camera_right"
 TIME_SYNC=true
 TRIGGER_SOURCE="Line0"
+CAMERA_SIDE="${CAMERA_SIDE:-both}"  # both, left, or right
 
 # 启动模式默认值
 LIDAR_ONLY=false
@@ -130,8 +134,12 @@ ensure_required_cameras_connected() {
         [[ -n "$serial" ]] && connected+=("$serial")
     done
 
-    is_camera_online "$LEFT_SERIAL" || missing+=("左相机 ${LEFT_SERIAL}")
-    is_camera_online "$RIGHT_SERIAL" || missing+=("右相机 ${RIGHT_SERIAL}")
+    if [[ "$CAMERA_SIDE" != right ]]; then
+        is_camera_online "$LEFT_SERIAL" || missing+=("左相机 ${LEFT_SERIAL}")
+    fi
+    if [[ "$CAMERA_SIDE" != left ]]; then
+        is_camera_online "$RIGHT_SERIAL" || missing+=("右相机 ${RIGHT_SERIAL}")
+    fi
     if (( ${#missing[@]} == 0 )); then
         return 0
     fi
@@ -157,6 +165,18 @@ while [[ $# -gt 0 ]]; do
             CAMERA_ONLY=true
             shift
             ;;
+        --camera-side)
+            [[ $# -ge 2 ]] || { echo "[ERROR] --camera-side 需要 left、right 或 both"; exit 1; }
+            CAMERA_SIDE="$2"
+            shift 2
+            ;;
+        --camera)
+            [[ $# -ge 2 ]] || { echo "[ERROR] --camera 需要 left 或 right"; exit 1; }
+            CAMERA_SIDE="$2"
+            CAMERA_ONLY=true
+            USE_GPS_SYNC=false
+            shift 2
+            ;;
         --no-trigger)
             HW_TRIGGER=false
             shift
@@ -172,7 +192,9 @@ while [[ $# -gt 0 ]]; do
         --help|-h)
             echo "用法: $0 [选项]"
             echo "  --lidar-only      仅启动雷达"
-            echo "  --camera-only    仅启动双相机"
+            echo "  --camera-only    仅启动相机，不启动雷达"
+            echo "  --camera S       只启动单个相机：left 或 right（不启动雷达）"
+            echo "  --camera-side S  相机选择：both、left 或 right（默认 both）"
             echo "  --no-trigger     不配置硬件触发"
             echo "  --gps-sync       启用 GPS 时间戳同步"
             echo "  --no-gps-sync    不启用 GPS 时间戳同步"
@@ -186,6 +208,18 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
+if [[ "$CAMERA_SIDE" != both && "$CAMERA_SIDE" != left && "$CAMERA_SIDE" != right ]]; then
+    echo "[ERROR] CAMERA_SIDE/--camera-side 必须是 both、left 或 right"
+    exit 1
+fi
+
+# 单相机快捷模式不启动雷达、不配置硬件触发，也不读取雷达共享内存时间戳。
+if [[ "$CAMERA_SIDE" != both ]]; then
+    CAMERA_ONLY=true
+    USE_GPS_SYNC=false
+    HW_TRIGGER=false
+fi
+
 if [[ "$LIDAR_ONLY" == true && "$CAMERA_ONLY" == true ]]; then
     echo "[ERROR] --lidar-only 与 --camera-only 不能同时使用"
     exit 1
@@ -198,10 +232,10 @@ START_CAMERAS=true
 [[ "$START_CAMERAS" == false ]] && HW_TRIGGER=false
 
 echo "============================================"
-echo "雷达 + 双目相机 GPS 时间戳同步"
+echo "雷达 + 相机 GPS 时间戳同步"
 echo "============================================"
 echo "  雷达:       $([ "$START_LIDAR" = true ] && echo "启动" || echo "跳过")"
-echo "  双相机:     $([ "$START_CAMERAS" = true ] && echo "启动" || echo "跳过")"
+echo "  相机:       $([ "$START_CAMERAS" = true ] && echo "启动 ($CAMERA_SIDE)" || echo "跳过")"
 echo "  硬件触发:   $([ "$HW_TRIGGER" = true ] && echo "是" || echo "否")"
 echo "  GPS 时间戳: $([ "$USE_GPS_SYNC" = true ] && echo "是" || echo "否")"
 echo "============================================"
@@ -291,19 +325,35 @@ if [[ "$START_CAMERAS" == true ]]; then
         echo "    检测到共享内存持续更新，序号: $initial_sequence -> $live_sequence"
     fi
     echo ""
-    echo "[2/2] 启动双相机..."
+    echo "[2/2] 启动相机 ($CAMERA_SIDE)..."
+    ACTIVE_LEFT_SERIAL="$LEFT_SERIAL"
+    ACTIVE_RIGHT_SERIAL="$RIGHT_SERIAL"
+    ACTIVE_LEFT_TOPIC="$LEFT_TOPIC"
+    ACTIVE_RIGHT_TOPIC="$RIGHT_TOPIC"
+    AUTOSTREAM=0
+    if [[ "$CAMERA_SIDE" == left ]]; then
+        ACTIVE_RIGHT_SERIAL="__disabled__"
+        ACTIVE_RIGHT_TOPIC="__disabled__"
+    elif [[ "$CAMERA_SIDE" == right ]]; then
+        ACTIVE_LEFT_SERIAL="__disabled__"
+        ACTIVE_LEFT_TOPIC="__disabled__"
+    fi
+    if [[ "$CAMERA_SIDE" != both ]]; then
+        # 单相机无需等待双相机参数服务链，打开相机后直接发布图像。
+        AUTOSTREAM=1
+    fi
     CAMERA_ARGS=(
-        "left_serial:=$LEFT_SERIAL"
-        "right_serial:=$RIGHT_SERIAL"
-        "left_topic:=$LEFT_TOPIC"
-        "right_topic:=$RIGHT_TOPIC"
+        "left_serial:=$ACTIVE_LEFT_SERIAL"
+        "right_serial:=$ACTIVE_RIGHT_SERIAL"
+        "left_topic:=$ACTIVE_LEFT_TOPIC"
+        "right_topic:=$ACTIVE_RIGHT_TOPIC"
         "pixel_format:=$PIXEL_FORMAT"
         "device_throughput_limit:=$THROUGHPUT"
         "exposure_time:=$EXPOSURE"
         "width:=$WIDTH"
         "height:=$HEIGHT"
         "settings_file:=$WS_ROOT/config/camera_settings.xml"
-        "autostream:=0"
+        "autostream:=$AUTOSTREAM"
     )
     if [ -n "$GPS_SYNC_ARG" ]; then
         CAMERA_ARGS+=("$GPS_SYNC_ARG")
@@ -331,6 +381,9 @@ if [[ "$HW_TRIGGER" == true && "$START_CAMERAS" == true ]]; then
     echo "[*] 配置硬件触发..."
     TRIGGER_SOURCE="$TRIGGER_SOURCE" \
     EXPOSURE="$EXPOSURE" \
+    ACTIVE_CAMERA_SIDE="$CAMERA_SIDE" \
+    LEFT_SERIAL="$LEFT_SERIAL" \
+    RIGHT_SERIAL="$RIGHT_SERIAL" \
     LEFT_TOPIC="$LEFT_TOPIC" \
     RIGHT_TOPIC="$RIGHT_TOPIC" \
     bash "$WS_ROOT/camera_hw_trigger_dual.sh"
