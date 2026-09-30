@@ -31,7 +31,7 @@ from cv_bridge import CvBridge
 import numpy as np
 import rclpy
 from rclpy.node import Node
-from rclpy.qos import qos_profile_sensor_data
+from rclpy.qos import QoSProfile, ReliabilityPolicy
 from rclpy.serialization import serialize_message
 import rosbag2_py
 from sensor_msgs.msg import Image
@@ -126,13 +126,14 @@ class CalibrationCapture(Node):
             ),
         )
 
+        image_qos = QoSProfile(depth=5, reliability=ReliabilityPolicy.RELIABLE)
         if args.mode in LEFT_MODES:
             self._create_bag_topic(args.left_topic)
             self.left_subscription = self.create_subscription(
                 Image,
                 args.left_topic,
                 self._left_callback,
-                qos_profile_sensor_data,
+                image_qos,
             )
         if args.mode in RIGHT_MODES:
             self._create_bag_topic(args.right_topic)
@@ -140,7 +141,7 @@ class CalibrationCapture(Node):
                 Image,
                 args.right_topic,
                 self._right_callback,
-                qos_profile_sensor_data,
+                image_qos,
             )
 
         metadata = {

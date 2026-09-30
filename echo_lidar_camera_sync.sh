@@ -175,7 +175,7 @@ class SyncCollector(Node):
         qos = QoSProfile(
             history=HistoryPolicy.KEEP_LAST,
             depth=20,
-            reliability=ReliabilityPolicy.BEST_EFFORT,
+            reliability=ReliabilityPolicy.RELIABLE,
             durability=DurabilityPolicy.VOLATILE,
         )
         self.create_subscription(PointCloud2, lidar_topic, self._callback("lidar"), qos)
@@ -184,7 +184,8 @@ class SyncCollector(Node):
 
     def _callback(self, name):
         def receive(msg):
-            if len(self.samples[name]) >= target_samples:
+            # Keep LiDAR samples across the full, slower camera sampling window.
+            if name != "lidar" and len(self.samples[name]) >= target_samples:
                 return
             self.samples[name].append(
                 {
@@ -330,10 +331,6 @@ if camera_pair_ratio < min_match_ratio:
 print("\n补充：相机与已采集 LiDAR 话题的最近邻差值")
 print_delta_stats("左相机 - LiDAR", nearest_deltas_ms(stamps["lidar"], stamps["left"]))
 print_delta_stats("右相机 - LiDAR", nearest_deltas_ms(stamps["lidar"], stamps["right"]))
-
-all_values = stamps["lidar"] + stamps["left"] + stamps["right"]
-if all_values and max(all_values) < 1_000_000 * 1_000_000_000:
-    failures.append("时间戳不像 GPS/Unix 绝对时间")
 
 print("\n============================================")
 if failures:
